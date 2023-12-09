@@ -8,19 +8,29 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    .active {
+      background-color: $main-color;
+      color: $white-color;
+    }
+
+    .not-active {
+      color: #1A3324;
+      background-color: $sub-color;
+    }
+
     .nav-tab {
       text-align: center;
       padding: 15px 0;
-      background-color: $sub-color;
       border-radius: 15px 15px 0 0;
       font-size: 24px;
-      color: #1A3324;
+
       cursor: pointer;
 
       &:hover {
         background-color: $main-color;
         color: $white-color;
       }
+
     }
   }
 
@@ -33,10 +43,5 @@
         @include Logo;
       }
     }
-  }
-
-  .active {
-    background-color: $main-color;
-    color: $white-color;
   }
 }

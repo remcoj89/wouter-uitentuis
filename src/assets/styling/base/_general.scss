@@ -1,3 +1,5 @@
+@import '../abstracts/variables';
+
 *,
 *::before,
 *::after {
@@ -8,4 +10,13 @@
 
 html {
   font-size: 67.5%;
+}
+
+body {
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
 }

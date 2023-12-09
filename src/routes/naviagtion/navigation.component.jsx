@@ -1,20 +1,26 @@
 import './navigation.styles.scss';
+import { Outlet, Link, useLocation } from 'react-router-dom';
+
 
 const Navigation = () => {
+  const location = useLocation();
 
   return(
-    <nav className='nav-container'>
-      <div className="nav-tabs">
-        <span className='nav-tab'>Sportvelden</span>
-        <span className='nav-tab'>Hovenier</span>
-        <span className='nav-tab'>Groen voorziening</span>
-      </div>
-      <div className="nav-bar">
-        <div className="logo">
-          <h1 id="logo">WOUTER UITENTUIS</h1>
+    <>
+      <nav className='nav-container'>
+        <div className="nav-tabs">
+          <Link to="/" className={`nav-tab ${location.pathname === '/' ? 'active' : 'not-active'}`}>Sportvelden</Link>
+          <Link to="/hovenier" className={`nav-tab ${location.pathname === '/hovenier' ? 'active' : 'not-active'}`}>Hovenier</Link>
+          <Link to="/groen-voorziening" className={`nav-tab ${location.pathname === '/groen-voorziening' ? 'active' : 'not-active'}`}>Groen voorziening</Link>
         </div>
-      </div>
-    </nav>
+        <div className="nav-bar">
+          <div className="logo">
+            <h1 id="logo">WOUTER UITENTUIS</h1>
+          </div>
+        </div>
+      </nav>
+      <Outlet/>
+    </>
   )
 };
 
