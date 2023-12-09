@@ -1,0 +1,9 @@
+@import '../base/_globals';
+@import './variables';
+
+@mixin Logo {
+  font-family: $font-sanchez;
+  font-size: 3.6rem;
+  line-height: normal;
+  color :$white-color;
+}
