@@ -1,8 +1,11 @@
 import './field-management.styles.scss';
+import HeroSection from '../../components/hero-section/hero-section.component'
 
 const FieldManagement = () => {
   return (
-    <h1>Field management</h1>
+    <>
+      <HeroSection />
+    </>
   )
 };
 

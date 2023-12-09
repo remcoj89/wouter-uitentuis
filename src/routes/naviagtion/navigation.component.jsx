@@ -17,6 +17,10 @@ const Navigation = () => {
           <div className="logo">
             <h1 id="logo">WOUTER UITENTUIS</h1>
           </div>
+          <div className="contact">
+            <span>info@wouteruitentuis.nl</span>
+            <span>06-30272667</span>
+          </div>
         </div>
       </nav>
       <Outlet/>

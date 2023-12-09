@@ -1,8 +1,11 @@
 import './landscaping.styles.scss';
+import HeroSection from '../../components/hero-section/hero-section.component'
 
 const Landscaping = () => {
   return (
-    <h1>Groen voorziening</h1>
+    <>
+    <HeroSection />
+  </>
   )
 };
 

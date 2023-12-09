@@ -7,6 +7,7 @@
     width:100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: .2rem;
 
     .active {
       background-color: $main-color;
@@ -21,7 +22,7 @@
     .nav-tab {
       text-align: center;
       padding: 15px 0;
-      border-radius: 15px 15px 0 0;
+      border-radius: 8px 8px 0 0;
       font-size: 24px;
       cursor: pointer;
 
@@ -35,10 +36,22 @@
   .nav-bar {
     background-color: $main-color;
     padding: 1.8rem 0;
+    display: flex;
+    justify-content: space-between;
     .logo {
       margin-left: 5%;
       #logo{
         @include Logo;
+      }
+    }
+    .contact{
+      margin-right: 5%;
+      span{
+        display: block;
+        color: $white-color;
+        text-align: end;
+        font-size: 1.8rem;
+        line-height: 1.6;
       }
     }
   }
