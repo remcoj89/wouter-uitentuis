@@ -1,0 +1,32 @@
+@import '../../assets/styling/abstracts/globals';
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap:3.6rem;
+  .project{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-odd {
+    flex-direction: row-reverse;
+  }
+
+  .project-content{
+    width: 40%;
+    color: $white-color;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin: 0 auto;
+    padding :2.4rem;
+
+  }
+  image{
+    background-image: url('../../assets/images/project-image.jpg');
+    width: 30%;
+  }
+}

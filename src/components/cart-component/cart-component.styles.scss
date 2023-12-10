@@ -1,0 +1,14 @@
+@import '../../assets/styling/abstracts/globals';
+
+.card{
+  background-color: rgba($sub-color, 0.22);
+  color: $white-color;
+  padding :0 2.4rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.8rem;
+  flex: 1 0 0;
+
+}

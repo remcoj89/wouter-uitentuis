@@ -1,0 +1,8 @@
+@import '../../assets/styling/abstracts/globals';
+
+.cart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap:1.8rem;
+}
