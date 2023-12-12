@@ -1,4 +1,5 @@
-@import '../../assets/styling/abstracts/globals';
+@import '../../../assets/styling/abstracts/globals';
+
 
 .project-container {
   display: flex;
@@ -15,7 +16,7 @@
 
   .project-content{
     width: 40%;
-    color: $white-color;
+    color: $main-color;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -23,10 +24,10 @@
     gap: 1.8rem;
     margin: 0 auto;
     padding :2.4rem;
-
   }
-  image{
-    background-image: url('../../assets/images/project-image.jpg');
-    width: 30%;
+
+  .project-image {
+    width:40%;
+    object-fit: cover;
   }
 }

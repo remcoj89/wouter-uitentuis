@@ -1,8 +1,7 @@
 @import '../../assets/styling/abstracts/globals';
 
 .card{
-  background-color: rgba($sub-color, 0.22);
-  color: $white-color;
+  color: $main-color;
   padding :0 2.4rem 1.8rem;
   display: flex;
   flex-direction: column;
@@ -11,4 +10,24 @@
   gap: 1.8rem;
   flex: 1 0 0;
 
+  .read-more-btn{
+    font-size: 1.6rem;
+    color: $sub-color;
+  }
+
+  &.open {
+    height: auto;
+  }
+
+  &.open .paragraph-2 {
+    opacity: 1;
+    transition: width 2s, height 4s;
+    animation: example 5s ease-in-out;
+  }
+}
+
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

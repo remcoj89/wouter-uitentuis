@@ -20,7 +20,7 @@ const ProjectSection = ({projects}) => {
             <p>{paragraph1}</p>
             <p>{paragraph2}</p>
             </div>
-            <img src={require(`../../assets/images/${imageUrl}`)} alt={`Wouter Uitentuits ${title}`} />
+            <img className='project-image' src={require(`../../../assets/images/${imageUrl}`)} alt={`Wouter Uitentuits ${title}`} />
           </div>
           )
         })

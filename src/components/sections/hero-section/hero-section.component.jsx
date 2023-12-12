@@ -1,5 +1,5 @@
 import './hero-section.styles.scss';
-import Button from '../button/button.component'
+import Button from '../../button/button.component'
 
 const HeroSection = ({sectionHero}) => {
   if(!sectionHero) {
@@ -15,7 +15,7 @@ const HeroSection = ({sectionHero}) => {
         <Button buttonType={'heroButton'}>Contact</Button>
       </div>
       <div className="hero-right">
-        <img src={require('../../assets/images/hero-right.png')} alt="" />
+        <img src={require('../../../assets/images/hero-right.png')} alt="" />
       </div>
     </header>
   )

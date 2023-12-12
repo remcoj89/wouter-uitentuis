@@ -1,9 +1,9 @@
 import './gardening.styles.scss';
-import HeroSection from '../../components/hero-section/hero-section.component';
-import CartSection from '../../components/cart-section/cart-section.component';
-import ProjectSection from '../../components/project-section/project-section.component';
 import { useContext} from 'react';
 import { appDataContext } from '../../context/data-context/data.context';
+import HeroSection from '../../components/sections/hero-section/hero-section.component';
+import CartSection from '../../components/sections/cart-section/cart-section.component';
+import ProjectSection from '../../components/sections/project-section/project-section.component';
 
 
 const Gardening = () => {

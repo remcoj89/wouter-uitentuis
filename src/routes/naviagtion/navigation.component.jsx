@@ -14,12 +14,14 @@ const Navigation = () => {
           <Link to="/groen-voorziening" className={`nav-tab ${location.pathname === '/groen-voorziening' ? 'active' : 'not-active'}`}>Groen voorziening</Link>
         </div>
         <div className="nav-bar">
+          <div className="nav-wrapper">
           <div className="logo">
-            <h1 id="logo">WOUTER UITENTUIS</h1>
+            <h1 id="logo">W. UITENTUIS</h1>
           </div>
           <div className="contact">
             <span>info@wouteruitentuis.nl</span>
             <span>06-30272667</span>
+          </div>
           </div>
         </div>
       </nav>

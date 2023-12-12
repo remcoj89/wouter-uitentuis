@@ -1,5 +1,5 @@
 import './cart-section.styles.scss';
-import CartComponent from '../cart-component/cart-component.component'
+import CartComponent from '../../cart-component/cart-component.component'
 
 
 const CartSection = ({specialization}) => {

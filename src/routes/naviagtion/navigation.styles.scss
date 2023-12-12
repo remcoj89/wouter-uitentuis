@@ -36,22 +36,26 @@
   .nav-bar {
     background-color: $main-color;
     padding: 1.4rem 0;
-    display: flex;
-    justify-content: space-between;
-    .logo {
-      margin-left: 5%;
-      #logo{
-        @include Logo;
+
+    .nav-wrapper{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 3rem;
+      .logo {
+        #logo{
+          @include Logo;
+        }
       }
-    }
-    .contact{
-      margin-right: 5%;
-      span{
-        display: block;
-        color: $white-color;
-        text-align: end;
-        font-size: 1.6rem;
-        line-height: 1.6;
+      .contact{
+        span{
+          display: block;
+          color: $white-color;
+          text-align: end;
+          font-size: 1.6rem;
+          line-height: 1.6;
+        }
       }
     }
   }

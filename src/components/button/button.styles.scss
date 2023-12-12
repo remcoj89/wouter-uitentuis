@@ -1,15 +1,14 @@
 @import '../../assets/styling/abstracts/globals';
 
 .button-container {
-flex-shrink: 0;
 padding :1.6rem 4.4rem;
 border-radius: 40px 5px;
-background: #FFF;
-box-shadow: 2px 4px 8px 1px $sub-color;
-color: $main-color;
+background: linear-gradient(90deg, rgba(26, 51, 36, 1), rgba(0, 166, 81, 1));
+box-shadow: 1px 1px 1px 1px $sub-color;
+color: $white-color;
 font-size: 2.4rem;
 font-weight: 600;
-transition: ease-in-out .3s;
+transition: ease-in-out .2s;
 cursor: pointer;
 
 &.hero-button {
@@ -18,6 +17,7 @@ cursor: pointer;
 
 &:hover {
   box-shadow: 2px 4px 8px 1px $main-color;
+  background: $white-color;
   color: $sub-color;
   }
 }
