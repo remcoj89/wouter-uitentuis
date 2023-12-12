@@ -1,4 +1,4 @@
-import Data from '../../../data/data.json'
+import Data from '../../data/data.json'
 import {createContext, useState, useEffect} from 'react';
 
 

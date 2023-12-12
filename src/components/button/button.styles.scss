@@ -1,9 +1,8 @@
 @import '../../assets/styling/abstracts/globals';
 
 .button-container {
-width: 284px;
-height: 81px;
 flex-shrink: 0;
+padding :1.6rem 4.4rem;
 border-radius: 40px 5px;
 background: #FFF;
 box-shadow: 2px 4px 8px 1px $sub-color;

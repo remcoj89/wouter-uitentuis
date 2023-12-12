@@ -2,8 +2,9 @@
 
 header{
   display: flex;
-  height: 70vh;
+  height: 55vh;
   justify-content: space-between;
+
   .hero-left, .hero-right {
     display: flex;
     justify-content: center;
@@ -39,16 +40,10 @@ header{
 
   .hero-right {
     width: 50%;
-    position: relative;
-    flex-grow: 1;
-    flex-shrink: 1;
 
     img{
-      position: absolute;
-      display: flex;
-      right: -11vw;
-      width: 100%;
-
+       width: 100%;
+       margin-right: -20vw;
     }
   }
 }

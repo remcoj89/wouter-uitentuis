@@ -8,39 +8,39 @@
     "sectionSpecializations": {
       "specialization1": {
         "title": "Tuin Aanleg",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization2": {
         "title": "Renovatie",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization": {
         "title": "Onderhoud",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
     "sectionProject": {
       "project1": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 1",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "project2": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 2",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "project3": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 3",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
@@ -66,39 +66,39 @@
     "sectionSpecializations": {
       "specialization1": {
         "title": "Tuin Aanleg",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization2": {
         "title": "Renovatie",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization": {
         "title": "Onderhoud",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
     "sectionProject": {
       "project1": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 1",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "project2": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 2",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "project3": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 3",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
@@ -123,40 +123,40 @@
     },
     "sectionSpecializations": {
       "specialization1": {
-        "title": "Tuin Aanleg",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "title": "Bemesten",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization2": {
-        "title": "Renovatie",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "title": "Bewateren",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization": {
-        "title": "Onderhoud",
-        "iconPath": "../../assets/icons/icon-shovel.svg",
+        "title": "Grasmaaien",
+        "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
     "sectionProject": {
       "project1": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 1",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "project2": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 2",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "project3": {
-        "title": "Project Title",
-        "imageUrl": "",
+        "title": "Project 3",
+        "imageUrl": "project-image.jpg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
