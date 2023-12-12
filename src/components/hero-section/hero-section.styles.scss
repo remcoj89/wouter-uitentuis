@@ -3,11 +3,11 @@
 header{
   display: flex;
   height: 70vh;
+  justify-content: space-between;
   .hero-left, .hero-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50%;
     color: $white-color;
     flex-direction: column;
     gap: 2rem;
@@ -19,33 +19,36 @@ header{
     flex-shrink: 0;
     height: inherit;
     justify-content: center;
+    width: 40%;
+    margin: 0 auto;
 
     h1 {
       display: flex;
       flex-direction: column;
-      font-size: 4.6rem;
-      span {
-        font-size: 4rem;
-        font-weight: 400;
-      }
+      font-size: 3.6rem;
     }
 
     h3 {
-      font-size: 3.8rem;
+      font-size: 2.8rem;
       font-weight: 300;
       span{
         display: block;
       }
     }
-
-
-
   }
 
   .hero-right {
-    background-image: url('../../assets/images/hero-right.png');
-    background-size: cover;
-    background-position: cover;
-    height: 80%;
+    width: 50%;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    img{
+      position: absolute;
+      display: flex;
+      right: -11vw;
+      width: 100%;
+
+    }
   }
 }

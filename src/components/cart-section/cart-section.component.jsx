@@ -13,7 +13,7 @@ const CartSection = () => {
     },
     {
       title: 'Renovatie',
-      icon: 'icon-shovel',
+      icon: 'icon-tulip',
       paragraph1: 'Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.',
       paragraph2: 'Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.'
     },

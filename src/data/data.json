@@ -1,30 +1,31 @@
 {
   "gardening": {
-    "section-hero": {
+    "id": "Gardening",
+    "sectionHero": {
       "title": "Wij Creëren Groene Meesterwerken",
-      "sub-title": "Ontdek Onze Toonaangevende Hovenierskunst"
+      "subTitle": "Ontdek Onze Toonaangevende Hovenierskunst"
     },
-    "section-specializations": {
+    "sectionSpecializations": {
       "specialization1": {
         "title": "Tuin Aanleg",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization2": {
         "title": "Renovatie",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization": {
         "title": "Onderhoud",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "section-project": {
+    "sectionProject": {
       "project1": {
         "title": "Project Title",
         "imageUrl": "",
@@ -44,7 +45,7 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "section-images": {
+    "sectionImages": {
       "imageUrl1": "",
       "imageUrl2": "",
       "imageUrl3": "",
@@ -57,31 +58,32 @@
     }
   },
   "landscaping": {
-    "section-hero": {
+    "id": "landscaping",
+    "sectionHero": {
       "title": "Wij Creëren Groene Meesterwerken",
-      "sub-title": "Ontdek Onze Toonaangevende Hovenierskunst"
+      "subTitle": "Ontdek Onze Toonaangevende Hovenierskunst"
     },
-    "section-specializations": {
+    "sectionSpecializations": {
       "specialization1": {
         "title": "Tuin Aanleg",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization2": {
         "title": "Renovatie",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization": {
         "title": "Onderhoud",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "section-project": {
+    "sectionProject": {
       "project1": {
         "title": "Project Title",
         "imageUrl": "",
@@ -101,7 +103,7 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "section-images": {
+    "sectionImages": {
       "imageUrl1": "",
       "imageUrl2": "",
       "imageUrl3": "",
@@ -113,32 +115,33 @@
       "imageUrl9": ""
     }
   },
-  "field-managment": {
-    "section-hero": {
+  "fieldManagement": {
+    "id": "field-management",
+    "sectionHero": {
       "title": "Wij Creëren Groene Meesterwerken",
-      "sub-title": "Ontdek Onze Toonaangevende Hovenierskunst"
+      "subTitle": "Ontdek Onze Toonaangevende Hovenierskunst"
     },
-    "section-specializations": {
+    "sectionSpecializations": {
       "specialization1": {
         "title": "Tuin Aanleg",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization2": {
         "title": "Renovatie",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       },
       "specialization": {
         "title": "Onderhoud",
-        "icon-path": "../../assets/icons/icon-shovel.svg",
+        "iconPath": "../../assets/icons/icon-shovel.svg",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "section-project": {
+    "sectionProject": {
       "project1": {
         "title": "Project Title",
         "imageUrl": "",
@@ -158,7 +161,7 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "section-images": {
+    "sectionImages": {
       "imageUrl1": "",
       "imageUrl2": "",
       "imageUrl3": "",

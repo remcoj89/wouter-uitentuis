@@ -1,12 +1,10 @@
 import './cart-component.styles.scss';
-import {ReactComponent}  from 'react'
 const CartComponent = ({ cart }) => {
 const { icon, title, paragraph1, paragraph2 } = cart;
 
-const IconComponent =  require(`../../assets/icons/${icon}.svg`).ReactComponent
   return (
     <div className="card">
-      {IconComponent && <IconComponent />}
+      <img src={require(`../../assets/icons/${icon}.svg`)} alt={`Wouter Uitentuis ${title}`} />
       <h2>{title}</h2>
       <p>{paragraph1}</p>
       <p>{paragraph2}</p>

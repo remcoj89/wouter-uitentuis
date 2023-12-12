@@ -1,19 +1,21 @@
 import './hero-section.styles.scss';
 import Button from '../button/button.component'
 
-const HeroSection = () => {
+const HeroSection = ({sectionHero}) => {
+  if(!sectionHero) {
+    return;
+  }
+  const {title, subTitle} = sectionHero
+
   return (
     <header>
       <div className="hero-left">
-        <h1>Wij Creëren Groene <span>Meesterwerken:</span></h1>
-        <h3>
-          <span>Ontdek Onze</span>
-          <span>Toonaangevende</span>
-          <span>Hovenierskunst.</span>
-        </h3>
+        <h1>{title}</h1>
+        <h3>{subTitle}</h3>
         <Button buttonType={'heroButton'}>Contact</Button>
       </div>
       <div className="hero-right">
+        <img src={require('../../assets/images/hero-right.png')} alt="" />
       </div>
     </header>
   )
