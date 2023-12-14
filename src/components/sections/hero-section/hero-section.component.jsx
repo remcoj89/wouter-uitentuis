@@ -8,7 +8,7 @@ const HeroSection = ({sectionHero}) => {
   const {title, subTitle} = sectionHero
 
   return (
-    <header>
+    <div className='hero'>
       <div className="hero-left">
         <h1>{title}</h1>
         <h3>{subTitle}</h3>
@@ -17,7 +17,7 @@ const HeroSection = ({sectionHero}) => {
       <div className="hero-right">
         <img src={require('../../../assets/images/hero-right.png')} alt="" />
       </div>
-    </header>
+    </div>
   )
 };
 

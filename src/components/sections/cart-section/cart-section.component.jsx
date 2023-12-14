@@ -8,14 +8,14 @@ const CartSection = ({specialization}) => {
   }
 
   return (
-    <div className="cart-container">
+    <section className="cart-container">
     {
       Object.values(specialization).map((specialty) => {
         return <CartComponent cart={specialty} key={specialty.title}/>
        })
     }
 
-    </div>
+    </section>
   )
 };
 

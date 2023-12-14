@@ -20,14 +20,16 @@ const Landscaping = () => {
   const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof} = landscapingData;
 
   return (
-    <main>
-    <HeroSection sectionHero={sectionHero}/>
-    <CartSection specialization={sectionSpecializations}/>
-    <CtaSection />
-    <SocialProofSection yearsActive={yearsActive} socialProof={sectionSocialProof}></SocialProofSection>
-    <ProjectSection projects={sectionProject}/>
-    <CtaSection />
-  </main>
+    <>
+      <HeroSection sectionHero={sectionHero}/>
+      <main>
+        <CartSection specialization={sectionSpecializations}/>
+        <CtaSection />
+        <SocialProofSection yearsActive={yearsActive} socialProof={sectionSocialProof}></SocialProofSection>
+        <ProjectSection projects={sectionProject}/>
+        <CtaSection />
+      </main>
+    </>
   )
 };
 

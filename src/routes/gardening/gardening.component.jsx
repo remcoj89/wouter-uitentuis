@@ -21,14 +21,17 @@ const Gardening = () => {
 
 
   return (
-    <main>
+    <>
       <HeroSection sectionHero={sectionHero} />
-      <CartSection specialization={sectionSpecializations}/>
-      <CtaSection />
-      <SocialProofSection yearsActive={yearsActive} socialProof={sectionSocialProof}></SocialProofSection>
-      <ProjectSection projects={sectionProject}/>
-      <CtaSection />
-    </main>
+      <main>
+        <CartSection specialization={sectionSpecializations}/>
+        <CtaSection />
+        <SocialProofSection yearsActive={yearsActive} socialProof={sectionSocialProof}></SocialProofSection>
+        <ProjectSection projects={sectionProject}/>
+        <CtaSection />
+      </main>
+    </>
+
   )
 };
 

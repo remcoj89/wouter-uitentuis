@@ -19,14 +19,16 @@ const FieldManagement = () => {
     const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof} = fieldManagementData;
 
   return (
-    <main>
+    <>
       <HeroSection sectionHero={sectionHero} />
-      <CartSection specialization={sectionSpecializations}/>
-      <CtaSection />
-      <SocialProofSection socialProof={sectionSocialProof}></SocialProofSection>
-      <ProjectSection projects={sectionProject}/>
-      <CtaSection />
-    </main>
+      <main>
+        <CartSection specialization={sectionSpecializations}/>
+        <CtaSection />
+        <SocialProofSection socialProof={sectionSocialProof}></SocialProofSection>
+        <ProjectSection projects={sectionProject}/>
+        <CtaSection />
+      </main>
+    </>
   )
 };
 

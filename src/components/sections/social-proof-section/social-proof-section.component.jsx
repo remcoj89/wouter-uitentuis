@@ -6,7 +6,7 @@ const SocialProofSection = ({yearsActive, socialProof}) => {
   }
 
   return (
-    <div className="social-proof-container">
+    <section className="social-proof-container">
       {
         Object.values(socialProof).map((item, i) => {
           const {logo, title, description} = item
@@ -22,7 +22,7 @@ const SocialProofSection = ({yearsActive, socialProof}) => {
           )
         })
       }
-  </div>
+  </section>
   );
 }
 

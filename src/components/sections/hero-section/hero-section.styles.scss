@@ -1,8 +1,9 @@
 @import '../../../assets/styling/abstracts/globals';
 
 
-header{
+.hero{
   display: flex;
+  margin: 3.6rem auto;
   height: 70vh;
   justify-content: space-between;
 

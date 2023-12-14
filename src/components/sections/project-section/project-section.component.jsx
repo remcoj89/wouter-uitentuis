@@ -7,7 +7,7 @@ const ProjectSection = ({projects}) => {
 
 
   return (
-    <div className="project-container">
+    <section className="project-container">
       {
         Object.values(projects).map((project, i) => {
           const {title, paragraph1, paragraph2, imageUrl} = project
@@ -25,7 +25,7 @@ const ProjectSection = ({projects}) => {
           )
         })
       }
-    </div>
+    </section>
   )
 };
 
