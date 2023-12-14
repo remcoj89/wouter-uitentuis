@@ -25,6 +25,20 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
+    "sectionSocialProof": {
+      "column1": {
+        "title": null,
+        "description": "Actief Als Hovenier"
+      },
+      "column2": {
+        "title": "> 200.000km2",
+        "description": "Gras geplant"
+      },
+      "column3": {
+        "title": "> 132",
+        "description": "Aangelegde Tuinen"
+      }
+    },
     "sectionProject": {
       "project1": {
         "title": "Project 1",
@@ -83,6 +97,20 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
+    "sectionSocialProof": {
+      "column1": {
+        "title": null,
+        "description": "Actief Als Hovenier"
+      },
+      "column2": {
+        "title": "> 200.000km2",
+        "description": "Gras geplant"
+      },
+      "column3": {
+        "title": "",
+        "description": "Gemeente Zaanstad"
+      }
+    },
     "sectionProject": {
       "project1": {
         "title": "Project 1",
@@ -139,6 +167,23 @@
         "iconPath": "icon-shovel",
         "paragraph1": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique.",
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
+      }
+    },
+    "sectionSocialProof": {
+      "column1": {
+        "logo": "logo-az"
+      },
+      "column2": {
+        "logo": "logo-afc-34"
+      },
+      "column3": {
+        "logo": "logo-go-ahead-eagles"
+      },
+      "column4": {
+        "logo": "logo-kolping-boys"
+      },
+      "column5": {
+        "logo": "logo-sporting-s"
       }
     },
     "sectionProject": {

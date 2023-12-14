@@ -1,0 +1,20 @@
+@import '../../../assets/styling/abstracts/globals';
+
+
+.social-proof-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  .social-proof-cart{
+    text-align: center;
+
+    .social-proof-title{
+      color: $sub-color;
+    }
+    .social-proof-description{
+      margin: 2.4rem 0;
+      color: $main-color;
+      font-weight: 700;
+    }
+  }
+}

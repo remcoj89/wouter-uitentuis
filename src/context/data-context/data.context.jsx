@@ -6,6 +6,7 @@ export const appDataContext = createContext({
   gardeningData: {},
   landscapingData: {},
   fieldManagementData: {},
+  socialProofData: {}
 })
 
 export const AppDataProvider = (({children}) => {

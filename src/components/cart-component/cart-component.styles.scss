@@ -21,8 +21,8 @@
 
   &.open .paragraph-2 {
     opacity: 1;
-    transition: width 2s, height 4s;
-    animation: example 5s ease-in-out;
+    transition: width 2s, height .5s;
+    animation: example .5s ease-in-out;
   }
 }
 
