@@ -8,7 +8,7 @@ import HeroSection from '../../components/sections/hero-section/hero-section.com
 import CartSection from '../../components/sections/cart-section/cart-section.component';
 import ProjectSection from '../../components/sections/project-section/project-section.component';
 import SocialProofSection from '../../components/sections/social-proof-section/social-proof-section.component';
-
+import CtaSection from '../../components/sections/cta-section/cta-section.component';
 
 const Gardening = () => {
   const yearsActive = yearsActiveCalculator(2003);
@@ -17,15 +17,17 @@ const Gardening = () => {
   if(!gardeningData) {
     return;
   }
-  const {sectionHero, sectionSpecializations, projectSection, sectionSocialProof} = gardeningData;
+  const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof} = gardeningData;
 
 
   return (
     <main>
       <HeroSection sectionHero={sectionHero} />
       <CartSection specialization={sectionSpecializations}/>
-      <ProjectSection projects={projectSection}/>
+      <CtaSection />
       <SocialProofSection yearsActive={yearsActive} socialProof={sectionSocialProof}></SocialProofSection>
+      <ProjectSection projects={sectionProject}/>
+      <CtaSection />
     </main>
   )
 };
