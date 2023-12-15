@@ -59,17 +59,11 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "sectionImages": {
-      "imageUrl1": "",
-      "imageUrl2": "",
-      "imageUrl3": "",
-      "imageUrl4": "",
-      "imageUrl5": "",
-      "imageUrl6": "",
-      "imageUrl7": "",
-      "imageUrl8": "",
-      "imageUrl9": ""
-    }
+    "sectionImages": [
+      "veld-1",
+      "veld-2",
+      "veld-3"
+    ]
   },
   "landscaping": {
     "id": "landscaping",
@@ -131,17 +125,11 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "sectionImages": {
-      "imageUrl1": "",
-      "imageUrl2": "",
-      "imageUrl3": "",
-      "imageUrl4": "",
-      "imageUrl5": "",
-      "imageUrl6": "",
-      "imageUrl7": "",
-      "imageUrl8": "",
-      "imageUrl9": ""
-    }
+    "sectionImages":  [
+      "veld-1",
+      "veld-2",
+      "veld-3"
+    ]
   },
   "fieldManagement": {
     "id": "field-management",
@@ -206,16 +194,10 @@
         "paragraph2": "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
       }
     },
-    "sectionImages": {
-      "imageUrl1": "",
-      "imageUrl2": "",
-      "imageUrl3": "",
-      "imageUrl4": "",
-      "imageUrl5": "",
-      "imageUrl6": "",
-      "imageUrl7": "",
-      "imageUrl8": "",
-      "imageUrl9": ""
-    }
+    "sectionImages":  [
+      "veld-1",
+      "veld-2",
+      "veld-3"
+    ]
   }
 }

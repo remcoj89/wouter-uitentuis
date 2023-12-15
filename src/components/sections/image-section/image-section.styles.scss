@@ -1,0 +1,32 @@
+@import '../../../assets/styling/abstracts/globals';
+
+.image-container{
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  .image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  .arrow-container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;;
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+    .arrow {
+      width:5rem;
+      height: 5rem;
+      stroke: $sub-color;
+       cursor: pointer;
+
+       &:hover {
+        stroke: $white-color;
+       }
+    }
+  }
+}
