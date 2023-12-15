@@ -17,7 +17,7 @@ const FieldManagement = () => {
     if(!fieldManagementData) {
       return;
     }
-    const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof, sectionImages} = fieldManagementData;
+    const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof, sectionImages, sectionFaq} = fieldManagementData;
 
   return (
     <>
@@ -29,7 +29,8 @@ const FieldManagement = () => {
         <ProjectSection projects={sectionProject}/>
         <CtaSection />
         <ImageSection images={sectionImages}/>
-        <ContactSection />      </main>
+        <ContactSection faq={sectionFaq} />
+      </main>
     </>
   )
 };

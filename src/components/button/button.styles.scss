@@ -1,23 +1,34 @@
 @import '../../assets/styling/abstracts/globals';
 
 .button-container {
-padding :1.6rem 4.4rem;
-border-radius: 40px 5px;
-background: linear-gradient(90deg, rgba(26, 51, 36, 1), rgba(0, 166, 81, 1));
-box-shadow: 1px 1px 1px 1px $sub-color;
-color: $white-color;
-font-size: 2.4rem;
-font-weight: 600;
-transition: ease-in-out .2s;
-cursor: pointer;
+  border: none;
+  border-radius: 40px 5px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 1.5rem 0.4rem;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  background: linear-gradient(90deg, rgba(26, 51, 36, 1), rgba(0, 166, 81, 1));
+  box-shadow: 1px 1px 1px 1px $sub-color;
+  color: $white-color;
+  width: 20rem;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+
+&:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba($main-color, 0.2);
+}
+
+&:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba($main-color, 0.2);
+}
 
 &.hero-button {
   margin-top: 2.4rem;
 }
 
-&:hover {
-  box-shadow: 2px 4px 8px 1px $main-color;
-  background: $white-color;
-  color: $sub-color;
-  }
 }

@@ -63,6 +63,28 @@
       "veld-1",
       "veld-2",
       "veld-3"
+    ],
+    "sectionFaq" : [
+      {
+        "question": "Hoe vaak moet ik mijn tuin laten onderhouden?",
+        "answer": "De frequentie hangt af van de grootte en complexiteit van je tuin; meestal adviseren we een seizoensgebonden onderhoudsschema voor optimale groei en esthetiek."
+      },
+      {
+        "question": "Welke planten zijn geschikt voor mijn schaduwrijke tuin?",
+        "answer": "Er zijn diverse schaduwtolerante planten, zoals varens en hosta's, die gedijen zonder direct zonlicht. We adviseren graag over geschikte keuzes voor jouw specifieke omgeving."
+      },
+      {
+        "question": "Wat kan ik doen om mijn gazon gezond te houden?",
+        "answer": "Regelmatig maaien, goed water geven en periodiek bemesten zijn essentieel. Ook is het raadzaam om jaarlijks te verticuteren en kale plekken opnieuw in te zaaien."
+      },
+      {
+        "question": "Hoe kan ik mijn tuin het beste voorbereiden op de winter?",
+        "answer": "Snoeien van vorstgevoelige planten, mulchen voor isolatie, en het beschermen van kwetsbare planten met doeken zijn belangrijke stappen. We bieden ook winterklaar maatwerkadvies."
+      },
+      {
+        "question": "Welke duurzame praktijken kan ik implementeren in mijn tuin?",
+        "answer": "Waterbesparing met druppelirrigatie, gebruik van inheemse planten, en compostering zijn enkele duurzame keuzes. We kunnen een plan opstellen dat past bij jouw ecologische doelen."
+      }
     ]
   },
   "landscaping": {
@@ -129,6 +151,20 @@
       "veld-1",
       "veld-2",
       "veld-3"
+    ],
+    "sectionFaq" : [
+      {
+        "question": "Hoe kan ik grote bomen in mijn tuin gezond houden?",
+        "answer": "Regelmatig snoeien, inspecteren op ziekten en plagen, en adequaat bemesten zijn cruciaal voor het behoud van de gezondheid van grote bomen."
+      },
+      {
+        "question": "Wat is de beste tijd voor grootschalig snoeiwerk in een tuin?",
+        "answer": "Over het algemeen wordt grootschalig snoeiwerk uitgevoerd in de late winter of vroege lente, voordat de groeiperiode begint."
+      },
+      {
+        "question": "Welke machines zijn het meest geschikt voor grootgroen onderhoud?",
+        "answer": "Voor grootgroen onderhoud zijn krachtige grasmaaiers, houtversnipperaars en snoeimachines essentieel om efficiënt en effectief te werken."
+      }
     ]
   },
   "fieldManagement": {
@@ -198,6 +234,20 @@
       "veld-1",
       "veld-2",
       "veld-3"
+    ],
+    "sectionFaq" : [
+      {
+        "question": "Hoe vaak moet ik mijn sportveld onderhouden?",
+        "answer": "Onderhoudsfrequentie hangt af van het gebruik, maar regelmatig maaien, beluchten en bemesten zijn essentieel voor optimale prestaties."
+      },
+      {
+        "question": "Wat zijn goede methoden voor onkruidbestrijding op sportvelden?",
+        "answer": "Geïntegreerde onkruidbestrijding met herbiciden, maaien op de juiste hoogte en het bevorderen van een gezond grasveld helpen onkruidgroei minimaliseren."
+      },
+      {
+        "question": "Hoe kan ik de speelbaarheid van mijn grasveld verbeteren?",
+        "answer": "Adequaat beluchten, bemesten en irrigatietechnieken verbeteren de bodemstructuur en bevorderen gezonde wortelgroei, wat de speelbaarheid ten goede komt."
+      }
     ]
   }
 }

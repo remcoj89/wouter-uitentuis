@@ -1,7 +1,9 @@
 .contact-container{
 
   .flex-box{
-    display: flex;
+    display:grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
     margin-top: 2.4rem;
   }
 }
