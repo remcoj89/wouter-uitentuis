@@ -7,6 +7,7 @@
 
   .social-proof-cart{
     text-align: center;
+    overflow: hidden;
 
     .social-proof-title{
       color: $sub-color;
@@ -15,6 +16,10 @@
       margin: 2.4rem 0;
       color: $main-color;
       font-weight: 700;
+    }
+
+    .social-proof-logo {
+      width: 90%;
     }
   }
 }

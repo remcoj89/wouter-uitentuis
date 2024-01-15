@@ -6,7 +6,7 @@ const ContactSection = ({faq}) => {
   if(!faq) {
     return;
   }
- 
+
   return (
     <div className="contact-container">
       <h2>Beniewd wat wij voor uw club kunnen betekenen?</h2>

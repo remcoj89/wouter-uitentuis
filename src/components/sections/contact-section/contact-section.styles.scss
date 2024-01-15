@@ -2,8 +2,13 @@
 
   .flex-box{
     display:grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 1fr;
     justify-content: space-around;
     margin-top: 2.4rem;
+    gap: 3.24rem;
+
+    @media (min-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

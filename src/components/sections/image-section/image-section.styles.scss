@@ -15,18 +15,18 @@
   bottom: 0;
   left: 0;
   right: 0;;
-   display: flex;
-   justify-content: center;
-   gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
     .arrow {
       width:5rem;
       height: 5rem;
       stroke: $sub-color;
-       cursor: pointer;
+      cursor: pointer;
 
-       &:hover {
+      &:hover {
         stroke: $white-color;
-       }
+      }
     }
   }
 }

@@ -12,7 +12,7 @@ const CartSection = ({specialization}) => {
     {
       Object.values(specialization).map((specialty) => {
         return <CartComponent cart={specialty} key={specialty.title}/>
-       })
+      })
     }
 
     </section>
