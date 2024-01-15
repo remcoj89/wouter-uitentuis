@@ -46,11 +46,25 @@
       max-width: 1440px;
       margin: 0 auto;
       padding: 0 3rem;
+
       .logo {
         #logo{
           @include Logo;
         }
       }
+
+      .burger-menu {
+        display: block;
+        width:6rem;
+        height:6rem;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(188, 187, 187)
+        }
+      }
+
       .contact{
         span{
           display: block;

@@ -60,5 +60,8 @@
     "Hovenier"
   ],
   "author": "Remco Jonk",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@iconify/react": "^4.1.1"
+  }
 }

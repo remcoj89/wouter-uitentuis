@@ -2,9 +2,10 @@
 
 
 .hero{
-  margin: 3.6rem auto;
-  justify-content: space-between;
   display: grid;
+  margin: 2.4em auto;
+  justify-content: space-between;
+  justify-content: flex-end;
   grid-template-columns: 1fr;
   gap: 3.6rem;
   font-size: clamp(2.6em, 3.4em, 3.6em);
@@ -29,7 +30,6 @@
 
   .hero-right {
     order: -1;
-    text-align: center;
     img {
       width: 100%;
     }

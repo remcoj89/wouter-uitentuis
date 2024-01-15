@@ -15,7 +15,6 @@ const ContactSection = ({faq}) => {
         <FormComponent />
       </div>
     </div>
-
   )
 }
 
