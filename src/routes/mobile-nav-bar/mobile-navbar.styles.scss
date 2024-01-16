@@ -1,10 +1,13 @@
 @import '../../assets/styling/abstracts/globals';
 @import '../../assets/styling/base/globals';
 
+.responsive {
+  position: relative;
+}
+
 .mobile-nav-container {
   position: sticky;
   background-color: white;
-  top: 0;
   z-index: 100;
   width: 100%;
 
@@ -33,15 +36,35 @@
         cursor: pointer;
       }
 
-      .contact{
-        span{
-          display: block;
-          color: $white-color;
-          text-align: end;
-          font-size: 1.6rem;
-          line-height: 1.6;
+
+        .nav-links{
+          position: absolute;
+          left: 0;
+          right: 0;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          background-color: white;
+          padding: 2.4em 3.6em 3.2em;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+          .nav-link {
+            color: $main-color;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            border-bottom: 1px solid;
+            margin: 0 2.4rem;
+
+            &:hover {
+              color: $sub-color;
+            }
+
+            &:active {
+              color: $sub-color;
+            }
+          }
         }
-      }
+
     }
   }
 
