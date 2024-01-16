@@ -11,6 +11,7 @@ import SocialProofSection from '../../components/sections/social-proof-section/s
 import ImageSection from '../../components/sections/image-section/image-section.component';
 import ContactSection from '../../components/sections/contact-section/constact-section.component';
 
+
 const FieldManagement = () => {
 
   const {fieldManagementData} = useContext(appDataContext);

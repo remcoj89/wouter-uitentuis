@@ -1,0 +1,34 @@
+@import '../../assets/styling/abstracts/globals';
+
+.modal {
+  position:absolute;
+  top:12vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.474);
+  backdrop-filter: blur(1opx);
+}
+
+.mobile-nav-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 15vh auto 0;
+  padding: 3em 0;
+  background-color: white;
+
+  a {
+    font-size: 2.4em;
+    text-align: center;
+    line-height: 1.8;
+    color: $main-color;
+    border-bottom: solid 1px $main-color;
+    margin: 0 2.4rem;
+
+    &:hover {
+      color: $sub-color;
+    }
+  }
+}

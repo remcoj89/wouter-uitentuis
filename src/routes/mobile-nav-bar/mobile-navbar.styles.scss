@@ -1,0 +1,48 @@
+@import '../../assets/styling/abstracts/globals';
+@import '../../assets/styling/base/globals';
+
+.mobile-nav-container {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  .nav-bar {
+    background-color: $main-color;
+    padding: 1.4rem 0;
+    .nav-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 3rem;
+
+      .logo {
+        #logo{
+          @include Logo;
+        }
+      }
+
+      .burger-menu {
+        display: block;
+        width:6rem;
+        height:6rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      .contact{
+        span{
+          display: block;
+          color: $white-color;
+          text-align: end;
+          font-size: 1.6rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+}

@@ -1,11 +1,13 @@
 @import '../../assets/styling/abstracts/globals';
 @import '../../assets/styling/base/globals';
 
-.nav-container{
-  width: 100%;
+.desktop-nav-container{
   position: sticky;
+  background-color: white;
   top: 0;
-  z-index: 5;
+  z-index: 100;
+  width: 100%;
+  
   .nav-tabs {
     width:100%;
     display: grid;
@@ -39,10 +41,10 @@
   .nav-bar {
     background-color: $main-color;
     padding: 1.4rem 0;
-
     .nav-wrapper{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       max-width: 1440px;
       margin: 0 auto;
       padding: 0 3rem;
@@ -59,10 +61,6 @@
         height:6rem;
         color: white;
         cursor: pointer;
-
-        &:hover {
-          color: rgb(188, 187, 187)
-        }
       }
 
       .contact{
