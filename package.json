@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "hamburger-react": "^2.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "localforage": "^1.10.0",
@@ -60,8 +61,5 @@
     "Hovenier"
   ],
   "author": "Remco Jonk",
-  "license": "ISC",
-  "devDependencies": {
-    "@iconify/react": "^4.1.1"
-  }
+  "license": "ISC"
 }

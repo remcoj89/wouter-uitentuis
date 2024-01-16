@@ -1,15 +1,12 @@
 import './mobile-navbar.styles.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Icon } from '@iconify/react';
+import { Divide as Hamburger } from 'hamburger-react'
 
 const MobileNavbar = () => {
   const location = useLocation();
-  const [menuActive, setMenuActive] = useState(false)
+  const [isOpen, setOpen] = useState(false)
 
-  function toggleMenu() {
-    setMenuActive(!menuActive)
-  }
   return (
     <>
       <nav className='mobile-nav-container'>
@@ -26,7 +23,7 @@ const MobileNavbar = () => {
             </div>
 
             <div id="burger-menu">
-            <Icon className='burger-menu' icon={menuActive ? "gg:close" : "iconamoon:menu-burger-horizontal-light"} onClick={toggleMenu} />
+              <Hamburger toggled={isOpen} toggle={setOpen} color="#FFFF"/>
             </div>
           </div>
         </div>
