@@ -16,7 +16,7 @@ const ProjectSection = ({projects}) => {
           return (
           <div className={`project ${isOdd? 'project-odd' : ''}`} key={title}>
             <div className="project-content">
-            <h3>{title}</h3>
+            <h3 className='project-title'>{title}</h3>
             <p>{paragraph1}</p>
             <p>{paragraph2}</p>
             </div>
