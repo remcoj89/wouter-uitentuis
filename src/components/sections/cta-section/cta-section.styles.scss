@@ -1,9 +1,20 @@
 .cta-container {
-  width: 50%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
 
+  .cta-title {
+    font-size: clamp(2.4em, 40vw, 3.2em);
+    font-weight: 600;
+  }
+
   .cta-paragraph{
     margin: 3.2rem 0;
+    font-size: clamp(1.8em, 40vw, 2.4em);
+    font-weight: 400;
+  }
+
+  @media (min-width: 835px) {
+    width: 50%;
   }
 }
