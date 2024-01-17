@@ -30,7 +30,6 @@ function App() {
           <Route path='/groen-voorziening' element={<Landscaping/>}/>
       </Route>
     </Routes>
-
   );
 }
 

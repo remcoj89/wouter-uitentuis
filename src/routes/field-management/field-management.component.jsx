@@ -10,6 +10,7 @@ import CtaSection from '../../components/sections/cta-section/cta-section.compon
 import SocialProofSection from '../../components/sections/social-proof-section/social-proof-section.component';
 import ImageSection from '../../components/sections/image-section/image-section.component';
 import ContactSection from '../../components/sections/contact-section/constact-section.component';
+import DesktopFooterSection from '../../components/sections/desktop-footer-section/desktop-footer-section.component';
 
 
 const FieldManagement = () => {
@@ -32,6 +33,7 @@ const FieldManagement = () => {
         <ImageSection images={sectionImages}/>
         <ContactSection faq={sectionFaq} />
       </main>
+      <DesktopFooterSection />
     </>
   )
 };

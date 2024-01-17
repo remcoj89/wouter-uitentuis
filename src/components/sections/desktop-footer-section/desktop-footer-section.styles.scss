@@ -1,0 +1,30 @@
+@import '../../../assets/styling/abstracts/globals';
+
+.footer {
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.9em 2.4em;
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+
+  .footer-logo{
+    @include Logo;
+  }
+
+  .footer-contact {
+    font-size: 1.8em;
+    color: $white-color;
+    text-align: center;
+  }
+
+  .copy-right {
+    color: $white-color;
+    font-size: 1.4em;
+  }
+}
