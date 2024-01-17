@@ -26,7 +26,7 @@ const ContactForm = () => {
 
   return (
     <div className='contact-form-container'>
-      <h2>Contact</h2>
+      <h2>Neem vrijblijvend contact met ons op</h2>
       <form>
         <FormInput
           label='Naam'

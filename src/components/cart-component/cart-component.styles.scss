@@ -10,9 +10,14 @@
   gap: 1.8rem;
   flex: 1 0 0;
 
+  .card-title{
+    @include sectionTitle;
+  }
+
   .read-more-btn{
     font-size: 1.6rem;
     color: $sub-color;
+    cursor: pointer;
   }
 
   &.open {

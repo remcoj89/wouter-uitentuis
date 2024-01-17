@@ -1,11 +1,12 @@
+@import '../../../assets/styling/abstracts/globals';
+
 .cta-container {
   width: 80%;
   text-align: center;
   margin: 0 auto;
 
   .cta-title {
-    font-size: clamp(2.4em, 40vw, 3.2em);
-    font-weight: 600;
+    @include sectionTitle;
   }
 
   .cta-paragraph{

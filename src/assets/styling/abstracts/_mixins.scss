@@ -13,3 +13,9 @@
   font-size: 12px;
   color: $main-color;
 }
+
+@mixin sectionTitle {
+  font-size: clamp(2.4em, 40vw, 3.2em);
+  font-weight: 600;
+  font-family: $font-sanchez;
+}

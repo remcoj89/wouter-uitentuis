@@ -15,7 +15,7 @@ const toggleReadMore = () => {
   return (
     <div className={`card ${readMore ? 'open' : ''}`}>
       <img src={require(`../../assets/icons/${iconPath}.svg`)} alt={`Wouter Uitentuis ${title}`} />
-      <h2>{title}</h2>
+      <h2 className='card-title'>{title}</h2>
       <p>{paragraph1}</p>
       {readMore && <p className='paragraph-2'>{paragraph2}</p>}
       <span className='read-more-btn' onClick={toggleReadMore}>{readMore ? 'Lees minder' : 'Lees meer...'}</span>

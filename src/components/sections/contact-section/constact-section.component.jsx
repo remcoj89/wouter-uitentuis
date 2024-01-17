@@ -9,7 +9,7 @@ const ContactSection = ({faq}) => {
 
   return (
     <div className="contact-container">
-      <h2>Beniewd wat wij voor uw club kunnen betekenen?</h2>
+      <h2 className='contact-title'>Wilt u meer weten?</h2>
       <div className="flex-box">
         <FaqComponent faq={faq} />
         <FormComponent />

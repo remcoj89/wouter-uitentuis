@@ -1,4 +1,11 @@
+@import '../../../assets/styling/abstracts/globals';
+
 .contact-container{
+
+  .contact-title {
+    @include sectionTitle;
+    text-align: center;
+  }
 
   .flex-box{
     display:grid;
