@@ -2,27 +2,25 @@
 
 .mobile-footer {
   background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.8em;
+  align-items: center;
+  width: 100%;
+  padding: 2.4em 0;
+  margin: 0 auto;
 
-  .mobile-footer-content {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding: 1.8em 0;
-    margin: 0 auto;
-
-    .mobile- footer-logo{
-      @include Logo;
-    }
-
-    .mobile-footer-contact {
-      font-size: 1.8em;
-      color: $white-color;
-      text-align: center;
-    }
-
-    .copy-right {
-      color: $white-color;
-      font-size: 1.4em;
-    }
+  .mobile-footer-logo {
+    @include Logo;
+  }
+  .mobile-footer-contact {
+    font-size: 1.4em;
+    color: $white-color;
+    text-align: center;
+  }
+  .copy-right {
+    color: $white-color;
+    font-size: 1.4em;
   }
 }
