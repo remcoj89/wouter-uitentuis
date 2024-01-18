@@ -46,7 +46,6 @@ const MobileNavbar = () => {
               <Link to="/groen-voorziening" className={`nav-link ${location.pathname === '/groen-voorziening' ? 'active' : 'not-active'}`}>Groen voorziening</Link>
             </div>
             )}
-
           </div>
         </div>
       </nav>

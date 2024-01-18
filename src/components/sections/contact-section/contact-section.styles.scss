@@ -1,21 +1,24 @@
 @import '../../../assets/styling/abstracts/globals';
 
-.contact-container{
-  height: fit-content;
-  .contact-title {
-    @include sectionTitle;
-    text-align: center;
-  }
+.conact-section {
+  height: 100%;
 
-  .flex-box{
-    display:grid;
-    grid-template-columns: 1fr;
-    justify-content: space-around;
-    margin-top: 2.4rem;
-    gap: 10%;
+  .contact-container{
+    .contact-title {
+      @include sectionTitle;
+      text-align: center;
+    }
 
-    @media (min-width: 700px) {
-      grid-template-columns: 1fr 1fr;
+    .flex-box{
+      display:grid;
+      grid-template-columns: 1fr;
+      justify-content: space-around;
+      margin-top: 2.4rem;
+      gap: 10%;
+
+      @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
 }
