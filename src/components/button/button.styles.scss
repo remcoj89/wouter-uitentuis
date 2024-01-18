@@ -8,11 +8,10 @@
   padding: 1.5rem 0.4rem;
   display: inline-block;
   text-transform: uppercase;
-  position: relative;
   background: linear-gradient(90deg, rgba(26, 51, 36, 1), rgba(0, 166, 81, 1));
   box-shadow: 1px 1px 1px 1px $sub-color;
   color: $white-color;
-  width: 20rem;
+  width: 10em;
   text-align: center;
   transition: all 0.2s;
   cursor: pointer;
@@ -31,4 +30,7 @@
   margin-top: 2.4rem;
 }
 
+&.submit-button{
+  margin:0 auto;
+}
 }

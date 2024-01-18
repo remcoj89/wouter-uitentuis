@@ -1,4 +1,3 @@
-import './gardening.styles.scss';
 import { useContext} from 'react';
 import { appDataContext } from '../../context/data-context/data.context';
 
@@ -20,7 +19,7 @@ const Gardening = () => {
   if(!gardeningData) {
     return;
   }
-  const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof, sectionImages} = gardeningData;
+  const {sectionHero, sectionSpecializations, sectionProject, sectionSocialProof, sectionImages, sectionFaq} = gardeningData;
 
 
   return (
@@ -28,12 +27,11 @@ const Gardening = () => {
       <HeroSection sectionHero={sectionHero} />
       <main>
         <CartSection specialization={sectionSpecializations}/>
-        <CtaSection />
         <SocialProofSection yearsActive={yearsActive} socialProof={sectionSocialProof}></SocialProofSection>
         <ProjectSection projects={sectionProject}/>
         <CtaSection />
         <ImageSection images={sectionImages}/>
-        <ContactSection />
+        <ContactSection faq={sectionFaq} />
       </main>
       <DesktopFooterSection />
     </>

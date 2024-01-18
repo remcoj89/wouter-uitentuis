@@ -1,7 +1,7 @@
 @import '../../../assets/styling/abstracts/globals';
 
 .contact-container{
-
+  height: fit-content;
   .contact-title {
     @include sectionTitle;
     text-align: center;

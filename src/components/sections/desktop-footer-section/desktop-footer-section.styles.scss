@@ -2,29 +2,33 @@
 
 .footer {
   background-color: $main-color;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.9em 2.4em;
 
-  .footer-left {
+  .footer-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between
-  }
+    justify-content: space-between;
+    width: 80%;
+    padding: 1.8em 0;
+    margin: 0 auto;
 
-  .footer-logo{
-    @include Logo;
-  }
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-  .footer-contact {
-    font-size: 1.8em;
-    color: $white-color;
-    text-align: center;
-  }
+    .footer-logo{
+      @include Logo;
+    }
 
-  .copy-right {
-    color: $white-color;
-    font-size: 1.4em;
+    .footer-contact {
+      font-size: 1.8em;
+      color: $white-color;
+      text-align: center;
+    }
+
+    .copy-right {
+      color: $white-color;
+      font-size: 1.4em;
+    }
   }
 }

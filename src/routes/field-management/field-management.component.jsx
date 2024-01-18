@@ -1,5 +1,3 @@
-import './field-management.styles.scss';
-
 import { useContext} from 'react';
 import { appDataContext } from '../../context/data-context/data.context';
 
@@ -26,7 +24,6 @@ const FieldManagement = () => {
       <HeroSection sectionHero={sectionHero} />
       <main>
         <CartSection specialization={sectionSpecializations}/>
-        <CtaSection />
         <SocialProofSection socialProof={sectionSocialProof}></SocialProofSection>
         <ProjectSection projects={sectionProject}/>
         <CtaSection />

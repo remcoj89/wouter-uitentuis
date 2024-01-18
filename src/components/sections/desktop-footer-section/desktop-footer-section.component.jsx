@@ -6,6 +6,7 @@ const FooterSection = () => {
 
   return (
     <div className="footer">
+      <div className="footer-content">
         <div className='footer-left'>
           <h2 className='footer-logo'>W.Uitentuis</h2>
           <p className='copy-right'><span> &copy;</span>2007 - {year} - Copy right - W.Uitentuis</p>
@@ -17,6 +18,7 @@ const FooterSection = () => {
           <li>1636VB Schermerhorn</li>
           <li>KVK: 12345678</li>
         </ul>
+      </div>
     </div>
   )
 }

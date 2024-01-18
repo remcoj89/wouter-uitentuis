@@ -8,7 +8,7 @@ const ContactSection = ({faq}) => {
   }
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact-section">
       <h2 className='contact-title'>Wilt u meer weten?</h2>
       <div className="flex-box">
         <FaqComponent faq={faq} />

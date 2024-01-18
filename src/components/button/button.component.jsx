@@ -2,6 +2,7 @@ import './button.styles.scss';
 
 const BUTTON_TYPE_CLASSES = {
   heroButton: 'hero-button',
+  submitButton: "submit-button"
 };
 
 const Button = ({children, buttonType}) => {
