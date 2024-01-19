@@ -54,7 +54,6 @@
             line-height: 1.8;
             border-bottom: 1px solid;
             margin: 0 2.4rem;
-
             &:hover {
               color: $sub-color;
             }
@@ -62,6 +61,14 @@
             &:active {
               color: $sub-color;
             }
+          }
+
+          .active {
+            color: $sub-color;
+          }
+
+          .not-active {
+            color: $main-color;
           }
         }
 

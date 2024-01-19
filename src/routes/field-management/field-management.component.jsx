@@ -38,7 +38,7 @@ const FieldManagement = () => {
         <ContactSection faq={sectionFaq} />
       </main>
       {/* Footer */}
-      {screenWidth > 600 ?  <DesktopFooterSection /> :  <MobileFooterSection />}
+      {screenWidth > 600 ? <DesktopFooterSection /> : <MobileFooterSection />}
     </>
   )
 };

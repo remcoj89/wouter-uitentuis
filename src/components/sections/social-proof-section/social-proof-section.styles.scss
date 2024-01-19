@@ -9,17 +9,28 @@
     text-align: center;
     overflow: hidden;
 
-    .social-proof-title{
-      color: $sub-color;
-    }
-    .social-proof-description{
-      margin: 2.4rem 0;
-      color: $main-color;
-      font-weight: 700;
-    }
+
+      .social-proof-title{
+        color: $sub-color;
+        @include sectionTitle
+      }
+      .social-proof-description{
+        margin: 2.4rem 0;
+        color: $main-color;
+        font-weight: 700;
+      }
+
 
     .social-proof-logo {
       width: 90%;
     }
+  }
+}
+
+.has-social-proof-content {
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
   }
 }

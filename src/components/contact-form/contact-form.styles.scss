@@ -3,7 +3,10 @@
 .contact-form-container {
   display: flex;
   flex-direction: column;
-  
+  @media (min-width: 700px) {
+    width: 50%;
+  }
+
   h2 {
     font-size: 2.4rem;
     color: $main-color;
@@ -14,5 +17,6 @@
   form {
     text-align: center;
     max-width: 100%;
+    margin-bottom: 1.8rem;
   }
 }

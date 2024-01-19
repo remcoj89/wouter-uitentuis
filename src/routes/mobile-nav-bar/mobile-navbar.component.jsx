@@ -26,6 +26,11 @@ const MobileNavbar = () => {
     };
     }, []);
 
+    const handleLinkClick = () => {
+      setOpen(false);
+
+    };
+
   return (
     <>
       <nav className={`mobile-nav-container responsive`} ref={navContainerRef}>
@@ -41,9 +46,9 @@ const MobileNavbar = () => {
 
             {isOpen && (
             <div className="nav-links" style={{ top: containerHeight }}>
-              <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : 'not-active'}`}>Sportvelden</Link>
-              <Link to="/hovenier" className={`nav-link ${location.pathname === '/hovenier' ? 'active' : 'not-active'}`}>Hovenier</Link>
-              <Link to="/groen-voorziening" className={`nav-link ${location.pathname === '/groen-voorziening' ? 'active' : 'not-active'}`}>Groen voorziening</Link>
+              <Link onClick={handleLinkClick}  to="/" className={`nav-link ${location.pathname === '/' ? 'active' : 'not-active'}`}>Sportvelden</Link>
+              <Link onClick={handleLinkClick}  to="/hovenier" className={`nav-link ${location.pathname === '/hovenier' ? 'active' : 'not-active'}`}>Hovenier</Link>
+              <Link onClick={handleLinkClick}  to="/groen-voorziening" className={`nav-link ${location.pathname === '/groen-voorziening' ? 'active' : 'not-active'}`}>Groen voorziening</Link>
             </div>
             )}
           </div>

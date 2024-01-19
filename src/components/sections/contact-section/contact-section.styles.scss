@@ -1,24 +1,24 @@
 @import '../../../assets/styling/abstracts/globals';
 
-.conact-section {
-  height: 100%;
+.contact-container {
+    height: 100%;
 
-  .contact-container{
     .contact-title {
       @include sectionTitle;
       text-align: center;
     }
 
     .flex-box{
-      display:grid;
-      grid-template-columns: 1fr;
+      height: 100%;
+      display: flex;
+      flex-direction:column;
       justify-content: space-around;
       margin-top: 2.4rem;
-      gap: 10%;
+      gap: 3.6rem;
+      align-items: stretch;
 
       @media (min-width: 700px) {
-        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
       }
     }
   }
-}
