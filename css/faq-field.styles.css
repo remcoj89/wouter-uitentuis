@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Sanchez&display=swap");
+h2, h3 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+main {
+  margin: 3.6rem auto;
+  max-width: 1440px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 51, 36);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.accordion-item {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid rgb(26, 51, 36);
+}
+.accordion-item .faq-button[aria-expanded=true] {
+  border-bottom: 1px solid rgb(0, 166, 81);
+}
+
+.faq-button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: rgb(26, 51, 36);
+  font-size: 1.8rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.faq-button:hover, .faq-button:focus {
+  cursor: pointer;
+  color: rgb(0, 166, 81);
+}
+.faq-button:hover::after, .faq-button:focus::after {
+  cursor: pointer;
+  color: rgb(0, 166, 81);
+  border: 1px solid rgb(0, 166, 81);
+}
+.faq-button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.faq-button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.faq-button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.faq-button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.faq-button[aria-expanded=true] {
+  color: rgb(0, 166, 81);
+}
+.faq-button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.faq-button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion-content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 2em 0;
+}/*# sourceMappingURL=faq-field.styles.css.map */

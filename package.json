@@ -64,6 +64,5 @@
   "author": "Remco Jonk",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
   }
 }

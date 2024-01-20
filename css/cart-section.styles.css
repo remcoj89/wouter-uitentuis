@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Sanchez&display=swap");
+h2, h3 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+main {
+  margin: 3.6rem auto;
+  max-width: 1440px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 51, 36);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.cart-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 1.3rem;
+}
+@media (min-width: 757px) {
+  .cart-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}/*# sourceMappingURL=cart-section.styles.css.map */

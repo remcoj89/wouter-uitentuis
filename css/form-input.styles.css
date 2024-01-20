@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Sanchez&display=swap");
+h2, h3 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+main {
+  margin: 3.6rem auto;
+  max-width: 1440px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 51, 36);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+.group .form-input {
+  background: none;
+  background-color: white;
+  color: rgb(0, 166, 81);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(26, 51, 36);
+  margin: 25px 0;
+}
+.group .form-input:focus {
+  outline: none;
+}
+.group .form-input:focus ~ .form-input-label {
+  top: -14px;
+  font-size: 12px;
+  color: rgb(26, 51, 36);
+}
+.group input[type=password] {
+  letter-spacing: 0.3em;
+}
+.group .form-input-label {
+  color: rgb(26, 51, 36);
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+.group .form-input-label.shrink {
+  top: -14px;
+  font-size: 12px;
+  color: rgb(26, 51, 36);
+}/*# sourceMappingURL=form-input.styles.css.map */

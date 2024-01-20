@@ -6,13 +6,14 @@
   position: relative;
 
   @media (min-width: 750px) {
-    width: 70%;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .image {
-    height: 65vh;
     object-fit: cover;
     margin: 0 auto;
+    width: 100%;
   }
 
   .arrow-container{

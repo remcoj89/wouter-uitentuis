@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Sanchez&display=swap");
+h2, h3 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+main {
+  margin: 3.6rem auto;
+  max-width: 1440px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 51, 36);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.hero {
+  display: grid;
+  margin: 2.4em auto;
+  justify-content: space-between;
+  justify-content: flex-end;
+  grid-template-columns: 1fr;
+  gap: 3.6rem;
+  font-size: 3.4em;
+}
+@media screen and (min-width: 800px) {
+  .hero {
+    grid-template-columns: 40% 50%;
+  }
+}
+.hero .hero-left {
+  text-align: center;
+  margin: auto;
+}
+.hero .hero-left h1 {
+  font-size: clamp(3.24rem, 40vw, 3.6rem);
+}
+.hero .hero-left h3 {
+  font-size: clamp(1.8rem, 40vw, 2.6rem);
+  font-weight: 400;
+  margin: 1em 0;
+}
+.hero .hero-right {
+  order: -1;
+}
+.hero .hero-right img {
+  width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .hero .hero-right {
+    order: 1;
+  }
+}/*# sourceMappingURL=hero-section.styles.css.map */

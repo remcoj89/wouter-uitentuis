@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Sanchez&display=swap");
+h2, h3 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+main {
+  margin: 3.6rem auto;
+  max-width: 1440px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 51, 36);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+.project-container .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 750px) {
+  .project-container .project {
+    flex-direction: row;
+  }
+}
+@media (min-width: 750px) {
+  .project-container .project-odd {
+    flex-direction: row-reverse;
+  }
+}
+.project-container .project-content {
+  color: rgb(26, 51, 36);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin: 0 auto;
+  padding: 2.4rem;
+}
+@media (min-width: 750px) {
+  .project-container .project-content {
+    width: 40%;
+  }
+}
+.project-container .project-content .project-title {
+  font-size: clamp(2.4em, 40vw, 3em);
+}
+.project-container .project-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 750px) {
+  .project-container .project-image {
+    width: 50%;
+  }
+}
+.project-container .project-image .project-title {
+  font-size: clamp(2.4em, 40vw, 3em);
+}/*# sourceMappingURL=project-section.styles.css.map */

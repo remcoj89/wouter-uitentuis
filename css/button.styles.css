@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Sanchez&display=swap");
+h2, h3 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+main {
+  margin: 3.6rem auto;
+  max-width: 1440px;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 51, 36);
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.button-container {
+  border: none;
+  border-radius: 40px 5px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 1.5rem 0.4rem;
+  display: inline-block;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgb(26, 51, 36), rgb(0, 166, 81));
+  box-shadow: 1px 1px 1px 1px rgb(0, 166, 81);
+  color: rgb(229, 229, 229);
+  width: 10em;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.button-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(26, 51, 36, 0.2);
+}
+.button-container:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(26, 51, 36, 0.2);
+}
+.button-container.hero-button {
+  margin-top: 2.4rem;
+}
+.button-container.submit-button {
+  margin: 0 auto;
+}/*# sourceMappingURL=button.styles.css.map */
