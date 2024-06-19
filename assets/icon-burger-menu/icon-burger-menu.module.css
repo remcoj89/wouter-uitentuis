@@ -1,0 +1,28 @@
+.burgerIconWrapper {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.bar1, .bar2, .bar3 {
+  background-color: rgb(var(--color-on-primary));
+  height: 0.4rem;
+  margin-block: 6px;
+  transition: 0.4s;
+  width: 3rem;
+}
+
+.bar1.change {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.bar2.change {opacity: 0;}
+
+.bar3.change {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media(min-width: 480px) {
+  .burgerIconWrapper {
+    display: none;
+  }
+}

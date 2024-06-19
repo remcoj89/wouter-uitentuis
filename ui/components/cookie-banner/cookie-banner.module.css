@@ -1,0 +1,39 @@
+.cookieBanner {
+  background-color: rgba(var(--color-primary), 0.5);
+  bottom: 10rem;
+  color: rgb(var(--color-on-background));
+  display: flex;
+  inset-inline: 25%;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding: 2.4rem 3.6rem;
+  position: absolute;
+}
+
+.highligtedText{
+  font-weight: bold;
+  color: rgb(var(--color-on-primary))
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  cursor: pointer;
+  padding-inline: 2.4rem;
+  padding-block: 1.6rem;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  border: none;
+}
+.btn:hover {
+  border: solid 1px;
+  border-radius: var(--border-radius-btn);
+}
+
+.btnAllow{
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-on-primary));
+}

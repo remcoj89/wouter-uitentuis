@@ -1,0 +1,105 @@
+:root {
+  --border-radius: 1rem;
+  --border-radius-btn: 40px 5px;
+
+  --box-shadow: 0px 4px 14px rgba(var(--color-on-background), 0.3);
+  --box-shadow-btn: 4px 4px 4px 4px rgba(var(--color-on-secondary), 0.25);
+
+  --breakpoint-large: 1200px;
+  --breakpoint-medium: 768px;
+  --breakpoint-small: 480px;
+
+  --color-background: 248, 249, 250;
+  --color-on-background: 52, 58, 64;
+  --color-on-primary: 222, 226, 230;
+  --color-primary: 108, 117, 125;
+
+  --font-size-body: 1.8rem;
+  --font-size-body-large: 2.1rem;
+  --font-size-body-small: 1.6rem;
+  --font-size-hero-large: clamp(2.7rem, -0.6rem + 9.2vw, 4.6rem);
+  --font-size-hero-medium: clamp(2.4rem, -0.475rem + 9.2vw, 4.7rem);
+  --font-size-title: 3.6rem;
+  --font-weight-bold: 700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+
+  --line-height: 1.4;
+
+  --margin-inline: clamp(1rem, 2.237vw - 1.295rem, 3rem);
+  --margin-text: 1.5rem;
+
+  --section-padding-block: clamp(1rem, 2.237vw - 1.295rem, 3rem);
+
+  --wrapper-max-width: 114rem;
+  --wrapper-padding-inline: clamp(1.5rem, 1.566vw - 0.607rem, 2.4rem);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: 52, 58, 64;
+    --color-on-background: 248, 249, 250;
+    --color-on-primary: 108, 117, 125;
+    --color-primary: 222, 226, 230;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+html,
+body {
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
+
+body {
+  background: rgba(var(--color-background), 0.5);
+  background: radial-gradient(circle , rgb(var(--color-background-gradient-light)) 0%, rgb(var(--color-background-gradient-dark)) 100%);
+  color: rgb(var(--color-on-background));
+  font-size: var(--font-size-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+.wrapper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: var(--wrapper-max-width);
+  padding-inline: var(--wrapper-padding-inline);
+}
+
+section {
+  margin-top: 8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

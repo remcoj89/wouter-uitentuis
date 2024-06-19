@@ -1,0 +1,37 @@
+.main {
+  padding: 6rem;
+  min-height: 100svh;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+@media (prefers-reduced-motion) {
+
+}
+
+/* Mobile */
+@media (min-width: 480px) {
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 480px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
