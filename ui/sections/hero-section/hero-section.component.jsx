@@ -1,11 +1,14 @@
+'use client'
 // Styles
 import Styles from './hero-section.module.css';
 
 // Hooks
 import Image from 'next/image';
+import {useState, useEffect} from 'react'
 
 // Components
 import Button from '@/ui/components/button/button.component';
+import { ArrowDownLarge, ArrowDownSmall } from '@/assets/icons';
 
 const HeroSection = () => {
 
@@ -16,6 +19,9 @@ const HeroSection = () => {
   const image2 = {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"}
   const image3 = {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
 
+    const handleClick = () => {
+        console.log("click")
+    }
 
   return (
     <section id="hero-section"
@@ -54,6 +60,17 @@ const HeroSection = () => {
          </div>
 
       </div>
+
+      <div className={Styles.scrollDownBtn}>
+        <div
+          className={Styles.arrows}
+          onClick={handleClick}>
+          <ArrowDownSmall color="#00A651" />
+          <ArrowDownLarge color="#5EBF9C" />
+        </div>
+
+      </div>
+
     </section>
   )
 }

@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
   width: 100%;
   z-index: 1;
 }
@@ -28,11 +29,13 @@
   inset: 0;
   inset-block-start: 15%;
   justify-content: center;
+  overflow: none;
   position: absolute;
   z-index: 10;
 }
 
 .heroContent {
+  height: 100%;
   width: 50%;
 }
 
@@ -50,11 +53,10 @@
   gap: 4.1rem 4.1rem;
   grid-template-columns: 57% 40%;
   grid-template-rows: 1fr 1fr;
-  overflow: none;
   height: 100%;
   width: 50%;
 
-  grid-template-areas:
+grid-template-areas:
     "image-1 imag-2"
     "image-1 image-3";
 }
@@ -71,14 +73,69 @@
   height: 100%;
 }
 .image2 {
-  height: 65%;
   align-self: end;
-  grid-area: imag-2;
   border-radius: 30px;;
+  grid-area: imag-2;
+  height: 65%;
 }
 .image3, .image3 > img{
   align-self: start;
+  border-radius: 30px 30px 80px 30px;
   grid-area: image-3;
   height: 75%;
-  border-radius: 30px 30px 80px 30px;
+}
+
+/* .scrollDownBtn {
+  background: rgb(var(--color-background));
+  bottom: 0;
+  color: black;
+  height: 1rem;
+  left: 0;
+  margin-inline: auto;
+  padding: var(--padding-card);
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: auto;
+  width:20vw;
+  z-index: 2000;
+
+clip-path: polygon(
+    50% 0%,
+    0% 100%,
+    100% 100%
+  );
+} */
+
+.scrollDownBtn {
+  align-items: center;
+  background: rgb(var(--color-background));
+  border-radius: 1rem 0;
+  cursor: pointer;
+  bottom: -9rem;
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+  left: 0;
+  margin:0 auto;
+  position: absolute;
+  right: 0;
+  transform: rotate(45deg);
+  width: 15rem;
+  z-index: 10;
+}
+
+.arrows {
+  transform: rotate(-45deg) translateY(-50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes movingArrows {
+  to {transform: rotate(-45deg) translateY(10px)};
 }
