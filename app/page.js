@@ -1,17 +1,13 @@
-
-import Navbar from "@/ui/components/nav-component/nav-bar.component";
+import HeroSection from "@/ui/sections/hero-section/hero-section.component";
 import styles from "./page.module.css";
 
 // Components
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* Hero Section */}
+       <HeroSection />
       <main className={styles.main}>
-        {/* Hero Section */}
-        <section id="hero" className="wrapper">
-          <h2>Hero Section</h2>
-        </section>
       </main>
     </>
   );

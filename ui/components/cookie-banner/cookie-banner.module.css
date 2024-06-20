@@ -1,5 +1,5 @@
 .cookieBanner {
-  background-color: rgba(var(--color-primary), 0.5);
+  background-color: rgba(var(--color-primary));
   bottom: 10rem;
   color: rgb(var(--color-on-background));
   display: flex;
@@ -34,6 +34,6 @@
 }
 
 .btnAllow{
-  background-color: rgb(var(--color-primary));
-  color: rgb(var(--color-on-primary));
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-on-background));
 }

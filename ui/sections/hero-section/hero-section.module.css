@@ -1,0 +1,84 @@
+.heroSection {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.heroSection::before {
+  background: linear-gradient(var(--color-background-gradient-start) 0%, var(--color-background-gradient-end) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  inset: 0;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.heroWrapper {
+  align-items: center;
+  display: flex;
+  height: 70%;
+  inset: 0;
+  inset-block-start: 15%;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.heroContent {
+  width: 50%;
+}
+
+.heroContent > button {
+  margin-top: 6rem;
+}
+
+.heroContentTitle {
+  color: rgb(var(--color-green));
+  font-size: var(--font-size-hero-large);
+}
+
+.heroImageGrid {
+  display: grid;
+  gap: 4.1rem 4.1rem;
+  grid-template-columns: 57% 40%;
+  grid-template-rows: 1fr 1fr;
+  overflow: none;
+  height: 100%;
+  width: 50%;
+
+  grid-template-areas:
+    "image-1 imag-2"
+    "image-1 image-3";
+}
+
+.image > img{
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1{
+  align-self: center;
+  border-radius: 100px 30px 25px 25px;
+  grid-area: image-1;
+  height: 100%;
+}
+.image2 {
+  height: 65%;
+  align-self: end;
+  grid-area: imag-2;
+  border-radius: 30px;;
+}
+.image3, .image3 > img{
+  align-self: start;
+  grid-area: image-3;
+  height: 75%;
+  border-radius: 30px 30px 80px 30px;
+}

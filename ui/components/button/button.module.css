@@ -1,0 +1,13 @@
+.btnPrimary {
+  background-color: rgb(var(--color-primary));
+  border: none;
+  border-radius: var(--border-radius-btn);
+  color:  rgb(var(--color-white));
+  cursor: pointer;
+  font-size: var(--font-size-large);
+  padding: var(--padding-btn);
+}
+
+.btnPrimary:hover {
+ opacity: 0.8;
+}

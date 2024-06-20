@@ -7,6 +7,9 @@ import { usePathname } from 'next/navigation';
 import Styles from './nav-bar.module.css';
 import Link from 'next/link';
 
+// Icons
+import { PhoneIcon, EmailIcon } from '@/assets/icons';
+
 // Components
 import BurgerMenu from '@/assets/icon-burger-menu/icon-burger-menu.component';
 
@@ -25,11 +28,20 @@ const toggleBurgerMenu = () => { setIsMenuOpen(!isMenuOpen)}
     <nav className={Styles.navbar}>
       <div className="wrapper">
         <div className={Styles.navContainer}>
-          <Link href="/">WESTEND DIGITAL</ Link>
-          <div className={Styles.navlinks} style={isMenuOpen || screenWidth >= 478 ? {display: "flex"} : {display: "none"}}>
-            <li className={`${Styles.navLink} ${pathname === '/' ? `${Styles.active}` : ""}`} ><Link href="/">home</Link></li>
-            <li className={`${Styles.navLink} ${pathname === '/about' ? `${Styles.active}` : ""}`} ><Link href="/about">about us</Link></li>
-            <li className={`${Styles.navLink} ${pathname === '/contact' ? `${Styles.active}` : ""}`} ><Link href="/plan">contact</Link></li>
+
+          <Link  className={Styles.logo} href="/">W. Uitentuis</ Link>
+
+          <div className={Styles.navLinkSection}>
+            <div className={Styles.navlinks} style={isMenuOpen || screenWidth >= 478 ? {display: "flex"} : {display: "none"}}>
+              <li className={`${Styles.navLink} ${pathname === '/' ? `${Styles.active}` : ""}`} ><Link href="/">Sportvelden</Link></li>
+              <li className={`${Styles.navLink} ${pathname === '/gardener' ? `${Styles.active}` : ""}`} ><Link href="/gardener">Hovenier</Link></li>
+              <li className={`${Styles.navLink} ${pathname === '/big-green' ? `${Styles.active}` : ""}`} ><Link href="/big-green">Groen Onderhoud</Link></li>
+            </div>
+    
+            <div className={Styles.contactWrapper}>
+              <div className={Styles.contactWrapperIcon}><EmailIcon /> info@wouteruitentuis.nl</div>
+              <div className={Styles.contactWrapperIcon}><PhoneIcon /> 06-30272667</div>
+            </div>
           </div>
           <BurgerMenu toggleBurgerMenu={toggleBurgerMenu} isMenuOpen={isMenuOpen}/>
         </div>

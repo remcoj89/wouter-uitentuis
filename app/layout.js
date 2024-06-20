@@ -3,6 +3,8 @@ import { openSans } from "@/utils/fonts/fonts";
 import "./globals.css";
 import GoogleAnalytics from "@/lib/google-analytics/googleAnalytics";
 import CookieBanner from "@/ui/components/cookie-banner/cookie-banner.component";
+import Navbar from "@/ui/components/nav-component/nav-bar.component";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -13,9 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className}>
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
+        {/* <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID}/> */}
+        <Navbar />
         {children}
-        <CookieBanner />
+        {/* <CookieBanner /> */}
       </body>
     </html>
   );

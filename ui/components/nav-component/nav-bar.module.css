@@ -1,9 +1,11 @@
 .navbar {
-  --nav-bar-padding-block: 3rem;
-  background-color: rgb(var(--color-primary));
+  --nav-bar-padding-block: 1rem;
+  background-color: rgb(var(--color-dark-green));
   padding-block: var(--nav-bar-padding-block);
-  position: sticky;
+  color: rgb(var(--color-white));
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -11,15 +13,24 @@
   align-items: center;
   align-items: center;
   display: flex;
+  font-size: var(--font-size-body);
   justify-content: space-between;
   position: relative;
+  width: 100%;
 }
 
+.logo {
+  font-size: clamp(2.4rem, -0.475rem + 9.2vw, 4.2rem);
+  font-weight: var(--font-weight-bold);
+
+}
+
+/* Nav links */
 .navlinks {
   background: rgb(var(--color-background));
+  flex-direction: column;
   gap: 3.2rem;
   height: 100svh;
-  flex-direction: column;
   inset: calc(var(--nav-bar-padding-block) + 3.3rem) auto;
   padding-block: var(--nav-bar-padding-block);
   position: absolute;
@@ -27,40 +38,78 @@
 }
 
 .navLink {
-  color: rgb(var(--color-on-background));
   list-style: none;
   margin-bottom: 3.2rem;
   text-align: center;
 }
 
 .navLink a{
-  color: inherit;
+  color: var(--color-white);
   font-weight: 700;
   line-height: var(--line-height);
   text-transform: uppercase;
 }
 
-.navLink a:hover {
+.navLink:hover {
   color: rgb(var(--color-on-primary), 0.8);
 }
 
-.active {
-  color: rgb(var(--color-on-primary), 0.5);
+.active, .navLink:hover {
+  color: rgb(var(--color-green));
+}
+
+/* Contact wrapper */
+
+.contactWrapper {
+  align-items: center;
+  display: flex;
 }
 
 @media(min-width: 650px) {
+  .navContainer {
+    align-items: center;
+  }
+
+  .navLinkSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .navlinks {
     background: transparent;
     display: flex;
-    gap: 3.2rem;
     flex-direction: row;
+    gap: 3.2rem;
     height: auto;
-    inset-block:auto;
-    justify-content: flex-end;
-    right: 0;
+    inset: 0;
+    position: static;
+    padding-right: 3rem;
+    width: fit-content;
   }
 
   .navLink {
+    display: block;
     margin: auto 0;
+    padding-block: 1.3rem;
+  }
+
+  .active, .navLink:hover{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+  }
+
+
+  .contactWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    padding-inline-start: 3rem;
+    border-left: solid 1px rgb(var(--color-light-green));
+  }
+
+  .contactWrapperIcon {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
   }
 }

@@ -1,47 +1,64 @@
 :root {
+
   --border-radius: 1rem;
-  --border-radius-btn: 40px 5px;
+  --border-radius-btn: 50px;
+  --border-radius-card-uneven: 40px 0 40px 0;
+  --border-radius-card: 30px;
 
-  --box-shadow: 0px 4px 14px rgba(var(--color-on-background), 0.3);
-  --box-shadow-btn: 4px 4px 4px 4px rgba(var(--color-on-secondary), 0.25);
+  --box-shadow: 0px 20px 150px rgba(var(--color-very-dark-green), 0.1.2);
 
-  --breakpoint-large: 1200px;
-  --breakpoint-medium: 768px;
-  --breakpoint-small: 480px;
+  --color-dark-green: 26, 51, 36;
+  --color-green: 0, 166, 81;
+  --color-light-green: 94, 191, 156;
+  --color-white: 244, 255, 250;
+  --color-very-dark-green: 2, 21, 6;
 
-  --color-background: 248, 249, 250;
-  --color-on-background: 52, 58, 64;
-  --color-on-primary: 222, 226, 230;
-  --color-primary: 108, 117, 125;
+  --color-background: var(--color-white);
+  --color-on-background: var(--color-very-dark-green);
+  --color-primary: var(--color-dark-green);
+  --color-on-primary: var(--color-white);
+
+  --color-background-gradient-start: rgba(255, 255, 255, 1);
+  --color-background-gradient-end: rgba(222, 244, 232, 1);
 
   --font-size-body: 1.8rem;
-  --font-size-body-large: 2.1rem;
-  --font-size-body-small: 1.6rem;
-  --font-size-hero-large: clamp(2.7rem, -0.6rem + 9.2vw, 4.6rem);
-  --font-size-hero-medium: clamp(2.4rem, -0.475rem + 9.2vw, 4.7rem);
-  --font-size-title: 3.6rem;
+  --font-size-body-large: 2.4rem;
+  --font-size-hero-large: clamp(4.7rem, -0.6rem + 9.2vw, 7rem);
+  --font-size-hero-medium: clamp(2.4rem, -0.475rem + 9.2vw, 4.8rem);
+  --font-size-title: clamp(2.6rem, -0.475rem + 9.2vw, 3.8rem);
+  --font-size-title-large: clamp(3.6rem, -0.475rem + 9.2vw, 5.2rem);
+
   --font-weight-bold: 700;
   --font-weight-light: 300;
   --font-weight-normal: 400;
+
+  --gap-card: 3.5rem;
 
   --line-height: 1.4;
 
   --margin-inline: clamp(1rem, 2.237vw - 1.295rem, 3rem);
   --margin-text: 1.5rem;
 
-  --section-padding-block: clamp(1rem, 2.237vw - 1.295rem, 3rem);
+  --padding-btn: 1.6rem;
+  --padding-card: 5rem;
 
-  --wrapper-max-width: 114rem;
+  --section-padding-block: clamp(1rem, 2.237vw - 1.295rem, 2.3rem);
+
+  --wrapper-max-width: 144rem;
   --wrapper-padding-inline: clamp(1.5rem, 1.566vw - 0.607rem, 2.4rem);
 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: 52, 58, 64;
-    --color-on-background: 248, 249, 250;
-    --color-on-primary: 108, 117, 125;
-    --color-primary: 222, 226, 230;
+    --color-background: var(--color-very-dark-green);
+    --color-primary: var(--color-green);
+    --color-on-background: var(--color-white);
+    --color-on-primary: var(--color-white);
+    --color-background-gradient-start: rgb(36, 61, 36);
+    --color-background-gradient-end: rgba(1, 51, 24, 1);
+
+    --box-shadow: 0px 20px 150px rgba(var(--color-dark-green), 0.3);
   }
 }
 
@@ -62,8 +79,7 @@ body {
 }
 
 body {
-  background: rgba(var(--color-background), 0.5);
-  background: radial-gradient(circle , rgb(var(--color-background-gradient-light)) 0%, rgb(var(--color-background-gradient-dark)) 100%);
+  background: rgb(var(--color-background));
   color: rgb(var(--color-on-background));
   font-size: var(--font-size-body);
 }
@@ -88,13 +104,12 @@ img {
 }
 
 .wrapper {
-  height: 100%;
   margin: 0 auto;
   max-width: var(--wrapper-max-width);
   padding-inline: var(--wrapper-padding-inline);
 }
 
-section {
+section:not(:first-child()) {
   margin-top: 8rem;
 }
 
