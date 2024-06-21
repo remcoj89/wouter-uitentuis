@@ -1,0 +1,31 @@
+.ctaSection {
+  height: 47.2rem;
+  color: rgb(var(--color-white))
+}
+
+.ctaText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-card);
+  padding-left: 15%;
+  width: 60%;
+}
+
+.ctaTitle {
+  font-size: var(--font-size-title-large);
+  font-weight: var(--font-weight-medium);
+  text-wrap:pretty;
+}
+.ctaSubtitle {
+  font-size: var(--font-size-body-large);
+  text-wrap:pretty;
+}
+
+.ctaImage {
+  position: absolute;
+  left: -10%;
+  top: -30%;
+  border-radius: var(--border-radius-card);
+  height: 37.2rem;
+  width: 37.2rem;
+}

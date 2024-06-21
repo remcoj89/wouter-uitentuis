@@ -2,6 +2,7 @@
 
   --border-radius: 1rem;
   --border-radius-btn: 50px;
+  --border-radius-icon: 150px;
   --border-radius-card-uneven: 40px 0 40px 0;
   --border-radius-card: 30px;
 
@@ -24,11 +25,13 @@
   --font-size-body: 1.8rem;
   --font-size-body-large: 2.4rem;
   --font-size-hero-large: clamp(4.7rem, -0.6rem + 9.2vw, 7rem);
-  --font-size-hero-medium: clamp(2.4rem, -0.475rem + 9.2vw, 4.8rem);
+  --font-size-hero-medium: clamp(2.4rem, -0.475rem + 5.2vw, 4.8rem);
+  --font-size-subtitle: clamp(2.4rem, -0.475rem + 5.2vw, 3.2rem);
   --font-size-title: clamp(2.6rem, -0.475rem + 9.2vw, 3.8rem);
   --font-size-title-large: clamp(3.6rem, -0.475rem + 9.2vw, 5.2rem);
 
   --font-weight-bold: 700;
+  --font-weight-medium: 500;
   --font-weight-light: 300;
   --font-weight-normal: 400;
 
@@ -40,6 +43,7 @@
   --margin-text: 1.5rem;
 
   --padding-btn: 1.6rem;
+  --padding-btn-inline-start: 4rem;
   --padding-card: 5rem;
 
   --section-padding-block: clamp(1rem, 2.237vw - 1.295rem, 2.3rem);
@@ -83,7 +87,6 @@ body {
   background: rgb(var(--color-background));
   color: rgb(var(--color-on-background));
   font-size: var(--font-size-body);
-
 }
 
 a {

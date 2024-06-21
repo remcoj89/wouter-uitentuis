@@ -8,20 +8,27 @@
 
 .btnPrimary {
   background-color: rgb(var(--color-primary));
+}
+
+.btnDarkGreen {
+  background-color: rgb(var(--color-dark-green));
+}
+
+.btnPrimary, .btnDarkGreen {
   border: none;
   border-radius: var(--border-radius-btn);
   color:  rgb(var(--color-white));
   cursor: pointer;
   font-size: var(--font-size-large);
-  padding: var(--padding-btn);
+  padding-block: var(--padding-btn);
+  padding-inline: var(--padding-btn-inline-start) var(--padding-btn);
 }
 
-.btnPrimary:hover {
+.btnPrimary:hover, .btnDarkGreen:hover  {
  opacity: 0.8;
 }
 
 .btnCard {
-
   background: transparent;
   border: none;
 }

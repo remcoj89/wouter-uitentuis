@@ -1,27 +1,10 @@
 .uspSection {
   display: grid;
   grid-template-columns: 1fr;
-  position: absolute;
-  left: 0;
-  right: 0;
   z-index: 2;
+  position: relative;
+  margin-top: 8rem;
 }
-
-.cardIcon {
-  background-color: rgb(var(--color-primary));
-  padding: 2.4rem;
-  border-radius: var(--border-radius-btn);
-}
-
-.btnIcon {
-  background-color: rgb(var(--color-light-green));
-  padding: 1.4rem;
-  border-radius: var(--border-radius-btn);
-}
-.btnIcon:hover {
-  background-color: rgb(var(--color-green));
-}
-
 
 @media (min-width: 650px) {
   .uspSection {
