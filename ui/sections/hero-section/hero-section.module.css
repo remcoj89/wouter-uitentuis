@@ -35,12 +35,17 @@
 }
 
 .heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 100%;
   width: 50%;
 }
 
 .heroContent > button {
   margin-top: 6rem;
+
 }
 
 .heroContentTitle {
@@ -85,57 +90,39 @@ grid-template-areas:
   height: 75%;
 }
 
-/* .scrollDownBtn {
-  background: rgb(var(--color-background));
-  bottom: 0;
-  color: black;
-  height: 1rem;
-  left: 0;
-  margin-inline: auto;
-  padding: var(--padding-card);
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: auto;
-  width:20vw;
-  z-index: 2000;
-
-clip-path: polygon(
-    50% 0%,
-    0% 100%,
-    100% 100%
-  );
-} */
 
 .scrollDownBtn {
   align-items: center;
   background: rgb(var(--color-background));
   border-radius: 1rem 0;
+  bottom: -7.5rem;
   cursor: pointer;
-  bottom: -9rem;
   display: flex;
   height: 15rem;
   justify-content: center;
   left: 0;
   margin:0 auto;
+  overflow: hidden;
   position: absolute;
   right: 0;
   transform: rotate(45deg);
   width: 15rem;
-  z-index: 10;
+  z-index: 2;
 }
 
 .arrows {
-  transform: rotate(-45deg) translateY(-50px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(-45deg) translateY(-50px);
 }
 
-
 @keyframes movingArrows {
-  to {transform: rotate(-45deg) translateY(10px)};
+  to {
+
+transform: rotate(-45deg) translateY(10px)
+};
 }

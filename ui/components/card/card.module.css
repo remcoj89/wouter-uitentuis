@@ -1,0 +1,16 @@
+.card {
+  padding: var(--padding-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-card);
+}
+
+.uspCard {
+  background: transparent;
+}
+.uspCard:hover {
+  border: 1px solid rgb(var(--color-light-green));
+  border-radius: 40px 0px;
+  box-shadow: 0px 20px 150px 0px rgba(0, 0, 0, 0.12);
+
+}

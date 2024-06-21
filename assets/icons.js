@@ -1,3 +1,4 @@
+// Email Icon
 export const EmailIcon = () => {
   return (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7,6 +8,7 @@ export const EmailIcon = () => {
   )
 }
 
+// Phone Icon
 export const PhoneIcon = () => {
   return(
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +29,7 @@ export const PhoneIcon = () => {
   )
 }
 
+// Header Arrow Down Small
 export const ArrowDownSmall = ({color}) => {
   return (
     <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,11 +37,86 @@ export const ArrowDownSmall = ({color}) => {
     </svg>
   )
 }
-
+// Header Arrow Down Large
 export const ArrowDownLarge = ({color}) => {
   return (
     <svg width="46" height="26" viewBox="0 0 46 26" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M3 3L23 23L43 3" stroke={color} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+}
+
+// Icon Grass
+export const GrassIcon = () => {
+  return (
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_17_184)">
+      <mask id="mask0_17_184" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+        <path d="M0 3.8147e-06H60V60H0V3.8147e-06Z" fill="white"/>
+      </mask>
+      <g mask="url(#mask0_17_184)">
+        <path d="M1.75781 58.2422H58.2422" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12.6574 1.99336L12.4219 1.75782C20.1284 17.171 24.1406 34.1667 24.1406 51.3991V58.2422H35.8594V58.0077C35.8594 36.9982 27.5134 16.8493 12.6574 1.99336Z" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M5.39062 20.5078C10.7752 30.5077 13.5937 41.6873 13.5937 53.0447V58.2422H24.1406V58.0078C24.1406 43.2536 17.194 29.3604 5.39062 20.5078Z" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3.0334 37.7249L1.875 36.9141L2.69672 39.6532C4.48312 45.6077 5.39062 51.791 5.39062 58.0078V58.2422H13.5937V58.0078C13.5937 49.9288 9.65203 42.3579 3.0334 37.7249Z" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M54.6094 20.5078C49.2248 30.5077 46.4062 41.6873 46.4062 53.0447V58.2422H35.8594V58.0078C35.8594 43.2536 42.8059 29.3604 54.6094 20.5078Z" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M56.9666 37.7249L58.125 36.9141L57.3033 39.6532C55.5169 45.6077 54.6094 51.791 54.6094 58.0078V58.2422H46.4062V58.0078C46.4062 49.9288 50.348 42.3579 56.9666 37.7249Z" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M35.8594 58.0078V51.3993C35.8594 34.1668 39.8715 17.171 47.5781 1.75793V1.75781L47.3426 1.99347C39.8059 9.53016 33.9461 18.4297 30 28.1122" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_17_184">
+        <rect width="60" height="60" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+  )
+}
+// Icon Water Drup
+export const WaterIcon = () => {
+  return (
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0_28_107" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+        <path d="M0 3.8147e-06H60V60H0V3.8147e-06Z" fill="white"/>
+      </mask>
+      <g mask="url(#mask0_28_107)">
+        <path d="M24.7266 58.2422C34.4347 58.2422 42.3047 50.3722 42.3047 40.6641C42.3047 36.5107 40.8642 32.5766 38.4555 29.5684L24.7266 12.4219L10.9976 29.5684C8.58891 32.5766 7.14844 36.5107 7.14844 40.6641C7.14844 50.3722 15.0184 58.2422 24.7266 58.2422Z" stroke="#F4FFFA" stroke-width="3" stroke-miterlimit="10"/>
+        <path d="M24.7266 51.2109C18.9107 51.2109 14.1797 46.48 14.1797 40.6641" stroke="#F4FFFA" strokeWidth="3" strokeMiterlimit="10"/>
+        <path d="M45.8203 21.2109C41.9425 21.2109 38.7891 18.0575 38.7891 14.1797C38.7891 12.5644 39.3195 11.0469 40.3238 9.79371L45.8203 2.83524L51.3169 9.79371C52.3212 11.0469 52.8516 12.5644 52.8516 14.1797C52.8516 18.0575 49.6982 21.2109 45.8203 21.2109Z" stroke="#F4FFFA" stroke-width="3" stroke-miterlimit="10"/>
+      </g>
+</svg>
+  )
+}
+
+// Icon Fertilize
+export const FertilizeIcon = () => {
+  return (
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_30_182)">
+        <path d="M59.8934 47.7708L58.4217 47.5186C58.375 47.5108 53.6179 46.6891 45.0609 44.6644C38.5222 43.1181 30.5191 44.3889 23.4586 45.5104C20.7024 45.9485 18.0986 46.3618 15.8826 46.5523C8.2956 47.2046 2.25769 46.5628 2.19727 46.5564L0.234375 46.3408V60.0005H59.8934V47.7708ZM56.3526 56.4596H3.77518V50.235C6.24345 50.3906 10.806 50.543 16.1861 50.0802C18.5289 49.8788 21.1931 49.4559 24.0139 49.0077C30.7512 47.937 38.3877 46.7244 44.2457 48.1105C50.2291 49.5259 54.3224 50.3508 56.3526 50.738V56.4596Z" fill="#F4FFFA"/>
+        <path d="M27.3242 19.889L29.8731 23.5713C31.9051 26.506 34.4232 29.0246 37.3584 31.0562L39.801 32.7472C40.6827 33.3578 41.698 33.6568 42.7083 33.6568C44.0258 33.6568 45.334 33.1482 46.3228 32.159L55.1957 23.2866C56.9429 21.5393 57.1901 18.7964 55.7834 16.7648L54.0924 14.3222C52.0609 11.387 49.5423 8.86882 46.6075 6.83681L42.4195 3.93733L41.731 2.1905C41.3025 1.10285 40.3636 0.311379 39.2192 0.0733411C38.0753 -0.164696 36.8974 0.186409 36.0707 1.01313L24.7314 12.3529L24.9951 19.7522L27.3242 19.889ZM51.1815 16.3377L52.8725 18.7799C53.3042 19.4043 53.2282 20.2461 52.6917 20.7831L43.8193 29.6554C43.2828 30.1919 42.4401 30.2684 41.8161 29.8363L39.374 28.1453C36.7899 26.3563 34.5729 24.1394 32.7844 21.5558L30.3478 18.0365L41.0727 7.31197L44.592 9.74819C47.1756 11.5367 49.3926 13.7541 51.1815 16.3377ZM38.4836 3.60774L38.8471 4.53013L28.3688 15.0079L28.3249 13.7669L38.4836 3.60774Z" fill="#F4FFFA"/>
+        <path d="M15.208 20.3704L17.7655 18.207L20.0525 20.9097L17.495 23.0735L15.208 20.3704Z" fill="#F4FFFA"/>
+        <path d="M11.2671 26.3391L13.8242 24.1748L16.1116 26.8779L13.5545 29.0422L11.2671 26.3391Z" fill="#F4FFFA"/>
+        <path d="M10.7617 35.0843L13.3192 32.9209L15.6062 35.6235L13.0487 37.7874L10.7617 35.0843Z" fill="#F4FFFA"/>
+        <path d="M15.8965 31.2498L18.454 29.0859L20.741 31.789L18.1835 33.9524L15.8965 31.2498Z" fill="#F4FFFA"/>
+        <path d="M17.3105 39.0762L19.8676 36.9124L22.1551 39.6155L19.5975 41.7793L17.3105 39.0762Z" fill="#F4FFFA"/>
+        <path d="M11.9292 42.4219L14.4863 40.2576L16.7737 42.9607L14.2162 45.125L11.9292 42.4219Z" fill="#F4FFFA"/>
+        <path d="M36.0337 20.4747L43.5108 12.998L46.0143 15.5016L38.5377 22.9787L36.0337 20.4747Z" fill="#F4FFFA"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_30_182">
+          <rect width="60" height="60" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+
+// Icon Arrow Right
+export const ArrowRightIcon = () => {
+  return (
+    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928933C12.9526 0.538409 12.3195 0.538409 11.9289 0.928933C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM1 9L19 9L19 7L1 7L1 9Z" fill="#F4FFFA"/>
     </svg>
   )
 }
