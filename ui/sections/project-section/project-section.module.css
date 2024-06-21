@@ -1,0 +1,5 @@
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 9.5rem;
+}

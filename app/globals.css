@@ -13,6 +13,7 @@
   --color-light-green: 94, 191, 156;
   --color-white: 244, 255, 250;
   --color-very-dark-green: 2, 21, 6;
+  --color-backround-banner: 238, 255, 238;
 
   --color-background: var(--color-white);
   --color-on-background: var(--color-very-dark-green);
@@ -20,8 +21,8 @@
   --color-on-primary: var(--color-white);
 
   --color-background-gradient-start: rgba(255, 255, 255, 1);
-  --color-background-gradient-end: rgba(222, 244, 232, 1);
-
+  --color-background-gradient-end: rgba(254, 253, 244, 1);
+  
   --font-size-body: 1.8rem;
   --font-size-body-large: 2.4rem;
   --font-size-hero-large: clamp(4.7rem, -0.6rem + 9.2vw, 7rem);
@@ -57,6 +58,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--color-very-dark-green);
+    --color-backround-banner: var(--color-very-dark-green);
     --color-primary: var(--color-green);
     --color-on-background: var(--color-white);
     --color-on-primary: var(--color-white);
