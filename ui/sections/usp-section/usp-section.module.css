@@ -3,7 +3,6 @@
   grid-template-columns: 1fr;
   z-index: 2;
   position: relative;
-  margin-top: 8rem;
 }
 
 @media (min-width: 650px) {

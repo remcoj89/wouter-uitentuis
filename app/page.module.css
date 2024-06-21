@@ -1,5 +1,6 @@
 .main {
   min-height: 100svh;
+  margin-top: var(--margin-top-section);
 }
 
 /* Enable hover only on non-touch devices */

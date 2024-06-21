@@ -41,6 +41,7 @@
 
   --margin-inline: clamp(1rem, 2.237vw - 1.295rem, 3rem);
   --margin-text: 1.5rem;
+  --margin-top-section: 15rem;
 
   --padding-btn: 1.6rem;
   --padding-btn-inline-start: 4rem;
@@ -114,13 +115,14 @@ img {
   padding-inline: var(--wrapper-padding-inline);
 }
 
+section:not(:first-of-type) {
+  margin-top: var(--margin-top-section);
+}
+
 section {
   position: relative;
 }
 
-section:not(:first-child()) {
-  margin-top: 8rem;
-}
 
 #usp-section {
   scroll-margin-top: 20rem;

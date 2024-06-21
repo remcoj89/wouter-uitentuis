@@ -3,6 +3,7 @@
   display: flex;
 }
 
+
 .uspCard {
   background: transparent;
   gap: var(--gap-card);
@@ -13,7 +14,6 @@
   border: 1px solid rgb(var(--color-light-green));
   border-radius: 40px 0px;
   box-shadow: 0px 20px 150px 0px rgba(var(--color-primary), 0.30);
-
 }
 
 .ctaCard {
@@ -29,4 +29,11 @@
   -webkit-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
   -moz-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
   box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
+}
+
+.logoCard {
+  background-color: rgb(var(--color-white));
+  border: 1px solid rgba(var(--color-primary), 0.30);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 20px 150px 0px rgba(var(--color-primary), 0.30);
 }

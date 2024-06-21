@@ -29,11 +29,13 @@ const HeroSection = () => {
       style={{background: `url(${backgroundImage})`, backgroundSize: "cover"}}
       >
       <div className={`wrapper ${Styles.heroWrapper} `}>
+
          <div className={Styles.heroContent}>
             <h1 className={Styles.heroContentTitle}>{heroTitle}</h1>
             <h2 className={Styles.heroContentSubtitle}>{heroSubtitle}</h2>
             <Button buttonStyle="btnPrimary">Klik voor een vrijblijvende afpraak</Button>
          </div>
+         
          <div className={Styles.heroImageGrid}>
 
             <Image

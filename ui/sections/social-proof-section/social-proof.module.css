@@ -1,0 +1,15 @@
+.socialProofSection {
+  position: relative;
+  z-index: 2;
+}
+
+.socialProofTitle {
+  text-align: center;
+  font-size: var(--font-size-hero-medium);
+}
+
+.socialProofWrapper {
+  display: flex;
+  gap: var(--gap-card);
+  margin-top: 7.5rem;
+}
