@@ -5,6 +5,7 @@
   --border-radius-icon: 150px;
   --border-radius-card-uneven: 40px 0 40px 0;
   --border-radius-card: 30px;
+  --border-radius-large: 100px;
 
   --box-shadow: 0px 20px 150px rgba(var(--color-very-dark-green), 0.1.2);
   --box-shadow-gallery: 0px 10px 15px 7px rgba(var(--color-very-dark-green), 1);

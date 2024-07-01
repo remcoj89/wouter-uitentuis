@@ -25,7 +25,7 @@
   border: 1px solid rgb(var(--color-white));
   border-radius: var(--border-radius-card);
   box-shadow: var(--box-shadow-gallery);
-  max-height: 40rem;
+  height: 40rem;
   object-fit: cover;
   object-position: center;
   opacity: 0.7;

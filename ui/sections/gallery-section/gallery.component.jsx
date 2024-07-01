@@ -30,15 +30,17 @@ const Gallery = () => {
 
       <div className="wrapper">
         <div className={Styles.imageGrid}>
-          {images.map(image => {
+          {images.map((image, i) => {
             return (
-            <Image
-              className={Styles.galleryImage}
-              src={image.imgUrl}
-              width={500}
-              height={500}
-              alt={image.altText}
-              key={image.title} />
+              <figure key={i}>
+                <Image
+                  className={Styles.galleryImage}
+                  src={image.imgUrl}
+                  width={500}
+                  height={500}
+                  alt={image.altText}
+                   />
+              </figure>
             )
           })}
         </div>

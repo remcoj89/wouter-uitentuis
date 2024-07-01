@@ -1,0 +1,5 @@
+.contactForm {
+  padding: var(--padding-card);
+  display: grid;
+  gap: var(--gap-card);
+}

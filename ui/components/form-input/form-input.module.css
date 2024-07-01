@@ -1,0 +1,24 @@
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.input, .textArea {
+  border-radius: var(--border-radius);
+  background: rgb(var(--color-white));
+  color: rgb(var(--color-very-dark-green));
+  border: none;
+  outline: none;
+  line-height: 1.6;
+  padding: 1rem;
+  caret-color: rgb(var(--color-dark-green));
+}
+
+.input:focus, .textArea:focus {
+  outline: none;
+}
+
+
+.textArea {
+  height: 25rem;
+}

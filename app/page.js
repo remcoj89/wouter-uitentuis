@@ -11,6 +11,7 @@ import CardComponent from "@/ui/components/card/card.component";
 import ProjectSection from '@/ui/sections/project-section/project-section.component';
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component';
 import Gallery from '@/ui/sections/gallery-section/gallery.component';
+import ContactSection from '@/ui/sections/contact-section/contact-section.component';
 
 
 
@@ -42,6 +43,7 @@ export default function Home() {
   return (
     <>
        <HeroSection />
+       <ContactSection />
 
       <main className={styles.main}>
         <UspSection />
@@ -59,6 +61,7 @@ export default function Home() {
         <ProjectSection />
         <CtaSectionWithBgImage />
         <Gallery />
+
       </main>
     </>
   );
