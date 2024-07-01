@@ -43,7 +43,6 @@ export default function Home() {
   return (
     <>
        <HeroSection />
-       <ContactSection />
 
       <main className={styles.main}>
         <UspSection />
@@ -61,7 +60,7 @@ export default function Home() {
         <ProjectSection />
         <CtaSectionWithBgImage />
         <Gallery />
-
+        <ContactSection />
       </main>
     </>
   );

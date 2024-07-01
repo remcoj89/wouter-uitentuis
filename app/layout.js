@@ -4,6 +4,7 @@ import "./globals.css";
 import GoogleAnalytics from "@/lib/google-analytics/googleAnalytics";
 import CookieBanner from "@/ui/components/cookie-banner/cookie-banner.component";
 import Navbar from "@/ui/components/nav-component/nav-bar.component";
+import FooterSection from "@/ui/sections/footer-section/footer-section.component";
 
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         {/* <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID}/> */}
         <Navbar />
         {children}
+        <FooterSection />
         {/* <CookieBanner /> */}
       </body>
     </html>

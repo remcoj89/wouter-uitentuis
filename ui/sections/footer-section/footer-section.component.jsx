@@ -1,0 +1,28 @@
+// Styles
+import IconComponent from '@/ui/components/icon/icon.component';
+import Styles from './footer-section.module.css';
+
+// Hooks
+import Link from 'next/link';
+
+// Components
+
+const FooterSection = () => {
+
+  const currentYear = new Date().getFullYear();
+
+return (
+  <section id="section-footer">
+    <footer className={`wrapper ${Styles.footerWrapper}`}>
+      <div className={Styles.footerContactWrapper}>
+      <Link href="mailto: info@wouteruitentuis.nl" target='_blank'> <IconComponent  info@wouteruitentuis.nl</Link>
+      <Link href="https://maps.app.goo.gl/fwxp3YxCLdR9xtrL6" target='_blank' >Westeinde 29, 1636VB, Schermerhorn, KVK: 12345678</Link>
+      <Link href="tel: 0630272667" target='_blank'> 06-30272667</Link>
+      </div>
+      <p> &copy;All Copyrights Reseverd {currentYear} </p>
+    </footer>
+  </section>
+)
+}
+
+export default FooterSection;

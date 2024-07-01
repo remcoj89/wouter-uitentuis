@@ -1,0 +1,21 @@
+.footerWrapper {
+  text-align: center;
+  padding-block: var(--padding-card)
+}
+
+.footerContactWrapper {
+  border-bottom: 1px solid rgb(var(--color-green));
+  border-top: 1px solid rgb(var(--color-green));
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+
+.footerContactWrapper > a:nth-child(2) {
+  border-left: 1px solid rgb(var(--color-green));
+  border-right: 1px solid rgb(var(--color-green));
+  padding-inline: 3rem;
+}
