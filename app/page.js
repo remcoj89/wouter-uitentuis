@@ -10,6 +10,7 @@ import SocialProof from "@/ui/sections/social-proof-section/social-proof.compone
 import CardComponent from "@/ui/components/card/card.component";
 import ProjectSection from '@/ui/sections/project-section/project-section.component';
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component';
+import Gallery from '@/ui/sections/gallery-section/gallery.component';
 
 
 
@@ -57,6 +58,7 @@ export default function Home() {
         </SocialProof>
         <ProjectSection />
         <CtaSectionWithBgImage />
+        <Gallery />
       </main>
     </>
   );
