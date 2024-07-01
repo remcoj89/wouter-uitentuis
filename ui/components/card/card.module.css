@@ -1,13 +1,12 @@
 .card {
-  padding: var(--padding-card);
   display: flex;
+  padding: var(--padding-card);
 }
-
 
 .uspCard {
   background: transparent;
-  gap: var(--gap-card);
   flex-direction: column;
+  gap: var(--gap-card);
 }
 
 .uspCard:hover {
@@ -17,18 +16,44 @@
 }
 
 .ctaCard {
+  -moz-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
+  -webkit-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
+  align-items: center;
   background-color: rgb(var(--color-green));
   border-radius: var(--border-radius-card) 0 0 var(--border-radius-card);
-  height: 70%;
-  position: absolute;
   bottom: 0;
+  box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
+  height: 70%;
+  justify-content: space-evenly;
+  position: absolute;
   right: 0;
   width: 85%;
+}
+
+.ctaCardTextCenter {
   align-items: center;
-  justify-content: space-evenly;
-  -webkit-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
-  -moz-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
-  box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
+  background-color: rgb(var(--color-green));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius-card);
+  margin-inline: auto;
+  padding: 0;
+  position: relative;
+  width: 85%;
+}
+
+.ctaCardTextCenter::before {
+  background-color: rgba(var(--color-green), 0.2);
+  border-radius: var(--border-radius-card);
+  bottom: -15%;
+  content: "";
+  height: 100%;
+  left: -7.5%;
+  position: absolute;
+  right: -7.5%;
+  width: auto;
+  z-index: -1;
 }
 
 .logoCard {

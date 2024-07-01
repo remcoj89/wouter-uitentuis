@@ -37,10 +37,10 @@ const toggleBurgerMenu = () => { setIsMenuOpen(!isMenuOpen)}
               <li className={`${Styles.navLink} ${pathname === '/gardener' ? `${Styles.active}` : ""}`} ><Link href="/gardener">Hovenier</Link></li>
               <li className={`${Styles.navLink} ${pathname === '/big-green' ? `${Styles.active}` : ""}`} ><Link href="/big-green">Groen Onderhoud</Link></li>
             </div>
-    
+
             <div className={Styles.contactWrapper}>
-              <div className={Styles.contactWrapperIcon}><EmailIcon /> info@wouteruitentuis.nl</div>
-              <div className={Styles.contactWrapperIcon}><PhoneIcon /> 06-30272667</div>
+              <Link href="mailto: info@wouteruitentuis.nl" className={Styles.contactWrapperIcon}><EmailIcon /> info@wouteruitentuis.nl</Link>
+              <Link href="tel: 0630272667" className={Styles.contactWrapperIcon}><PhoneIcon /> 06-30272667</Link>
             </div>
           </div>
           <BurgerMenu toggleBurgerMenu={toggleBurgerMenu} isMenuOpen={isMenuOpen}/>

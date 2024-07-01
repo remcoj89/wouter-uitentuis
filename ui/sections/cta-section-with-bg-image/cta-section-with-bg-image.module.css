@@ -1,14 +1,15 @@
-.ctaSection {
-  color: rgb(var(--color-white));
-  height: 47.2rem;
-}
-
-.ctaText {
+.ctaCardContent {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.377);
+  color:  rgb(var(--color-white));
   display: flex;
   flex-direction: column;
+  border-radius: var(--border-radius-card);
   gap: var(--gap-card);
-  padding-left: 15%;
-  width: 60%;
+  height: 100%;
+  padding: var(--padding-card);
+  text-align: center;
+  width: 100%;
 }
 
 .ctaTitle {
@@ -19,13 +20,4 @@
 .ctaSubtitle {
   font-size: var(--font-size-body-large);
   text-wrap:pretty;
-}
-
-.ctaImage {
-  border-radius: var(--border-radius-card);
-  height: 37.2rem;
-  left: -10%;
-  position: absolute;
-  top: -30%;
-  width: 37.2rem;
 }
