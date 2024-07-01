@@ -13,6 +13,13 @@
   width: 100%;
 }
 
+.footerContactWrapper  > a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+}
+
 
 .footerContactWrapper > a:nth-child(2) {
   border-left: 1px solid rgb(var(--color-green));
