@@ -4,6 +4,7 @@ import Styles from './hero-section.module.css';
 
 // Hooks
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Components
 import Button from '@/ui/components/button/button.component';
@@ -20,7 +21,6 @@ const HeroSection = () => {
 
     const handleClick = () => {
         document.getElementById("usp-section").scrollIntoView()
-        console.log("click")
     }
 
   return (
@@ -33,9 +33,12 @@ const HeroSection = () => {
          <div className={Styles.heroContent}>
             <h1 className={Styles.heroContentTitle}>{heroTitle}</h1>
             <h2 className={Styles.heroContentSubtitle}>{heroSubtitle}</h2>
-            <Button buttonStyle="btnPrimary">Klik voor een vrijblijvende afpraak</Button>
+
+            <Link href="#contact-section">
+              <Button buttonStyle="btnPrimary">Klik voor een vrijblijvende afpraak</Button>
+            </Link>
          </div>
-         
+
          <div className={Styles.heroImageGrid}>
 
             <Image

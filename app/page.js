@@ -1,9 +1,10 @@
+// Styles
+import styles from "./page.module.css";
 // Hooks
 import Image from 'next/image'
 
 // Components
 import HeroSection from "@/ui/sections/hero-section/hero-section.component";
-import styles from "./page.module.css";
 import UspSection from "@/ui/sections/usp-section/usp-section.component";
 import CtaSection from "@/ui/sections/cta-section/cta-section.component";
 import SocialProof from "@/ui/sections/social-proof-section/social-proof.component";

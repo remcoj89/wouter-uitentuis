@@ -34,8 +34,8 @@ const toggleBurgerMenu = () => { setIsMenuOpen(!isMenuOpen)}
           <div className={Styles.navLinkSection}>
             <div className={Styles.navlinks} style={isMenuOpen || screenWidth >= 478 ? {display: "flex"} : {display: "none"}}>
               <li className={`${Styles.navLink} ${pathname === '/' ? `${Styles.active}` : ""}`} ><Link href="/">Sportvelden</Link></li>
-              <li className={`${Styles.navLink} ${pathname === '/gardener' ? `${Styles.active}` : ""}`} ><Link href="/gardener">Hovenier</Link></li>
-              <li className={`${Styles.navLink} ${pathname === '/big-green' ? `${Styles.active}` : ""}`} ><Link href="/big-green">Groen Onderhoud</Link></li>
+              <li className={`${Styles.navLink} ${pathname === '/hovenier' ? `${Styles.active}` : ""}`} ><Link href="/hovenier">Hovenier</Link></li>
+              <li className={`${Styles.navLink} ${pathname === '/groen-onderhoud' ? `${Styles.active}` : ""}`} ><Link href="/groen-onderhoud">Groen Onderhoud</Link></li>
             </div>
 
             <div className={Styles.contactWrapper}>

@@ -4,6 +4,7 @@ import Styles from './cta-section.module.css';
 
 // Hooks
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Components
 import Button from '@/ui/components/button/button.component';
@@ -22,11 +23,14 @@ const CtaSection = () => {
            <h3 className={Styles.ctaTitle}>Benieuw wat wij voor uw club kunnen betekenen?</h3>
            <span className={Styles.ctaSubtitle}>Neem dan vrijblijvend contact met ons op</span>
           </div>
-          <Button buttonStyle="btnDarkGreen">
-            Contact <IconComponent iconStyle='greenIcon'>
-              <PhoneIcon color="#ffff" />
-            </IconComponent>
-          </Button>
+
+          <Link href="#contact-section">
+            <Button buttonStyle="btnDarkGreen">
+              Contact <IconComponent iconStyle='greenIcon'>
+                <PhoneIcon color="#ffff" />
+              </IconComponent>
+            </Button>
+          </Link>
         </CardComponent>
     </section>
   )

@@ -1,6 +1,8 @@
 .contactSection {
   color: rgb(var(--color-white));
   position: relative;
+  scroll-margin-block-start: 15vh;
+  scroll-behavior: smooth;
   width: 100%;
 
 background: linear-gradient(
@@ -21,18 +23,18 @@ background: linear-gradient(
 }
 
 .contactSectionWrapper {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  display: flex;
   gap: 3rem;
+  justify-content: space-between;
 }
 
 /* Contact Section Header */
 
 .contactSectionHeader{
-  display: block;
   border-bottom: 1px solid rgb(var(--color-green));
   border-top: 1px solid rgb(var(--color-green));
+  display: block;
   margin-top: 3rem;
   padding-block: var(--padding-btn-inline-start);
   text-wrap:stable ;
@@ -54,14 +56,14 @@ color: rgb(var(--color-green))
 .contactSectionImage {
   border-radius: 0px var(--border-radius-large) 0px 0px;
   bottom: -20%;
+  height: 70%;
   left: 0;
-  top: 45%;
   object-fit: cover;
   object-position: center;
   position: absolute;
   right: 0;
+  top: 45%;
   width: 45%;
-  height: 70%;
 }
 
 .contactSectionForm {
