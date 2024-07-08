@@ -5,7 +5,7 @@ const InputField = ({label, inputOptions}) => {
 
   return (
     <div className={Styles.formField}>
-      <label className={Styles.label} htmlFor={name}>{label}</label>
+      <label className={Styles.label} htmlFor={inputOptions.name}>{label}</label>
 
       {inputOptions.type !== 'textarea' ?
       < input

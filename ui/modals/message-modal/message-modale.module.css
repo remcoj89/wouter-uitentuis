@@ -1,0 +1,34 @@
+.messageModal {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 25%;
+  left: 15%;
+  right: 15%;
+  bottom: 25%;
+  background-color: rgba(var(--color-dark-green), 0.575);
+  border-radius: var(--border-radius-card-uneven);
+  z-index: 999;
+}
+
+.message {
+  display: block;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  margin-inline: auto;
+}
+
+.message h3 {
+  font-size: var(--font-size-title);
+  margin-bottom: 3rem;
+}
+
+
+.buttonClose {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
