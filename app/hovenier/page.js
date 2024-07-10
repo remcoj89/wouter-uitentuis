@@ -9,6 +9,7 @@ import ProjectSection from '@/ui/sections/project-section/project-section.compon
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component'
 import Gallery from '@/ui/sections/gallery-section/gallery.component'
 import ContactSection from '@/ui/sections/contact-section/contact-section.component'
+import CtaSection from '@/ui/sections/cta-section/cta-section.component'
 
 export default function Hovenier() {
   return (
@@ -16,6 +17,7 @@ export default function Hovenier() {
       <HeroSection />
       <main className={Styles.main}>
         <UspSection />
+        <CtaSection />
         <SocialProof >
           Social Proof
         </SocialProof>

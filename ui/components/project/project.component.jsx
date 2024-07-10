@@ -7,9 +7,11 @@ import Image from 'next/image';
 // Components
 import ProjectBanner from '../project-banner/project-banner.component';
 
-const ProjectComponent = ({projectBanner}) => {
+const ProjectComponent = ({projectContent, projectBanner}) => {
+  const {projectTitle, projectImage, projectDescription} =projectContent
+  const {paragraph1,paragraph2, paragraph3} = projectDescription
 
-  const projectImage = {imageUrl: '/assets/images/field-management/hero_image-3.png', altText:'project Image'}
+
 
   return (
     <div className={Styles.projectWrapper}>
@@ -20,10 +22,14 @@ const ProjectComponent = ({projectBanner}) => {
         src={projectImage.imageUrl}
         width={500}/>
       <article className={Styles.projectArticle}>
-      <ProjectBanner bannerStyle={projectBanner}/>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?</p>
+      <ProjectBanner bannerStyle={projectBanner}>
+        <h4>{projectTitle}</h4>
+      </ProjectBanner>
+          <p>{paragraph1}</p>
+          <p>{paragraph2}</p>
+          <p>{paragraph3}</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?</p>
+
       </article>
     </div>
   )

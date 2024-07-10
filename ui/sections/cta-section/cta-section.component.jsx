@@ -11,17 +11,17 @@ import Button from '@/ui/components/button/button.component';
 import IconComponent from '@/ui/components/icon/icon.component';
 import { PhoneIcon } from '@/assets/icons';
 
-const CtaSection = () => {
+const CtaSection = ({ctaContent}) => {
+  const {ctaTitle, ctaSubtitle, imageUrl, altText} = ctaContent
 
-  const imageUrl = '/assets/images/field-management/hero_image-2.png'
 
   return (
     <section id="cta-section" className={Styles.ctaSection} >
         <CardComponent cardStyle='ctaCard' >
-          <Image className={Styles.ctaImage} src={imageUrl} height={500} width={500} alt="" />
+          <Image className={Styles.ctaImage} src={imageUrl} height={500} width={500} alt={altText} />
           <div className={Styles.ctaText}>
-           <h3 className={Styles.ctaTitle}>Benieuw wat wij voor uw club kunnen betekenen?</h3>
-           <span className={Styles.ctaSubtitle}>Neem dan vrijblijvend contact met ons op</span>
+           <h3 className={Styles.ctaTitle}>{ctaTitle}</h3>
+           <span className={Styles.ctaSubtitle}>{ctaSubtitle}</span>
           </div>
 
           <Link href="#contact-section">

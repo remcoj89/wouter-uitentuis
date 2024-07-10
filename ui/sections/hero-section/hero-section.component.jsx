@@ -10,14 +10,8 @@ import Link from 'next/link';
 import Button from '@/ui/components/button/button.component';
 import { ArrowDownLarge, ArrowDownSmall } from '@/assets/icons';
 
-const HeroSection = () => {
-
-  const backgroundImage = '/assets/images/field-management/green-grass-white-clouds.png';
-  const heroTitle = "Wij Creeren groene meesterwerken";
-  const heroSubtitle = "Ontdek onze toonaangeven hoveniers kunst"
-  const image1 = {imageUrl: "/assets/images/field-management/hero_image-1.png", altText: "image 1"}
-  const image2 = {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"}
-  const image3 = {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
+const HeroSection = ({sectionContent}) => {
+  const {heroTitle, subTitle,backGroundImage, image1, image2, image3} = sectionContent;
 
     const handleClick = () => {
         document.getElementById("usp-section").scrollIntoView()
@@ -26,14 +20,13 @@ const HeroSection = () => {
   return (
     <section id="hero-section"
       className={Styles.heroSection}
-      style={{background: `url(${backgroundImage})`, backgroundSize: "cover"}}
+      style={{background: `url(${backGroundImage})`, backgroundSize: "cover"}}
       >
       <div className={`wrapper ${Styles.heroWrapper} `}>
 
          <div className={Styles.heroContent}>
             <h1 className={Styles.heroContentTitle}>{heroTitle}</h1>
-            <h2 className={Styles.heroContentSubtitle}>{heroSubtitle}</h2>
-
+            <h2 className={Styles.heroContentSubtitle}>{subTitle}</h2>
             <Link href="#contact-section">
               <Button buttonStyle="btnPrimary">Klik voor een vrijblijvende afpraak</Button>
             </Link>

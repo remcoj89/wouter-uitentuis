@@ -5,7 +5,7 @@
   padding-block: var(--padding-card);
   padding-inline: var(--padding-card);
   position: absolute;
-  top: 10%;
+  top: 5%;
   z-index: 2;
   text-wrap: pretty;
 }

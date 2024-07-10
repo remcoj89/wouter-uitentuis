@@ -21,6 +21,7 @@ export default function BigGreen() {
       <HeroSection />
       <main className={Styles.main}>
         <UspSection />
+        <CtaSection />
         <SocialProof >
           Social Proof
         </SocialProof>
