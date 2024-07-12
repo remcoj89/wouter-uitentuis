@@ -2,7 +2,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   z-index: 1;
 }
@@ -10,7 +10,7 @@
 .heroSection::before {
   background: linear-gradient(var(--color-background-gradient-start) 0%, var(--color-background-gradient-end) 100%);
   content: '';
-  height: 100vh;
+  height: 90vh;
   inset: 0;
   opacity: 0.5;
   position: absolute;
@@ -21,9 +21,8 @@
 .heroWrapper {
   align-items: center;
   display: flex;
-  height: 65%;
-  inset: 0;
-  inset-block-start: 15%;
+  height: 75%;
+  inset: 75px 0 0 0;
   justify-content: center;
   overflow: none;
   position: absolute;
@@ -31,17 +30,17 @@
 }
 
 .heroContent {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   height: 100%;
-  width: 50%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .heroContent > a {
   margin-top: 6rem;
-
 }
 
 .heroContentTitle {
@@ -50,18 +49,31 @@
 }
 
 .heroImageGrid {
-  display: grid;
-  gap: 4.1rem 4.1rem;
-  grid-template-columns: 57% 40%;
-  grid-template-rows: 1fr 1fr;
-  height:90%;
-  width: 50%;
-  flex-grow: 1;
-  flex-shrink: 1;
+  display: none;
+}
+
+@media (min-width: 1093px) {
+  .heroContent {
+    align-items: flex-start;
+    text-align: left;
+    width: 50%;
+  }
+
+  .heroImageGrid {
+    display: grid;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 4.1rem 4.1rem;
+    grid-template-columns: 57% 40%;
+    grid-template-rows: 1fr 1fr;
+    height:70%;
+    overflow: hidden;
+    width: 50%;
 
 grid-template-areas:
-    "image-1 imag-2"
-    "image-1 image-3";
+      "image-1 imag-2"
+      "image-1 image-3";
+  }
 }
 
 .image > img{
@@ -86,7 +98,6 @@ grid-template-areas:
   grid-area: image-3;
   height: 75%;
 }
-
 
 .scrollDownBtn {
   align-items: center;
@@ -119,6 +130,7 @@ grid-template-areas:
 
 @keyframes movingArrows {
   to {
+
     transform: rotate(-45deg) translateY(10px)
-};
+  };
 }

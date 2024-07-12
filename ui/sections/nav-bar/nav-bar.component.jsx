@@ -25,8 +25,8 @@ const NavBar = () => {
               <CloseIcon color="#ffff" />
             </label>
             <Link href='/' className={`${Styles.navLink} ${pathname === '/' ? `${Styles.active}` : ""}`} >Field management</Link>
-            <Link href='/' className={`${Styles.navLink} ${pathname === '/hovenier' ? `${Styles.active}` : ""}`}>Hovenier</Link>
-            <Link href='/' className={`${Styles.navLink} ${pathname === '/groen-onderhoud' ? `${Styles.active}` : ""}`}>Groen Onderhoud</Link>
+            <Link href='/hovenier' className={`${Styles.navLink} ${pathname === '/hovenier' ? `${Styles.active}` : ""}`}>Hovenier</Link>
+            <Link href='/groen-onderhoud' className={`${Styles.navLink} ${pathname === '/groen-onderhoud' ? `${Styles.active}` : ""}`}>Groen Onderhoud</Link>
             <div className={Styles.contactWrapper}>
               <Link href="mailto: info@wouteruitentuis.nl" id={Styles.emailLink} className={Styles.contactWrapperIcon}><EmailIcon /> info@wouteruitentuis.nl</Link>
               <Link href="tel: 0630272667" id={Styles.phoneLink} className={Styles.contactWrapperIcon}><PhoneIcon /> 06-30272667</Link>

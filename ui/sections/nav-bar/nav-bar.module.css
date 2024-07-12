@@ -5,7 +5,7 @@
 }
 
 .nav {
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-dark-green));
   color: rgb(var(--color-on-primary));
   height: 75px;
   line-height: 75px;
@@ -42,7 +42,7 @@
 }
 
 .navWrapper .navLinks {
-  background: rgb(var(--color-primary));
+  background: rgb(var(--color-dark-green));
   box-shadow: rgba(0, 0, 0, 0.150);
   display: block;
   height: 100vh;
