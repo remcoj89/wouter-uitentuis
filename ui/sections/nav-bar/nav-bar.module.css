@@ -1,0 +1,164 @@
+.header {
+  position: static;
+  top: 0;
+  z-index: 9999;
+}
+
+.nav {
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-on-primary));
+  height: 75px;
+  line-height: 75px;
+  padding-inline: 30px;
+}
+
+.nav .logo {
+  color: rgb(var(--color-on-primary));
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav .navWrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1250px;
+  position: relative;
+}
+
+.navWrapper input {
+  display: none;
+}
+
+.navButton {
+  align-items: center;
+  color: var(--color-on-primary);
+  cursor: pointer;
+  display: grid;
+  height: 3rem;
+  width: 3rem;
+}
+
+.navWrapper .navLinks {
+  background: rgb(var(--color-primary));
+  box-shadow: rgba(0, 0, 0, 0.150);
+  display: block;
+  height: 100vh;
+  left:-100%;
+  line-height: 50px;
+  overflow-y: auto;
+  max-width: 50vh;
+  padding: 50px 10px;
+  position: fixed;
+  top: 75px;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 999;
+  font-size: 2rem;
+}
+
+.navLink {
+  display: block;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+.navLink:hover {
+  color: rgb(var(--color-on-primary), 0.8);
+}
+
+.active, .navLink:hover {
+  color: rgb(var(--color-green));
+  text-decoration: underline;
+}
+
+
+.navLinks::-webkit-scrollbar {
+  width: 0;
+}
+
+#menuButton:checked ~ .navLinks {
+  left: -0%;
+}
+
+#menuButton:checked ~ .menuButton {
+  display: none;
+}
+
+.cancelButton {
+  position: absolute;
+  right: 3rem;
+  top:1.5rem;
+}
+
+.contactWrapper {
+  border-top: solid 1px rgb(var(--color-green));
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+
+.contactWrapper, .contactWrapper a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+@media (min-width: 809px) {
+
+  .navWrapper .navLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    position: static;
+    height: unset;
+    max-width: unset;
+    padding: unset;
+    overflow-y: unset;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    width: auto;
+    font-size: 1.6rem;
+  }
+
+  .navLink:hover {
+    color: rgb(var(--color-on-primary), 0.8);
+  }
+
+  .active, .navLink:hover {
+    color: rgb(var(--color-green));
+    text-decoration: none;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+  }
+
+
+  .contactWrapper {
+    border-top: none;
+    margin-top:unset;
+    padding-top:unset;
+    padding-left: 2rem;
+    border-left: solid 1px rgb(var(--color-green));
+  }
+
+  .contactWrapper, .contactWrapper a {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+
+  .navButton {
+    display: none;
+  }
+}
+
+@media (max-width: 1056px) {
+  #emailLink {
+    display: none;
+  }
+}
