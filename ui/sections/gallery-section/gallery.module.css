@@ -18,14 +18,18 @@
 .imageGrid {
   display: grid;
   gap: var(--gap-card);
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.imageGrid button {
+  border: none;
+  background: transparent;
 }
 
 .galleryImage {
-  border: 1px solid rgb(var(--color-white));
-  border-radius: var(--border-radius-card);
   box-shadow: var(--box-shadow-gallery);
-  height: 40rem;
+  height: 100%;
+  max-height: 25rem;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   opacity: 0.7;

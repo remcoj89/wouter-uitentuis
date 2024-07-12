@@ -1,22 +1,23 @@
 .projectBanner {
   background-color: rgba(var(--color-backround-banner), 1);
-  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-body-large);
-  padding-block: var(--padding-card);
-  padding-inline: var(--padding-card);
+  font-weight: var(--font-weight-bold);
+  padding-block: 2.5rem;
+  padding-inline: 7rem;
   position: absolute;
+  text-wrap: pretty;
   top: 5%;
   z-index: 2;
-  text-wrap: pretty;
 }
 .projectBanner > h4 {
   max-width: 80%;
 }
 
 .projectBannerLeft{
-  right: -30%;
   border-left: 2px solid rgb(var(--color-green));
   border-radius: 0 0 100px 0;
+  left: 0;
+  right: -30%;
   text-align: right;
 }
 .projectBannerLeft > h4 {
@@ -24,7 +25,8 @@
 }
 
 .projectBannerRight {
-  left: -30%;
-  border-right: 2px solid rgb(var(--color-green));
   border-radius: 0 0 0 100px;
+  border-right: 2px solid rgb(var(--color-green));
+  left: -30%;
+  right: 0;
 }

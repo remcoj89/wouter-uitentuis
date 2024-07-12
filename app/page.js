@@ -46,8 +46,8 @@ export default function Home() {
         },
       ],
       ctaSection: {
-        ctaTitle: "Benieuw wat wij voor uw club kunnen betekenen?",
-        ctaSubtitle: "Neem dan vrijblijvend contact met ons op",
+        ctaTitle: "Samen voor Perfecte Speelvelden!",
+        ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
         imageUrl: "/assets/images/field-management/hero_image-2.png",
         altText: "Foto van een vers gemaaid voetbal veld"
       },
@@ -74,15 +74,15 @@ export default function Home() {
       ],
       ProjectSection: [
         {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+          projectTitle: "'Gras is geen rocketscience. Laat je niet gek maken'",
           projectDescription: {
-            paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+            paragraph1: "In het eerste jaar dat de trainingsvelden werden opgeleverd, nu vijf jaar geleden, kon nog niemand bevroeden hoe slecht het gras zou groeien. Er ontstonden veel kale grasplekken, vooral bij de overlap van de sproeiers.",
+            paragraph2: "Na het eerste seizoen is met een fieldtopmaker 2 cm van de graslaag af gefreesd, opnieuw ingezaaid en bemest. Door de warme en droge zomer in het jaar erop, verbrandde het opkomende gras direct.",
+            paragraph3: "We hebben ons toen afgevraagd wat daar de oorzaak van was en zijn gaan zoeken. We kwamen erachter dat het met het zoute gietwater had te maken. Met deze kennis zijn we de velden veel meer gaan besproeien om het zout weg te duwen. Soms wel 40 tot 50 ml/m2 per nacht. Normaal geven we afhankelijk van de tijd in het jaar tussen de 10 en 15 ml/m2.",
           },
           projectImage: {
-            imageUrl: "/assets/images/field-management/hero_image-3.png",
-            altText: "project Image"
+            imageUrl: "/assets/images/field-management/trainings-veld-van-az.webp",
+            altText: "Trainings veld van AZ"
           }
         },
         {
@@ -110,6 +110,12 @@ export default function Home() {
           }
         },
       ],
+      secondCta: {
+        ctaTitle: "Uw Velden, Onze Zorg!",
+        ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
+        imageUrl: "/assets/images/field-management/hero_image-1.png",
+        altText: "Foto van een vers gemaaid voetbal veld"
+      }
      }
 
   return (
@@ -130,7 +136,7 @@ export default function Home() {
           })}
         </SocialProof>
         <ProjectSection projectContent={pageContent.ProjectSection} />
-        <CtaSectionWithBgImage />
+        <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />
         <ContactSection />
       </main>

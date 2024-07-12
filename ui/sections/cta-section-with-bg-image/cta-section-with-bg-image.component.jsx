@@ -11,7 +11,8 @@ import Button from '@/ui/components/button/button.component';
 import {PhoneIcon} from '@/assets/icons';
 import IconComponent from '@/ui/components/icon/icon.component';
 
-const CtaSectionWithBgImage = () => {
+const CtaSectionWithBgImage = ({ctaContent}) => {
+  const {ctaTitle, ctaSubtitle, imageUrl} = ctaContent
 
   return (
     <section id="cta-section-with-bg-img" className={
@@ -19,10 +20,10 @@ const CtaSectionWithBgImage = () => {
 Styles.ctaSection
 }>
       <div className="wrapper">
-        <CardComponent cardStyle='ctaCardTextCenter' backgroundImgUrl="/assets/images/field-management/hero_image-1.png">
+        <CardComponent cardStyle='ctaCardTextCenter' backgroundImgUrl={imageUrl}>
           <div className={Styles.ctaCardContent}>
-            <h3 className={Styles.ctaTitle}>Beniewd wat wij voor uw vereniging kunnen betekenen?</h3>
-            <p className={Styles.ctaSubtitle}>Neem dan vrijblijvend contact met ons op</p>
+            <h3 className={Styles.ctaTitle}>{ctaTitle}</h3>
+            <p className={Styles.ctaSubtitle}>{ctaSubtitle}</p>
 
             <Link href="#contact-section">
               <Button buttonStyle="btnDarkGreen">
