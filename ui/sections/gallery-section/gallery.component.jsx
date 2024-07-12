@@ -7,29 +7,31 @@ import Styles from './gallery.module.css';
 import Image from 'next/image';
 import {useState} from 'react'
 
-
+// Components
+import ImageModal from '@/ui/modals/image-modal/image-modal.component';
 
 const Gallery = () => {
-  const [carouselAngle, setCarouselAngle] = useState(0)
+  const [imageIndex, setImageIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const images = [
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
-    {imgUrl:'/assets/images/field-management/hero_image-1.png', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/wouter-met-gras.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/az-trainings-veld-1.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/az-trainings-veld-2.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/gezaaid-veld.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/green-grass-white-clouds.png', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/kolping-boys-trakker.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/kolping-boys.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/meten.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/prut.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/renovatie-trainings-veld-kolping-boys.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/renovatie-veld.jpg', imageTitle: "titel", altText: "image description"},
+    {imgUrl:'/assets/images/field-management/team-wouter.jpg', imageTitle: "titel", altText: "image description"},
   ]
 
-  const gallerySpin = (sign) => {
-    const newAngle = sign ? carouselAngle - 45 : carouselAngle + 45;
-    setCarouselAngle(newAngle)
+  function modalHandler(i) {
+    setIsModalOpen(!isModalOpen);
+    setImageIndex(i)
   }
 
 
@@ -41,23 +43,26 @@ const Gallery = () => {
 
       <div className="wrapper">
         <div className={Styles.imageGrid}>
-        {/* <div className={Styles.imageGri}> */}
           {images.map((image, i) => {
             return (
-                <Image
-                    className={Styles.galleryImage}
-                    id={Styles[`image-${i}`]}
-                    src={image.imgUrl}
-                    width={500}
-                    height={500}
-                    alt={image.altText}
-                    key={i}
-                     />
-
+              <button onClick={() => modalHandler(i)} key={i}>
+                <figure className={Styles.gridFigure}  >
+                  <Image
+                      className={Styles.galleryImage}
+                      id={Styles[`image-${i}`]}
+                      src={image.imgUrl}
+                      width={500}
+                      height={500}
+                      alt={image.altText}
+                      />
+                </figure>
+              </button>
             )
           })}
         </div>
       </div>
+      {isModalOpen && <ImageModal closeModal={modalHandler} imageNumber={imageIndex} images={images} />}
+
     </section>
   )
 }

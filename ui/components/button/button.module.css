@@ -25,7 +25,9 @@
 }
 
 .btnPrimary:hover, .btnDarkGreen:hover  {
- opacity: 0.8;
+  opacity: 0.8;
+  border: 2px solid rgb(var(--color-on-background));
+  border-style: inset;
 }
 
 .btnCard {

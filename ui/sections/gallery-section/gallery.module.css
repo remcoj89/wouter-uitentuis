@@ -9,33 +9,41 @@
 
 .subtitle {
   color: rgb(var(--color-green));
-  font-weight: var(--font-weight-light);
   font-size: var(--font-size-title);
-  text-transform: uppercase;
+  font-weight: var(--font-weight-light);
   line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .imageGrid {
   display: grid;
-  gap: var(--gap-card);
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 .imageGrid button {
-  border: none;
   background: transparent;
+  border: none;
+}
+
+.gridFigure {
+  height: 30vh;
+  overflow: hidden;
+  width: 100%;
 }
 
 .galleryImage {
   box-shadow: var(--box-shadow-gallery);
+  display: block;
+  filter:grayscale(85%);
   height: 100%;
-  max-height: 25rem;
-  width: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.7;
+  width: 100%;
 }
 
 .galleryImage:hover {
   border: 2px solid rgb(var(--color-white));
-  opacity: 1;
+  cursor: pointer;
+  filter:grayscale(0);
+  transform: scale(1.2);
 }

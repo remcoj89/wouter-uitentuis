@@ -1,0 +1,89 @@
+.imageModal{
+  align-content: center;
+  background-color: rgba(var(--color-primary), 0.5);
+  inset: 0;
+  position: fixed;
+  z-index: 99;
+}
+.imageModal h1{
+  color: white;
+  font-size: 7rem;
+}
+
+.modalWrapper {
+  align-content: center;
+  height: 60vh;
+  margin-inline: auto;
+  position: relative;
+  width: var(--wrapper-max-width);
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 3.5rem;
+  position: absolute;
+  width: 3.5rem;
+}
+
+.modalImage {
+  border-radius: var(--border-radius-card);
+  height: 100%;
+  margin-inline: auto;
+  object-fit: cover;
+  width: 70%;
+}
+
+.modalBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 3.5rem;
+  position: absolute;
+  width: 3.5rem;
+}
+
+#closeBtn {
+  right: 15rem;
+  top: 15rem;
+}
+
+#btnLeft {
+  border: solid 2px white;
+  border-radius: 50rem;
+  left: 5rem;
+  top: 50%;
+}
+
+#btnLeft:hover {
+  animation: moveLeft 0.7s forwards;
+}
+
+#btnRight {
+  border: solid 2px white;
+  border-radius: 50rem;
+  right: 5rem;
+  top: 50%;
+}
+#btnRight:hover {
+  animation: moveRight 0.7s forwards;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(15px);
+  }
+}

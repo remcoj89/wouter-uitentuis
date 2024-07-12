@@ -13,23 +13,6 @@ import IconComponent from '@/ui/components/icon/icon.component';
 
 const UspSection = ({bennefits}) => {
 
-  // const bennefits = [
-  //   {
-  //     icon: '/assets/images/field-management/icon-grass.svg',
-  //     title: "Gras Specialist",
-  //     description: "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
-  //   },
-  //   {
-  //     icon: '/assets/images/field-management/icon-water.svg',
-  //     title: "Water beheer",
-  //     description: "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
-  //   },
-  //   {
-  //     icon: '/assets/images/field-management/icon-seed.svg',
-  //     title: "Bemesten",
-  //     description: "Lorem ipsum dolor sit amet consectetur. Consequat nec bibendum amet platea sapien amet sollicitudin feugiat. Mauris ultricies quis tristique sed ornare neque eget tristique."
-  //   },
-  // ]
   return (
     <section id="usp-section">
       <div className={`wrapper ${Styles.uspSection}`}>
