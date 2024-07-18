@@ -53,23 +53,26 @@ export default function BigGreen() {
       },
       socialProofSection: [
         {
-          imageUrl: "/assets/images/field-management/logos/logo-afc-34.png",
-          altText: "logo Afc 34"
+          imageUrl: "/assets/images/big-green/logos/logo-az.png",
+          altText: "Logo Az"
         },
         {
-          imageUrl: "/assets/images/field-management/logos/logo-az.png",
-          altText: "logo Az Alkmaar"
+          imageUrl: "/assets/images/big-green/logos/logo-gemeente-zaanstad.jpg",
+          altText: "Logo Gemeente Zaanstad"
         },
         {
-          imageUrl: "/assets/images/field-management/logos/logo-goahead-eagels.png",
-          altText: "logo Goahead Eagles"
+          imageUrl: "/assets/images/big-green/logos/logo-de-lange-bv.webp",
+          altText: "Logo De Lange Bv"
         },
         {
-          imageUrl:  "/assets/images/field-management/logos/logo-kolping-boys.png",
-          altText: "Kolping Boys"
+          imageUrl:  "/assets/images/big-green/logos/logo-gemeente-purmerend.jpg",
+          altText: "Logo Gemeente Purmerend"
         },
-        { imageUrl:  "/assets/images/field-management/logos/logo-sporting-s.png",
-          altText: "Sporting S"
+        { imageUrl:  "/assets/images/big-green/logos/logo-gemeente-maassluis.png",
+          altText: "Logo Gemeente Maassluis"
+        },
+        { imageUrl:  "/assets/images/big-green/logos/logo-natuur-monumenten.jpg",
+          altText: "Logo Natuur monumenten"
         }
       ],
       ProjectSection: [
@@ -115,6 +118,9 @@ export default function BigGreen() {
         ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
         imageUrl: "/assets/images/field-management/hero_image-1.png",
         altText: "Foto van een vers gemaaid voetbal veld"
+      },
+      contactSection: {
+        imageUrl: "/assets/images/gardener/handschoenen.avif"
       }
      }
 
@@ -126,12 +132,18 @@ export default function BigGreen() {
         <UspSection bennefits={pageContent.uspSection} />
         <CtaSection ctaContent={pageContent.ctaSection} />
         <SocialProof >
-          Social Proof
+          {pageContent.socialProofSection.map((logo, i) => {
+            return (
+              <CardComponent cardStyle='logoCard' key={i}>
+              <Image src={logo.imageUrl} alt={logo.altText} height={200} width={200}/>
+            </CardComponent>
+            )
+          })}
         </SocialProof>
         <ProjectSection projectContent={pageContent.ProjectSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />
-        <ContactSection />
+        <ContactSection urls={pageContent.contactSection} />
       </main>
     </>
   )

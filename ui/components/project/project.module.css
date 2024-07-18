@@ -2,8 +2,8 @@
   align-items: flex-end;
   display: flex;
   gap: var(--gap-card);
-  height: fit-content;
   height: 60rem;
+  position: relative;
 }
 
 .projectWrapper:nth-child(2) {
@@ -18,12 +18,9 @@
 
 .projectArticle {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
   flex-direction: column;
+  margin-top: 5rem;
   gap: var(--gap-card);
-  height: 100%;
-  position: relative;
-  height: 100%;
+  height: auto;
   width: 50%;
 }

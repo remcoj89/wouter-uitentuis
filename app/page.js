@@ -86,7 +86,7 @@ export default function Home() {
           }
         },
         {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
           projectDescription: {
             paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
             paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
@@ -98,7 +98,7 @@ export default function Home() {
           }
         },
         {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
           projectDescription: {
             paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
             paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
@@ -130,7 +130,6 @@ export default function Home() {
         <CtaSection ctaContent={pageContent.ctaSection} />
         <SocialProof >
           {pageContent.socialProofSection.map((logo, i) => {
-            <ProjectSection />
             return (
               <CardComponent cardStyle='logoCard' key={i}>
               <Image src={logo.imageUrl} alt={logo.altText} height={200} width={200}/>

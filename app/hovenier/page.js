@@ -69,7 +69,7 @@ const pageContent = {
         }
       },
       {
-        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         projectDescription: {
           paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
           paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
@@ -81,7 +81,7 @@ const pageContent = {
         }
       },
       {
-        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         projectDescription: {
           paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
           paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
