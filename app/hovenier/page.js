@@ -1,5 +1,9 @@
+'use client'
 // Styles
 import Styles from '../page.module.css'
+
+// Hooks
+import {useState, useEffect} from 'react';
 
 // Components
 import UspSection from '@/ui/sections/usp-section/usp-section.component'
@@ -10,109 +14,106 @@ import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-s
 import Gallery from '@/ui/sections/gallery-section/gallery.component'
 import ContactSection from '@/ui/sections/contact-section/contact-section.component'
 import CtaSection from '@/ui/sections/cta-section/cta-section.component'
+import CardComponent from '@/ui/components/card/card.component'
+import { ArrowRightIcon } from '@/assets/icons';
+
+const pageContent = {
+  heroSection:
+      {
+      heroTitle: "Creëer Uw Perfecte Buitenleven",
+      subTitle: "Maak Uw Tuin Klaar voor Elk Seizoen",
+      backGroundImage: "/assets/images/gardener/hovenier-hero-image.jpg",
+      image1: {imageUrl: "/assets/images/gardener/gras-veld.jpg", altText: "image 1"},
+      image2: {imageUrl: "/assets/images/gardener/achter-tuin.jpg", altText: "image 1"},
+      image3: {imageUrl: "/assets/images/gardener/terras.jpg", altText: "image 1"}
+    },
+    uspSection: [
+      {
+        title: "Snoeien en trimmen",
+        description: "Behoudt de vorm en gezondheid van planten en struiken, waardoor de esthetiek wordt verbeterd. Dit bevordert ook de groei en voorkomt overwoekering.",
+        iconUrl: "/assets/images/gardener/garden-icon-flower.svg"
+      },
+      {
+        title: "Seizoensgebonden onderhoud",
+        description: "Voert onderhoud uit passend bij elk seizoen, wat de tuin voorbereidt op veranderende weersomstandigheden. Dit zorgt voor een goed onderhouden tuin gedurende het hele jaar.",
+        iconUrl: "/assets/images/gardener/garden-icon-shovel.svg"
+      },
+      {
+        title: "Tuinrenovatie",
+        description: "Vernieuw verouderde of beschadigde tuinen, wat de esthetische waarde en functionaliteit verhoogt. Dit maakt de tuin weer aantrekkelijk en gebruiksvriendelijk.",
+        iconUrl: "/assets/images/gardener/garden-icon-garden-cart.svg"
+      },
+    ],
+    ctaSection: {
+      ctaTitle: "Samen voor een Perfecte Tuin!",
+      ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
+      imageUrl: "/assets/images/gardener/achtertuin-met-vijver.jpg",
+      altText: "Foto van een vers gemaaid voetbal veld"
+    },
+    socialProofSection: {
+      startYear: 2013,
+      numberOfGardens: 132,
+      grasPlanted: 6600,
+    },
+    ProjectSection: [
+      {
+        projectTitle: "'Heerlijke rustieke tuin'",
+        projectDescription: {
+          paragraph1: "In het eerste jaar dat de trainingsvelden werden opgeleverd, nu vijf jaar geleden, kon nog niemand bevroeden hoe slecht het gras zou groeien. Er ontstonden veel kale grasplekken, vooral bij de overlap van de sproeiers.",
+          paragraph2: "Na het eerste seizoen is met een fieldtopmaker 2 cm van de graslaag af gefreesd, opnieuw ingezaaid en bemest. Door de warme en droge zomer in het jaar erop, verbrandde het opkomende gras direct.",
+          paragraph3: "We hebben ons toen afgevraagd wat daar de oorzaak van was en zijn gaan zoeken. We kwamen erachter dat het met het zoute gietwater had te maken. Met deze kennis zijn we de velden veel meer gaan besproeien om het zout weg te duwen. Soms wel 40 tot 50 ml/m2 per nacht. Normaal geven we afhankelijk van de tijd in het jaar tussen de 10 en 15 ml/m2.",
+        },
+        projectImage: {
+          imageUrl: "/assets/images/gardener/achtertuin-met-vijver.jpg",
+          altText: "Achter tuin met vijver"
+        }
+      },
+      {
+        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+        projectDescription: {
+          paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+          paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+          paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+        },
+        projectImage: {
+          imageUrl: "/assets/images/field-management/hero_image-3.png",
+          altText: "project Image"
+        }
+      },
+      {
+        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
+        projectDescription: {
+          paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+          paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+          paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
+        },
+        projectImage: {
+          imageUrl: "/assets/images/field-management/hero_image-3.png",
+          altText: "project Image"
+        }
+      },
+    ],
+    secondCta: {
+      ctaTitle: "Uw Tuin, Onze Zorg!",
+      ctaSubtitle: "Wilt u weten wat wij voor uw tuin kunnen betekenen? Laten we samenwerken voor een prachtig stukje groen!",
+      imageUrl: "/assets/images/gardener/voortuin.jpg",
+      altText: "Foto van een vers gemaaid voetbal veld"
+    },
+    contactSection: {
+      imageUrl: "/assets/images/gardener/handschoenen.avif"
+    }
+   }
 
 export default function Hovenier() {
+  const [yearsActive, setYearsActive] = useState(null)
 
+  useState(() => {
+    const currentYear = new Date().getFullYear();
+    const startYear = pageContent.socialProofSection.startYear
 
-  const pageContent = {
-    heroSection:
-        {
-        heroTitle: "Milieuvriendelijk Onderhoud voor Gezonde Velden",
-        subTitle: "Behoud van Gezonde Grasvelden bij Intensief Gebruik",
-        backGroundImage: "/assets/images/field-management/green-grass-white-clouds.png",
-        image1: {imageUrl: "/assets/images/field-management/hero_image-1.png", altText: "image 1"},
-        image2: {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"},
-        image3: {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
-      },
-      uspSection: [
-        {
-          title: "Schadedetectie en herstel",
-          description: "Inspecteren en repareren van beschadigingen houdt het veld in optimale conditie. Snelle interventie voorkomt verdere schade.",
-          iconUrl: "/assets/images/field-management/icon-grass.svg"
-        },
-        {
-          title: "Beregening",
-          description: "Een goed beheerd irrigatiesysteem zorgt ervoor dat het gras voldoende water krijgt, vooral tijdens droge periodes. Dit voorkomt uitdroging en behoudt de vitaliteit van het veld.",
-          iconUrl: "/assets/images/field-management/icon-water.svg"
-        },
-        {
-          title: "Bemesten",
-          description: "Het toedienen van meststoffen voorziet het gras van essentiële voedingsstoffen. Dit versterkt de wortels en houdt het gras gezond en groen.",
-          iconUrl: "/assets/images/field-management/icon-seed.svg"
-        },
-      ],
-      ctaSection: {
-        ctaTitle: "Samen voor Perfecte Speelvelden!",
-        ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
-        imageUrl: "/assets/images/field-management/hero_image-2.png",
-        altText: "Foto van een vers gemaaid voetbal veld"
-      },
-      socialProofSection: [
-        {
-          imageUrl: "/assets/images/field-management/logos/logo-afc-34.png",
-          altText: "logo Afc 34"
-        },
-        {
-          imageUrl: "/assets/images/field-management/logos/logo-az.png",
-          altText: "logo Az Alkmaar"
-        },
-        {
-          imageUrl: "/assets/images/field-management/logos/logo-goahead-eagels.png",
-          altText: "logo Goahead Eagles"
-        },
-        {
-          imageUrl:  "/assets/images/field-management/logos/logo-kolping-boys.png",
-          altText: "Kolping Boys"
-        },
-        { imageUrl:  "/assets/images/field-management/logos/logo-sporting-s.png",
-          altText: "Sporting S"
-        }
-      ],
-      ProjectSection: [
-        {
-          projectTitle: "'Gras is geen rocketscience. Laat je niet gek maken'",
-          projectDescription: {
-            paragraph1: "In het eerste jaar dat de trainingsvelden werden opgeleverd, nu vijf jaar geleden, kon nog niemand bevroeden hoe slecht het gras zou groeien. Er ontstonden veel kale grasplekken, vooral bij de overlap van de sproeiers.",
-            paragraph2: "Na het eerste seizoen is met een fieldtopmaker 2 cm van de graslaag af gefreesd, opnieuw ingezaaid en bemest. Door de warme en droge zomer in het jaar erop, verbrandde het opkomende gras direct.",
-            paragraph3: "We hebben ons toen afgevraagd wat daar de oorzaak van was en zijn gaan zoeken. We kwamen erachter dat het met het zoute gietwater had te maken. Met deze kennis zijn we de velden veel meer gaan besproeien om het zout weg te duwen. Soms wel 40 tot 50 ml/m2 per nacht. Normaal geven we afhankelijk van de tijd in het jaar tussen de 10 en 15 ml/m2.",
-          },
-          projectImage: {
-            imageUrl: "/assets/images/field-management/trainings-veld-van-az.webp",
-            altText: "Trainings veld van AZ"
-          }
-        },
-        {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
-          projectDescription: {
-            paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          },
-          projectImage: {
-            imageUrl: "/assets/images/field-management/hero_image-3.png",
-            altText: "project Image"
-          }
-        },
-        {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis ipsum ullam.",
-          projectDescription: {
-            paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          },
-          projectImage: {
-            imageUrl: "/assets/images/field-management/hero_image-3.png",
-            altText: "project Image"
-          }
-        },
-      ],
-      secondCta: {
-        ctaTitle: "Uw Velden, Onze Zorg!",
-        ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
-        imageUrl: "/assets/images/field-management/hero_image-1.png",
-        altText: "Foto van een vers gemaaid voetbal veld"
-      }
-     }
+    return  setYearsActive(currentYear - startYear)
+  })
+
 
   return (
     <>
@@ -122,12 +123,25 @@ export default function Hovenier() {
         <UspSection bennefits={pageContent.uspSection} />
         <CtaSection ctaContent={pageContent.ctaSection} />
         <SocialProof >
-          Social Proof
+          <CardComponent cardStyle='socialProofCard' >
+              <h3>{yearsActive}</h3>
+              <span>Jaar actief als hovenier </span>
+
+          </CardComponent>
+          <CardComponent cardStyle='socialProofCard' >
+            <h3>&gt; 132</h3>
+            <span>Aangelegde Tuinen </span>
+          </CardComponent>
+          <CardComponent cardStyle='socialProofCard' >
+            <h3>&gt; 66000km2</h3>
+            <span>Gras gezaaid</span>
+          </CardComponent>
+
         </SocialProof>
         <ProjectSection projectContent={pageContent.ProjectSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />
-        <ContactSection />
+        <ContactSection urls={pageContent.contactSection} />
       </main>
     </>
   )

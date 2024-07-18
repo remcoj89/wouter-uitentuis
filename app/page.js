@@ -115,6 +115,9 @@ export default function Home() {
         ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
         imageUrl: "/assets/images/field-management/hero_image-1.png",
         altText: "Foto van een vers gemaaid voetbal veld"
+      },
+      contactSection: {
+        imageUrl: "/assets/images/gardener/handschoenen.avif"
       }
      }
 
@@ -138,7 +141,7 @@ export default function Home() {
         <ProjectSection projectContent={pageContent.ProjectSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />
-        <ContactSection />
+        <ContactSection urls={pageContent.contactSection}/>
       </main>
     </>
   );

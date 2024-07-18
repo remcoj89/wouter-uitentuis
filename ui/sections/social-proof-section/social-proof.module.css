@@ -10,6 +10,7 @@
 
 .socialProofWrapper {
   display: flex;
+  justify-content: center;
   gap: var(--gap-card);
   margin-top: 7.5rem;
 }

@@ -63,3 +63,32 @@
   box-shadow: 0px 20px 150px 0px rgba(var(--color-primary), 0.30);
   padding: 2.2rem 3.3rem 3.3rem;
 }
+
+.socialProofCard {
+  align-items: center;
+  background-color: rgb(var(--color-white));
+  border: 1px solid rgba(var(--color-primary), 0.30);
+  border-radius: var(--border-radius-card-uneven);
+  box-shadow: 0px 20px 150px 0px rgba(var(--color-primary), 0.30);
+  flex-direction: column;
+  gap: 4rem;
+  width: 33%;
+  justify-content: center;
+  padding: 2.2rem 3.3rem 3.3rem;
+}
+
+.socialProofCard h3 {
+  font-size: var(--font-size-title);
+  line-height: var(--font-size-title);
+  color: rgb(var(--color-on-background));
+  font-weight: var(--font-weight-medium);
+}
+
+.socialProofCard span {
+  color: rgb(var(--color-white));
+  background-color: rgb(var(--color-light-green));
+  border-radius: var(--border-radius-btn);
+  padding: 1.2rem 3.3rem;
+  width: 100%;
+  text-align: center;
+}
