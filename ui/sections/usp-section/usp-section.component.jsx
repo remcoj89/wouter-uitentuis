@@ -18,17 +18,15 @@ const UspSection = ({bennefits}) => {
       <div className={`wrapper ${Styles.uspSection}`}>
         {bennefits.map((benefit, i) => {
           return (
-            <Link href='/' key={i}>
+            <div key={i}>
               <CardComponent cardStyle={"uspCard"}  >
                 <IconComponent iconStyle="cardIcon">
                   <Image src={benefit.iconUrl} alt={`icoon ${benefit.title}`} height={50} width={50} />
                 </IconComponent>
                 <h3>{benefit.title}</h3>
                 <p>{benefit.description}</p>
-
-                {/* <Button buttonStyle="btnCard">Lees Meer <IconComponent iconStyle="btnIcon"><ArrowRightIcon/></IconComponent></Button> */}
               </CardComponent>
-            </Link>
+            </div>
           )
         })}
       </div>

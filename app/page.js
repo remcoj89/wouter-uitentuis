@@ -1,14 +1,11 @@
 // Styles
 import styles from "./page.module.css";
-// Hooks
-import Image from 'next/image'
+
 
 // Components
 import HeroSection from "@/ui/sections/hero-section/hero-section.component";
 import UspSection from "@/ui/sections/usp-section/usp-section.component";
 import CtaSection from "@/ui/sections/cta-section/cta-section.component";
-import SocialProof from "@/ui/sections/social-proof-section/social-proof.component";
-import CardComponent from "@/ui/components/card/card.component";
 import ProjectSection from '@/ui/sections/project-section/project-section.component';
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component';
 import Gallery from '@/ui/sections/gallery-section/gallery.component';
@@ -130,7 +127,6 @@ export default function Home() {
       <main className={styles.main}>
         <UspSection bennefits={pageContent.uspSection} />
         <CtaSection ctaContent={pageContent.ctaSection} />
-
         <SocialProofLogoSection >
           <HorizontalLogoSlider logos={pageContent.socialProofSection} />
         </SocialProofLogoSection>

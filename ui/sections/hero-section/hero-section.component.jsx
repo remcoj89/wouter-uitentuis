@@ -20,7 +20,7 @@ const HeroSection = ({sectionContent}) => {
   return (
     <section id="hero-section"
       className={Styles.heroSection}
-      style={{background: `url(${backGroundImage})`, backgroundSize: "cover"}}
+      style={{background: `url(${backGroundImage})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}
       >
       <div className={`wrapper ${Styles.heroWrapper} `}>
 

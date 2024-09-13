@@ -1,8 +1,8 @@
 .btn {
-  display: flex;
+  align-items: center;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  display: flex;
   gap: var(--gap-card)
 }
 
@@ -21,13 +21,13 @@
   cursor: pointer;
   font-size: var(--font-size-large);
   padding-block: var(--padding-btn);
-  padding-inline: var(--padding-btn-inline-start) var(--padding-btn);
+  padding-inline: var(--padding-btn);
 }
 
 .btnPrimary:hover, .btnDarkGreen:hover  {
-  opacity: 0.8;
   border: 2px solid rgb(var(--color-on-background));
   border-style: inset;
+  opacity: 0.8;
 }
 
 .btnCard {

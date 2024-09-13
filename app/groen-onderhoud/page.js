@@ -1,14 +1,13 @@
 // Styles
 import Styles from "../page.module.css";
-// Hooks
-import Image from 'next/image'
+
 
 // Components
 import HeroSection from "@/ui/sections/hero-section/hero-section.component";
 import UspSection from "@/ui/sections/usp-section/usp-section.component";
 import CtaSection from "@/ui/sections/cta-section/cta-section.component";
 import SocialProof from "@/ui/sections/social-proof-section/social-proof.component";
-import CardComponent from "@/ui/components/card/card.component";
+import HorizontalLogoSlider from "@/ui/components/horizontal-logo-slider/horizontal-logo-slider.component";
 import ProjectSection from '@/ui/sections/project-section/project-section.component';
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component';
 import Gallery from '@/ui/sections/gallery-section/gallery.component';
@@ -21,34 +20,34 @@ export default function BigGreen() {
   const pageContent = {
     heroSection:
         {
-        heroTitle: "Milieuvriendelijk Onderhoud voor Gezonde Velden",
-        subTitle: "Behoud van Gezonde Grasvelden bij Intensief Gebruik",
-        backGroundImage: "/assets/images/field-management/green-grass-white-clouds.png",
+        heroTitle: "Breng Leven In Je Groene Omgeving",
+        subTitle: "Deskundige Zorg Voor Een Groene En Gezonde Omgeving",
+        backGroundImage: "/assets/images/big-green/hero-big-green.png",
         image1: {imageUrl: "/assets/images/field-management/hero_image-1.png", altText: "image 1"},
         image2: {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"},
         image3: {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
       },
       uspSection: [
         {
-          title: "Schadedetectie en herstel",
-          description: "Inspecteren en repareren van beschadigingen houdt het veld in optimale conditie. Snelle interventie voorkomt verdere schade.",
-          iconUrl: "/assets/images/field-management/icon-grass.svg"
+          title: "Kostenbesparend beheer",
+          description: "Door efficiënte planning en uitvoering van onderhoudstaken worden lange termijn kosten verlaagd en grote herstelwerkzaamheden voorkomen.",
+          iconUrl: "/assets/images/big-green/icon-money.svg"
         },
         {
-          title: "Beregening",
-          description: "Een goed beheerd irrigatiesysteem zorgt ervoor dat het gras voldoende water krijgt, vooral tijdens droge periodes. Dit voorkomt uitdroging en behoudt de vitaliteit van het veld.",
-          iconUrl: "/assets/images/field-management/icon-water.svg"
+          title: "Verbeterde veiligheid",
+          description: "Regelmatig onderhoud voorkomt gevaarlijke situaties, zoals losliggende tegels, overgroeiende struiken en slecht zichtbare verkeersborden.",
+          iconUrl: "/assets/images/big-green/icon-safety.svg"
         },
         {
-          title: "Bemesten",
-          description: "Het toedienen van meststoffen voorziet het gras van essentiële voedingsstoffen. Dit versterkt de wortels en houdt het gras gezond en groen.",
-          iconUrl: "/assets/images/field-management/icon-seed.svg"
+          title: "Duurzaam groenbeheer",
+          description: "Gebruik van milieuvriendelijke technieken en inheemse planten draagt bij aan een duurzame buitenruimte en bevordert biodiversiteit.",
+          iconUrl: "/assets/images/big-green/icon-sustainability.svg"
         },
       ],
       ctaSection: {
-        ctaTitle: "Samen voor Perfecte Speelvelden!",
-        ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
-        imageUrl: "/assets/images/field-management/hero_image-2.png",
+        ctaTitle: "We denken graag me u mee",
+        ctaSubtitle: "Ontvang professioneel advies voor uw groenbeheer. Neem vandaag nog contact op voor een gratis gesprek.",
+        imageUrl: "/assets/images/big-green/darwin-park.jpg",
         altText: "Foto van een vers gemaaid voetbal veld"
       },
       socialProofSection: [
@@ -114,9 +113,9 @@ export default function BigGreen() {
         },
       ],
       secondCta: {
-        ctaTitle: "Uw Velden, Onze Zorg!",
-        ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
-        imageUrl: "/assets/images/field-management/hero_image-1.png",
+        ctaTitle: "Duurzaam en effectief groenbeheer voor elke omgeving.",
+        ctaSubtitle: "Kunnen wij u helpen met een duurzame en groene oplossing? Druk op de onderstaande knop om naar de contactpagina te gaan. ",
+        imageUrl: "/assets/images/big-green/veldpark-luchtfoto.jpg",
         altText: "Foto van een vers gemaaid voetbal veld"
       },
       contactSection: {
@@ -132,13 +131,7 @@ export default function BigGreen() {
         <UspSection bennefits={pageContent.uspSection} />
         <CtaSection ctaContent={pageContent.ctaSection} />
         <SocialProof >
-          {pageContent.socialProofSection.map((logo, i) => {
-            return (
-              <CardComponent cardStyle='logoCard' key={i}>
-              <Image src={logo.imageUrl} alt={logo.altText} height={200} width={200}/>
-            </CardComponent>
-            )
-          })}
+          <HorizontalLogoSlider logos={pageContent.socialProofSection} />
         </SocialProof>
         <ProjectSection projectContent={pageContent.ProjectSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>

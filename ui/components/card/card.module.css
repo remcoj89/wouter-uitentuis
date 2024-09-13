@@ -9,6 +9,7 @@
   align-items: center;
   text-align: center;
   gap: var(--gap-card);
+  height: 100%;
 }
 
 .uspCard:hover {
@@ -37,7 +38,6 @@
     flex-direction: row;
   }
 }
-
 
 
 .ctaCardTextCenter {

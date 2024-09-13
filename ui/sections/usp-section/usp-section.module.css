@@ -5,8 +5,13 @@
   position: relative;
 }
 
+.uspCard {
+
+}
+
 @media (min-width: 650px) {
   .uspSection {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
