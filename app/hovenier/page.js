@@ -107,6 +107,7 @@ const pageContent = {
 export default function Hovenier() {
   const [yearsActive, setYearsActive] = useState(null)
 
+
   useState(() => {
     const currentYear = new Date().getFullYear();
     const startYear = pageContent.socialProofSection.startYear
@@ -124,7 +125,7 @@ export default function Hovenier() {
         <CtaSection ctaContent={pageContent.ctaSection} />
         <SocialProof >
           <CardComponent cardStyle='socialProofCard' >
-              <h3>{yearsActive}</h3>
+              <h3 className='counter' >{yearsActive}</h3>
               <span>Jaar actief als hovenier </span>
 
           </CardComponent>

@@ -15,10 +15,7 @@ const CtaSectionWithBgImage = ({ctaContent}) => {
   const {ctaTitle, ctaSubtitle, imageUrl} = ctaContent
 
   return (
-    <section id="cta-section-with-bg-img" className={
-
-Styles.ctaSection
-}>
+    <section id="cta-section-with-bg-img" className={Styles.ctaSection}>
       <div className="wrapper">
         <CardComponent cardStyle='ctaCardTextCenter' backgroundImgUrl={imageUrl}>
           <div className={Styles.ctaCardContent}>

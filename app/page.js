@@ -13,6 +13,8 @@ import ProjectSection from '@/ui/sections/project-section/project-section.compon
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component';
 import Gallery from '@/ui/sections/gallery-section/gallery.component';
 import ContactSection from '@/ui/sections/contact-section/contact-section.component';
+import HorizontalLogoSlider from "@/ui/components/horizontal-logo-slider/horizontal-logo-slider.component";
+import SocialProofLogoSection from "@/ui/sections/social-proof-logo-section/social-proof-logo-section.component";
 
 
 
@@ -128,15 +130,10 @@ export default function Home() {
       <main className={styles.main}>
         <UspSection bennefits={pageContent.uspSection} />
         <CtaSection ctaContent={pageContent.ctaSection} />
-        <SocialProof >
-          {pageContent.socialProofSection.map((logo, i) => {
-            return (
-              <CardComponent cardStyle='logoCard' key={i}>
-              <Image src={logo.imageUrl} alt={logo.altText} height={200} width={200}/>
-            </CardComponent>
-            )
-          })}
-        </SocialProof>
+
+        <SocialProofLogoSection >
+          <HorizontalLogoSlider logos={pageContent.socialProofSection} />
+        </SocialProofLogoSection>
         <ProjectSection projectContent={pageContent.ProjectSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />

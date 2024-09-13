@@ -34,12 +34,19 @@
 .galleryImage {
   box-shadow: var(--box-shadow-gallery);
   display: block;
-  filter:grayscale(85%);
   height: 100%;
   object-fit: cover;
   object-position: center;
   width: 100%;
 }
+
+@media(min-width: 960px){
+  .galleryImage {
+    filter:grayscale(85%);
+  }
+}
+
+
 
 .galleryImage:hover {
   border: 2px solid rgb(var(--color-white));

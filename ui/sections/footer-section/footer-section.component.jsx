@@ -13,7 +13,7 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
 return (
-  <section id="section-footer">
+  <section id={Styles.sectionFooter}>
     <footer className={`wrapper ${Styles.footerWrapper}`}>
       <div className={Styles.footerContactWrapper}>
       <Link href="mailto: info@wouteruitentuis.nl" target='_blank'>
@@ -21,7 +21,7 @@ return (
        </Link>
       <Link href="https://maps.app.goo.gl/fwxp3YxCLdR9xtrL6" target='_blank' >
         <IconComponent iconStyle='greenIcon' ><LocationIcon color="#ffff"/></IconComponent>
-        Westeinde 29, 1636VB, Schermerhorn, KVK: 12345678
+        Westeinde 29, 1636VB, Schermerhorn
         </Link>
       <Link href="tel: 0630272667" target='_blank'>
         <IconComponent iconStyle='greenIcon'><PhoneIcon color="#ffff"/> </IconComponent>06-30272667

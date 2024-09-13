@@ -1,31 +1,45 @@
 .ctaSection {
   color: rgb(var(--color-white));
-  height: 47.2rem;
+  min-height: 46rem;
 }
 
 .ctaText {
   display: flex;
   flex-direction: column;
   gap: var(--gap-card);
-  padding-left: 15%;
-  width: 60%;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 3.5rem;
 }
 
 .ctaTitle {
-  font-size: var(--font-size-title-large);
+  font-size: var(--font-size-title);
   font-weight: var(--font-weight-medium);
   text-wrap:pretty;
 }
 .ctaSubtitle {
-  font-size: var(--font-size-body-large);
+  font-size: var(--font-size-body);
   text-wrap:pretty;
 }
 
 .ctaImage {
-  border-radius: var(--border-radius-card);
-  height: 37.2rem;
-  left: -10%;
-  position: absolute;
-  top: -30%;
-  width: 37.2rem;
+  display: none;
+}
+
+
+@media(min-width: 990px) {
+
+  .ctaText  {
+    padding-left: 20%;
+    max-width: 60%;
+  }
+  .ctaImage {
+    display: block;
+    border-radius: var(--border-radius-card);
+    height: 37.2rem;
+    left: -10%;
+    position: absolute;
+    top: -30%;
+    width: 25vw;
+  }
 }

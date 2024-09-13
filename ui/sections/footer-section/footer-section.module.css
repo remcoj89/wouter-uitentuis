@@ -1,3 +1,10 @@
+
+@media(max-width: 879px) {
+  #sectionFooter {
+    margin-top: 0;
+  }
+}
+
 .footerWrapper {
   text-align: center;
   padding-block: var(--padding-card)
@@ -7,7 +14,9 @@
   border-bottom: 1px solid rgb(var(--color-green));
   border-top: 1px solid rgb(var(--color-green));
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
   padding: 2rem;
   margin-bottom: 3rem;
   width: 100%;
@@ -15,14 +24,32 @@
 
 .footerContactWrapper  > a{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.8rem;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
+@media(min-width: 500px) {
+  .footerContactWrapper  > a{
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+  }
+}
 
-.footerContactWrapper > a:nth-child(2) {
-  border-left: 1px solid rgb(var(--color-green));
-  border-right: 1px solid rgb(var(--color-green));
-  padding-inline: 3rem;
+@media (min-width: 998px) {
+  .footerContactWrapper {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .footerContactWrapper >  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    width: 100%;
+  }
+
 }

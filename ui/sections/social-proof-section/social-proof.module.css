@@ -9,7 +9,8 @@
 }
 
 .socialProofWrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(120px, 1fr));
   justify-content: center;
   gap: var(--gap-card);
   margin-top: 7.5rem;

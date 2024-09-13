@@ -1,10 +1,12 @@
 .imageModal{
   align-content: center;
-  background-color: rgba(var(--color-primary), 0.5);
+  background-color: rgba(var(--color-primary), 1);
   inset: 0;
+  width: 100%;
   position: fixed;
   z-index: 99;
 }
+
 .imageModal h1{
   color: white;
   font-size: 7rem;
@@ -12,10 +14,10 @@
 
 .modalWrapper {
   align-content: center;
-  height: 60vh;
+  height: 100%;
   margin-inline: auto;
   position: relative;
-  width: var(--wrapper-max-width);
+  max-width: var(--wrapper-max-width);
 }
 
 .closeButton {
@@ -31,8 +33,9 @@
   border-radius: var(--border-radius-card);
   height: 100%;
   margin-inline: auto;
+  margin-block-start:5rem;
   object-fit: cover;
-  width: 70%;
+  width: 100%;
 }
 
 .modalBtn {
@@ -45,8 +48,33 @@
 }
 
 #closeBtn {
-  right: 15rem;
-  top: 15rem;
+  right:2rem;
+  top: 10rem;
+  z-index: 999;
+}
+
+#btnLeft,
+#btnRight {
+  display: none;
+}
+
+@media(min-width: 960px) {
+  .imageModal{
+    background-color: rgba(var(--color-primary), 0.75);
+  }
+
+  .modalImage {
+    margin-block-start: none;
+
+  }
+  #btnLeft,
+  #btnRight {
+    display: block;
+  }
+  #closeBtn {
+    right: 15rem;
+  }
+
 }
 
 #btnLeft {

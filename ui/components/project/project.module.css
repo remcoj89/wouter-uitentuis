@@ -1,8 +1,5 @@
 .projectWrapper {
-  align-items: flex-end;
-  display: flex;
-  gap: var(--gap-card);
-  height: 60rem;
+
   position: relative;
 }
 
@@ -11,16 +8,37 @@
 }
 
 .projectImage {
-  border-radius: var(--border-radius-large) 0px 0px 0px;
-  height: 100%;
-  width: 50%;
+  height: 40rem;
+  width: 100%;
 }
 
 .projectArticle {
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin-top: 5rem;
   gap: var(--gap-card);
-  height: auto;
-  width: 50%;
+}
+
+
+@media (min-width: 783px){
+
+  .projectWrapper {
+    align-items: flex-end;
+    display: flex;
+    gap: var(--gap-card);
+    height: 60rem;
+  }
+
+  .projectImage {
+    border-radius: var(--border-radius-large) 0px 0px 0px;
+    height: 100%;
+    width: 50%;
+  }
+
+  .projectArticle {
+    justify-content: flex-end;
+    text-align: left;
+    width: 50%;
+  }
 }

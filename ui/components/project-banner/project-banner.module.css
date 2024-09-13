@@ -1,32 +1,59 @@
 .projectBanner {
   background-color: rgba(var(--color-backround-banner), 1);
-  font-size: var(--font-size-body-large);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-bold);
   padding-block: 2.5rem;
-  padding-inline: 7rem;
+  padding-inline: 1rem;
   position: absolute;
   text-wrap: pretty;
-  top: 3rem;
+  top: -3rem;
   z-index: 2;
-}
-.projectBanner > h4 {
-  max-width: 80%;
 }
 
 .projectBannerLeft{
   border-left: 2px solid rgb(var(--color-green));
-  border-radius: 0 0 100px 0;
   left: 0;
-  right: 35%;
-  text-align: right;
+  right: 0;
 }
 .projectBannerLeft > h4 {
   float: right;
 }
 
 .projectBannerRight {
-  border-radius: 0 0 0 100px;
   border-right: 2px solid rgb(var(--color-green));
-  left: 35%;
+  left: 0;
   right: 0;
+}
+
+@media (min-width: 464px) {
+  .projectBanner {
+    top: 2rem;
+    padding-block: 2.5rem;
+    padding-inline: 4rem;
+  }
+}
+
+@media (min-width: 783px) {
+
+  .projectBanner {
+    font-size: var(--font-size-body-large);
+    top: 3rem;
+    padding-block: 2.5rem;
+    padding-inline: 7rem;
+  }
+
+  .projectBannerLeft{
+    border-radius: 0 0 100px 0;
+    right: 35%;
+    text-align: right;
+  }
+  .projectBannerLeft > h4 {
+    float: right;
+  }
+
+  .projectBannerRight {
+    border-radius: 0 0 0 100px;
+    left: 35%;
+  }
+
 }
