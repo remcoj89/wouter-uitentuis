@@ -23,9 +23,9 @@ const pageContent = {
       heroTitle: "Creëer Uw Perfecte Buitenleven",
       subTitle: "Maak Uw Tuin Klaar voor Elk Seizoen",
       backGroundImage: "/assets/images/gardener/hovenier-hero-image.jpg",
-      image1: {imageUrl: "/assets/images/gardener/gras-veld.jpg", altText: "image 1"},
-      image2: {imageUrl: "/assets/images/gardener/achter-tuin.jpg", altText: "image 1"},
-      image3: {imageUrl: "/assets/images/gardener/terras.jpg", altText: "image 1"}
+      image1: {imageUrl: "/assets/images/gardener/hovenier-hero-1.jpg", altText: "image 1"},
+      image2: {imageUrl: "/assets/images/gardener/hovenier-hero-4.jpg", altText: "image 1"},
+      image3: {imageUrl: "/assets/images/gardener/hovenier-hero-3.jpg", altText: "image 1"}
     },
     uspSection: [
       {

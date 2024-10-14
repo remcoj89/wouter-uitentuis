@@ -23,7 +23,7 @@ export default function Home() {
         heroTitle: "Milieuvriendelijk Onderhoud voor Gezonde Velden",
         subTitle: "Behoud van Gezonde Grasvelden bij Intensief Gebruik",
         backGroundImage: "/assets/images/field-management/green-grass-white-clouds.png",
-        image1: {imageUrl: "/assets/images/field-management/hero_image-1.png", altText: "image 1"},
+        image1: {imageUrl: "/assets/images/field-management/field-management-hero-1.jpg", altText: "image 1"},
         image2: {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"},
         image3: {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
       },
@@ -47,29 +47,78 @@ export default function Home() {
       ctaSection: {
         ctaTitle: "Samen voor Perfecte Speelvelden!",
         ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
-        imageUrl: "/assets/images/field-management/hero_image-2.png",
+        imageUrl: "/assets/images/field-management/field-management-hero-1.jpg",
         altText: "Foto van een vers gemaaid voetbal veld"
       },
       socialProofSection: [
         {
-          imageUrl: "/assets/images/field-management/logos/logo-afc-34.png",
-          altText: "logo Afc 34"
+          imageUrl: "/assets/images/field-management/club-logos/logo-ado-den-haag.png",
+          altText: "logo Ado Den Haag"
         },
         {
-          imageUrl: "/assets/images/field-management/logos/logo-az.png",
+          imageUrl: "/assets/images/field-management/club-logos/logo-aek-athene.png",
+          altText: "logo AEK Athene"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-alkmaarsche-boys.png",
+          altText: "logo Alkmaarsche Boys"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-az.png",
           altText: "logo Az Alkmaar"
         },
         {
-          imageUrl: "/assets/images/field-management/logos/logo-goahead-eagels.png",
-          altText: "logo Goahead Eagles"
+          imageUrl: "/assets/images/field-management/club-logos/logo-bologna.png",
+          altText: "logo Bologna"
         },
         {
-          imageUrl:  "/assets/images/field-management/logos/logo-kolping-boys.png",
-          altText: "Kolping Boys"
+          imageUrl: "/assets/images/field-management/club-logos/logo-engelse-bond.png",
+          altText: "logo Engelse nationale ploeg"
         },
-        { imageUrl:  "/assets/images/field-management/logos/logo-sporting-s.png",
-          altText: "Sporting S"
-        }
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-fc-groningen.png",
+          altText: "logo Fc Groningen"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-fc-utrecht.png",
+          altText: "logo Fc Utrecht"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-hercules-zaandam.png",
+          altText: "logo Hercules Zaandam"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-kaa-gent.png",
+          altText: "logo Kaa Gent"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-knvb.png",
+          altText: "logo KNVB"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-lamia-fc.png",
+          altText: "logo Lamia FC"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-shaktar-donetsk.png",
+          altText: "logo Shaktar Donetks"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-sporting-s.png",
+          altText: "logo sporting-s"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-voetbal-bond-peru.png",
+          altText: "logo Nationaal Voetbalteam Peru"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-vv-bergen.png",
+          altText: "logo VV Bergen"
+        },
+        {
+          imageUrl: "/assets/images/field-management/club-logos/logo-zcfc.png",
+          altText: "logo ZcFc"
+        },
       ],
       ProjectSection: [
         {

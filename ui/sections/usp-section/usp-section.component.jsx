@@ -23,8 +23,10 @@ const UspSection = ({bennefits}) => {
                 <IconComponent iconStyle="cardIcon">
                   <Image src={benefit.iconUrl} alt={`icoon ${benefit.title}`} height={50} width={50} />
                 </IconComponent>
-                <h3>{benefit.title}</h3>
-                <p>{benefit.description}</p>
+                <div className={Styles.uspContent}>
+                  <h3>{benefit.title}</h3>
+                  <p>{benefit.description}</p>
+                </div>
               </CardComponent>
             </div>
           )

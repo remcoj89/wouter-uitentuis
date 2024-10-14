@@ -5,8 +5,9 @@
   position: relative;
 }
 
-.uspCard {
-
+.uspContent {
+  display: grid;
+  justify-content: space-between;
 }
 
 @media (min-width: 650px) {
@@ -14,4 +15,3 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
