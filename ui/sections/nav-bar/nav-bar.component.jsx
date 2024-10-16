@@ -27,35 +27,45 @@ const NavBar = () => {
           <input type="radio" name="slide" className={Styles.navButton} id={Styles.menuButton}  />
 
           <ul className={Styles.navLinks}>
-            <label className={`${Styles.navButton} ${Styles.cancelButton}`} htmlFor={Styles.cancelButton}>
-              <CloseIcon color="#ffff" />
-            </label>
 
-            <Link
-              href='/'
-              className={`${Styles.navLink} ${pathname === '/' ? `${Styles.active}` : ""}`}
-              onClick={handleNavLinkClick} >
-                Field management
-            </Link>
+            <li>
+              <label className={`${Styles.navButton} ${Styles.cancelButton}`} htmlFor={Styles.cancelButton}>
+                <CloseIcon color="#ffff" />
+              </label>
+            </li>
 
-            <Link
-              href='/hovenier'
-              className={`${Styles.navLink} ${pathname === '/hovenier' ? `${Styles.active}` : ""}`}
-              onClick={handleNavLinkClick}>
-                Hovenier
-            </Link>
+            <li>
+              <Link
+                href='/'
+                className={`${Styles.navLink} ${pathname === '/' ? `${Styles.active}` : ""}`}
+                onClick={handleNavLinkClick} >
+                  Field management
+              </Link>
+            </li>
 
-            <Link
-              href='/groen-onderhoud'
-              className={`${Styles.navLink} ${pathname === '/groen-onderhoud' ? `${Styles.active}` : ""}`}
-              onClick={handleNavLinkClick}>
-                Groen Onderhoud
-            </Link>
+            <li>
+              <Link
+                href='/hovenier'
+                className={`${Styles.navLink} ${pathname === '/hovenier' ? `${Styles.active}` : ""}`}
+                onClick={handleNavLinkClick}>
+                  Hovenier
+               </Link>
+            </li>
 
-            <div className={Styles.contactWrapper}>
+            <li>
+              <Link
+                href='/groen-onderhoud'
+                className={`${Styles.navLink} ${pathname === '/groen-onderhoud' ? `${Styles.active}` : ""}`}
+                onClick={handleNavLinkClick}>
+                  Groen Onderhoud
+              </Link>
+            </li>
+
+
+            <li className={Styles.contactWrapper}>
               <Link href="mailto: info@wouteruitentuis.nl" id={Styles.emailLink} className={Styles.contactWrapperIcon}><EmailIcon /> info@wouteruitentuis.nl</Link>
               <Link href="tel: 0630272667" id={Styles.phoneLink} className={Styles.contactWrapperIcon}><PhoneIcon /> 06-30272667</Link>
-            </div>
+            </li>
           </ul>
 
           <label className={`${Styles.navButton} ${Styles.menuButton}`} htmlFor={Styles.menuButton}>
