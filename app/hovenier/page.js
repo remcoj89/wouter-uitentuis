@@ -127,7 +127,6 @@ export default function Hovenier() {
           <CardComponent cardStyle='socialProofCard' >
               <h3 className='counter' >{yearsActive}</h3>
               <span>Jaar actief als hovenier </span>
-
           </CardComponent>
           <CardComponent cardStyle='socialProofCard' >
             <h3>&gt; 132</h3>
