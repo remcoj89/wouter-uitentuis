@@ -29,7 +29,7 @@
   width: max-content;
   animation:
     scroll
-    var(--_animation-duration, 60s)
+    var(--_animation-duration, 120s)
     var(--_animation-drirection, forwards)
     linear
     infinite;
@@ -45,15 +45,15 @@
 }
 .scroller[data-speed="fast"] {
 
---_animation-duration: 30s;
+--_animation-duration: 60s;
 }
 .scroller[data-speed="medium"] {
 
---_animation-duration: 60s;
+--_animation-duration: 90s;
 }
 .scroller[data-speed="slow"] {
 
---_animation-duration: 90s;
+--_animation-duration: 120s;
 }
 
 .scroller__inner img {

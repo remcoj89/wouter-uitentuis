@@ -1,14 +1,12 @@
+'use client'
 // Styling
 import Styles from './usp-section.module.css';
 // Hooks
 
-import Link from 'next/link'
 import Image from 'next/image';
 
 // Components
 import CardComponent from '@/ui/components/card/card.component';
-import Button from '@/ui/components/button/button.component';
-import { ArrowRightIcon } from '@/assets/icons';
 import IconComponent from '@/ui/components/icon/icon.component';
 
 const UspSection = ({bennefits}) => {

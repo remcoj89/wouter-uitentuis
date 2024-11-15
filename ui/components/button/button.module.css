@@ -13,8 +13,15 @@
 .btnDarkGreen {
   background-color: rgb(var(--color-dark-green));
 }
+.btnGreen {
+  background-color: rgb(var(--color-green));
 
-.btnPrimary, .btnDarkGreen, .btnHero {
+  &:hover {
+    background-color: rgba(var(--color-green), 0.75);
+  }
+}
+
+.btnPrimary, .btnDarkGreen, .btnHero, .btnGreen {
   border: none;
   border-radius: var(--border-radius-btn);
   color:  rgb(var(--color-white));
@@ -35,7 +42,7 @@
 
 
 .btnHero {
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-green));
   display: inline-block;
   width: 100%;
 

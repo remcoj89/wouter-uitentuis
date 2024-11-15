@@ -38,7 +38,7 @@ const HorizontalLogoSlider = ({logos}) => {
 
   return (
 
-    <div className={Styles.scroller} data-direction="left" data-speed="medium">
+    <div className={Styles.scroller} data-direction="left" data-speed="slow">
       <div className={Styles.scroller__inner} >
         {logos.map((logo, i) => {
           return <Image src={logo.imageUrl} width={300} height={100} alt={logo.altText} className={Styles.scrollerContent} key={i}/>

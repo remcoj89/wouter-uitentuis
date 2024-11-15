@@ -46,4 +46,12 @@
     gap: 3rem;
     grid-column: 1 / 2;
   }
+
+  .link {
+    color: rgba(var(--color-green), 0.75);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

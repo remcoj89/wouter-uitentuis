@@ -22,8 +22,8 @@
   --color-primary: var(--color-dark-green);
   --color-on-primary: var(--color-white);
 
-  --color-background-gradient-start: rgba(255, 255, 255, 1);
-  --color-background-gradient-end: rgba(254, 253, 244, 1);
+  --color-background-gradient-start: rgba(var(--color-dark-green), 1);
+  --color-background-gradient-end: rgba(var(--color-very-dark-green), 1);
 
   --font-size-body: 1.6rem;
   --font-size-body-large: 2.4rem;
@@ -134,7 +134,7 @@ section:not(:first-of-type) {
 
 section {
   position: relative;
-  
+
 }
 
 

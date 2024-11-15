@@ -6,6 +6,7 @@
 .socialProofTitle {
   text-align: center;
   font-size: var(--font-size-hero-medium);
+  max-width: 65ch;
 }
 
 .socialProofWrapper {

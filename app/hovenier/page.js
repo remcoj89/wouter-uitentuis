@@ -1,46 +1,41 @@
-'use client'
 // Styles
 import Styles from '../page.module.css'
 
-// Hooks
-import {useState, useEffect} from 'react';
+
 
 // Components
 import UspSection from '@/ui/sections/usp-section/usp-section.component'
 import HeroSection from "@/ui/sections/hero-section/hero-section.component"
 import SocialProof from '@/ui/sections/social-proof-section/social-proof.component'
-import ProjectSection from '@/ui/sections/project-section/project-section.component'
+import ArticleSection from "@/ui/sections/article-section/article-section";
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component'
 import Gallery from '@/ui/sections/gallery-section/gallery.component'
 import ContactSection from '@/ui/sections/contact-section/contact-section.component'
 import CtaSection from '@/ui/sections/cta-section/cta-section.component'
 import CardComponent from '@/ui/components/card/card.component'
-import { ArrowRightIcon } from '@/assets/icons';
+import FeaturedContentSection from "@/ui/sections/featured-content-section/featured-content";
 
 const pageContent = {
   heroSection:
       {
-      heroTitle: "Creëer Uw Perfecte Buitenleven",
-      subTitle: "Maak Uw Tuin Klaar voor Elk Seizoen",
-      backGroundImage: "/assets/images/gardener/hovenier-hero-image.jpg",
-      image1: {imageUrl: "/assets/images/gardener/hovenier-hero-1.jpg", altText: "image 1"},
-      image2: {imageUrl: "/assets/images/gardener/hovenier-hero-4.jpg", altText: "image 1"},
-      image3: {imageUrl: "/assets/images/gardener/hovenier-hero-3.jpg", altText: "image 1"}
+      heroTitle: "Jouw hovenier in Noord-Holland",
+      subTitle: "Als hovenier helpen we particulieren en de kleinere ondernemer in regio Noord-Holland met tuinaanleg en -onderhoud. Van snoeien en bestraten tot seizoensgebonden onderhoud en houtwerk.",
+      backGroundImage: "/assets/images/gardener/hovenier-hero-1.jpg",
     },
     uspSection: [
       {
-        title: "Snoeien en trimmen",
-        description: "Behoudt de vorm en gezondheid van planten en struiken, waardoor de esthetiek wordt verbeterd. Dit bevordert ook de groei en voorkomt overwoekering.",
+        title: "Tuinaanleg & renovatie",
+        description: "We verzorgen de volledige aanleg of renovatie van tuinen, inclusief bestrating en aanplanting, met als doel een aantrekkelijke en gebruiksvriendelijk tuin.",
         iconUrl: "/assets/images/gardener/garden-icon-flower.svg"
       },
       {
-        title: "Seizoensgebonden onderhoud",
-        description: "Voert onderhoud uit passend bij elk seizoen, wat de tuin voorbereidt op veranderende weersomstandigheden. Dit zorgt voor een goed onderhouden tuin gedurende het hele jaar.",
+        title: "Tuinonderhoud",
+        description: "Passend onderhoud voor ieder seizoen. Dankzij goed onderhoud op het juiste moment geniet je het hele jaar van een tuin die er mooi bij staat.",
         iconUrl: "/assets/images/gardener/garden-icon-shovel.svg"
       },
       {
-        title: "Tuinrenovatie",
-        description: "Vernieuw verouderde of beschadigde tuinen, wat de esthetische waarde en functionaliteit verhoogt. Dit maakt de tuin weer aantrekkelijk en gebruiksvriendelijk.",
+        title: "Gazon",
+        description: "Wij zijn specialist op het gebied van gazonaanleg en onderhoud. Door middel van o.a. bemesten, beluchten en verticuteren zorgen we voor een gezond gazon jaarrond.",
         iconUrl: "/assets/images/gardener/garden-icon-garden-cart.svg"
       },
     ],
@@ -51,51 +46,43 @@ const pageContent = {
       altText: "Foto van een vers gemaaid voetbal veld"
     },
     socialProofSection: {
+      title: "W. Uitentuis – Hovenier Noord-Holland",
       startYear: 2013,
       numberOfGardens: 132,
       grasPlanted: 6600,
     },
-    ProjectSection: [
-      {
-        projectTitle: "'Heerlijke rustieke tuin'",
-        projectDescription: {
-          paragraph1: "In het eerste jaar dat de trainingsvelden werden opgeleverd, nu vijf jaar geleden, kon nog niemand bevroeden hoe slecht het gras zou groeien. Er ontstonden veel kale grasplekken, vooral bij de overlap van de sproeiers.",
-          paragraph2: "Na het eerste seizoen is met een fieldtopmaker 2 cm van de graslaag af gefreesd, opnieuw ingezaaid en bemest. Door de warme en droge zomer in het jaar erop, verbrandde het opkomende gras direct.",
-          paragraph3: "We hebben ons toen afgevraagd wat daar de oorzaak van was en zijn gaan zoeken. We kwamen erachter dat het met het zoute gietwater had te maken. Met deze kennis zijn we de velden veel meer gaan besproeien om het zout weg te duwen. Soms wel 40 tot 50 ml/m2 per nacht. Normaal geven we afhankelijk van de tijd in het jaar tussen de 10 en 15 ml/m2.",
-        },
-        projectImage: {
-          imageUrl: "/assets/images/gardener/achtertuin-met-vijver.jpg",
-          altText: "Achter tuin met vijver"
-        }
+    articleSection:
+    {
+      articleQuote: "Met elk budget is een mooie tuin te realiseren",
+      articleDescription: {
+        paragraph1: "Achterstallig onderhoud aan houtwerk, een terras vol scheve tegels of een herfsttuin met weinig kleur. Ons team gaat er graag mee aan de slag. We helpen je met het realiseren van een prachtig groen gazon, een kleurrijke border, een strak terras of een gloednieuwe overkapping.",
+        title1:"Elk seizoen een fijne tuin",
+        paragraph2: "Door een goede inrichting en beplanting van de tuin, is deze geschikt voor ieder seizoen. We denken graag mee over een beplantingsplan zodat jouw tuin zowel in de lente en zomer als in de koude en natte maanden een fijne plek is. Zo zorgen we voor planten die de winter kleur geven en beplanting die het vele water van het herfstseizoen opneemt en vasthoudt. Zo is jouw tuin direct toekomstbestendig.",
+        title2:"Met elk budget een mooie tuin",
+        paragraph3: "Ook met een klein budget kunnen we een prachtige buitenomgeving realiseren. Dat weten we uit ervaring. De uitdaging die dit met zich meebrengt maak de klus alleen maar mooier. Samen kijken we wat er mogelijk is en halen we het maximale uit jouw tuin.",
+        title3:"Persoonlijke benadering",
+        paragraph4: "‘Afspraak is afspraak’ is het motto binnen ons kleine team. We geloven in persoonlijk contact en zorgen dat je zoveel mogelijk dezelfde gezichten ziet. Zo leren we jou als klant goed kennen en zijn we in staat jouw ideale tuin te creëren."
       },
-      {
-        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        projectDescription: {
-          paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-        },
-        projectImage: {
-          imageUrl: "/assets/images/field-management/hero_image-3.png",
-          altText: "project Image"
-        }
+      articleImage1: {
+        imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
+        altText: "Belijnen met een lijn robot"
       },
-      {
-        projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        projectDescription: {
-          paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-        },
-        projectImage: {
-          imageUrl: "/assets/images/field-management/hero_image-3.png",
-          altText: "project Image"
-        }
+        articleImage2: {
+        imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
+        altText: "Belijnen met een lijn robot"
       },
-    ],
+      link: {
+        url: "/groen-onderhoud",
+        linkText: "Naast particulier en kleinzakelijk tuinonderhoud verzorgen we groenonderhoud voor gemeentes, overheidsinstellingen en bedrijven."
+      }
+    },
+    featuredContentSection: {
+      title: "Houtwerk op maat",
+      paragraph: "Voor onze klanten creëren we diverse houtwerkconstructies. In eigen beheer bouwen we onder meer tuinhuizen, veranda’s, pergola’s en overkappingen. Dit doen we volledig op maat, zodat de houtwerkconstructie perfect in jouw buitenomgeving past."
+    },
     secondCta: {
-      ctaTitle: "Uw Tuin, Onze Zorg!",
-      ctaSubtitle: "Wilt u weten wat wij voor uw tuin kunnen betekenen? Laten we samenwerken voor een prachtig stukje groen!",
+      ctaTitle: "Heerlijk buitenleven in elk seizoen",
+      ctaSubtitle: "Toe aan vernieuwing in de tuin? Laten we samen kijken naar de mogelijkheden.",
       imageUrl: "/assets/images/gardener/voortuin.jpg",
       altText: "Foto van een vers gemaaid voetbal veld"
     },
@@ -104,16 +91,17 @@ const pageContent = {
     }
    }
 
+export const metadata = {
+  title: 'Wouter Uitentuis | Hovenier in omgeving Alkmaar',
+  description:"Als hovenier helpen we particulieren en de kleinere ondernemer in regio Noord-Holland met tuinaanleg en -onderhoud. Van snoeien en bestraten tot seizoensgebonden onderhoud en houtwerk.",
+  openGraph: {
+    title: 'Wouter Uitentuis | Hovenier in omgeving Alkmaar',
+    description:"Als hovenier helpen we particulieren en de kleinere ondernemer in regio Noord-Holland met tuinaanleg en -onderhoud. Van snoeien en bestraten tot seizoensgebonden onderhoud en houtwerk.",
+  },
+}
+
 export default function Hovenier() {
-  const [yearsActive, setYearsActive] = useState(null)
 
-
-  useState(() => {
-    const currentYear = new Date().getFullYear();
-    const startYear = pageContent.socialProofSection.startYear
-
-    return  setYearsActive(currentYear - startYear)
-  })
 
 
   return (
@@ -123,9 +111,10 @@ export default function Hovenier() {
       <main className={Styles.main}>
         <UspSection bennefits={pageContent.uspSection} />
         <CtaSection ctaContent={pageContent.ctaSection} />
-        <SocialProof >
+        <SocialProof socialProofTitle={pageContent.socialProofSection.title}>
+
           <CardComponent cardStyle='socialProofCard' >
-              <h3 className='counter' >{yearsActive}</h3>
+              <h3 className='counter'>11</h3>
               <span>Jaar actief als hovenier </span>
           </CardComponent>
           <CardComponent cardStyle='socialProofCard' >
@@ -138,7 +127,8 @@ export default function Hovenier() {
           </CardComponent>
 
         </SocialProof>
-        <ProjectSection projectContent={pageContent.ProjectSection} />
+        <ArticleSection articleContent={pageContent.articleSection}/>
+        <FeaturedContentSection featuredContent={pageContent.featuredContentSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />
         <ContactSection urls={pageContent.contactSection} />

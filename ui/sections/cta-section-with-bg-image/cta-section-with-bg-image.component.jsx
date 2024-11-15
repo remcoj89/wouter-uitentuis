@@ -23,7 +23,7 @@ const CtaSectionWithBgImage = ({ctaContent}) => {
             <p className={Styles.ctaSubtitle}>{ctaSubtitle}</p>
 
             <Link href="#contact-section">
-              <Button buttonStyle="btnDarkGreen">
+              <Button buttonStyle="btnGreen">
                 Contact  <IconComponent iconStyle='greenIcon'>
                             <PhoneIcon color="#ffff" />
                           </IconComponent>

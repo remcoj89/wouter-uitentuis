@@ -1,10 +1,10 @@
 import Styles from './article-section.module.css';
 import Image from 'next/image'
+import Link from 'next/link'
 
 const ArticleSection = ({articleContent}) => {
-  const {articleQuote, articleDescription, articleImage1, articleImage2} = articleContent
+  const {articleQuote, articleDescription, articleImage1, articleImage2, link} = articleContent
 
-  console.log(articleContent)
   return (
     <section id="article-section">
       <article className={`wrapper ${Styles.articleGrid}`}>
@@ -37,6 +37,10 @@ const ArticleSection = ({articleContent}) => {
             <h3>{articleDescription.title3}</h3>
             <p>{articleDescription.paragraph4}</p>
           </div>
+          {
+            link ? <Link href={link.url} className={Styles.link}>{link.linkText}</Link> : ""
+          }
+
         </div>
 
         <div className={Styles.articleGridItem4}>

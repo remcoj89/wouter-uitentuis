@@ -28,6 +28,12 @@
           color: rgb(var(--color-green));
           font-size: var(--font-size-hero-large);
       }
+
+      .heroContentSubtitle {
+        color: rgb(var(--color-white));
+        font-size: 1.8rem;
+        line-height: 150%;
+      }
     }
   }
 }
