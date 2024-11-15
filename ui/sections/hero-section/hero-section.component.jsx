@@ -24,38 +24,13 @@ const HeroSection = ({sectionContent}) => {
       >
       <div className={`wrapper ${Styles.heroWrapper} `}>
 
-         <div className={Styles.heroContent}>
+          <div className={Styles.heroContent}>
             <h1 className={Styles.heroContentTitle}>{heroTitle}</h1>
-            <h2 className={Styles.heroContentSubtitle}>{subTitle}</h2>
+            <p className={Styles.heroContentSubtitle}>{subTitle}</p>
+          </div>
             <Link href="#contact-section">
-              <Button buttonStyle="btnPrimary">Klik voor een vrijblijvende afpraak</Button>
+              <Button buttonStyle="btnHero">Afspraak maken</Button>
             </Link>
-         </div>
-
-         <div className={Styles.heroImageGrid}>
-
-            <Image
-              className={`${Styles.image} ${Styles.image1}`}
-              src={image1.imageUrl}
-              width={500}
-              height={500}
-              alt={image1.altText}
-              />
-            <Image
-              className={`${Styles.image} ${Styles.image2}`}
-              src={image2.imageUrl}
-              width={500}
-              height={500}
-              alt={image2.altText}
-              />
-            <Image
-              className={`${Styles.image} ${Styles.image3}`}
-              src={image3.imageUrl}
-              width={500}
-              height={500}
-              alt={image3.altText}
-              />
-         </div>
 
       </div>
 

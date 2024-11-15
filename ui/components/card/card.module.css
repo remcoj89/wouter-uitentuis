@@ -5,19 +5,14 @@
 
 .uspCard {
   align-items: center;
-  background: transparent;
   flex-direction: column;
   justify-content: space-between;
   gap: var(--gap-card);
   height: 100%;
   text-align: center;
-}
-
-.uspCard:hover {
-  border: 1px solid rgb(var(--color-light-green));
-  border-radius: 40px 0px;
   box-shadow: 0px 20px 150px 0px rgba(var(--color-primary), 0.30);
 }
+
 
 .ctaCard {
   -moz-box-shadow: 0px -50px 5px 0px rgba(var(--color-green),0.2);
@@ -31,12 +26,13 @@
   justify-content: space-evenly;
   position: absolute;
   right: 0;
-  width: 85%;
+  width:100%;
 }
 
 @media (min-width: 990px) {
   .ctaCard {
     flex-direction: row;
+    width: 85%;
   }
 }
 

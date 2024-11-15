@@ -14,7 +14,7 @@ const ContactSection = ({urls}) => {
     <div className={`wrapper ${Styles.contactSectionWrapper}`}>
         {/* title and imag */}
         <div className={Styles.contactSectionHeader}>
-          <h3 className={Styles.title}>Benieuw wat wij voor uw club <span className={Styles.titleColor}>kunnen betekenen?</span></h3>
+          <h3 className={Styles.title}>Heb je een vraag, suggestie of ben je benieuwd hoe we jou kunnen helpen? <span className={Styles.titleColor}>We horen het graag!</span></h3>
         </div>
         {/* Form */}
         <div className={Styles.contactSectionForm}>

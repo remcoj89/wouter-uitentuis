@@ -78,20 +78,20 @@ color: rgb(var(--color-green))
   .contactSectionHeader{
     padding-inline: 0;
     padding-block: var(--padding-btn-inline-start);
-    width:50%;
+    width: 50%;
   }
 
   .contactSectionImage {
     display: block;
     border-radius: 0px var(--border-radius-large) 0px 0px;
     bottom: -20%;
-    height: 70%;
+    height: 60%;
     left: 0;
     object-fit: cover;
     object-position: center;
     position: absolute;
     right: 0;
-    top: 45%;
+    top: 55%;
     width: 45%;
   }
 

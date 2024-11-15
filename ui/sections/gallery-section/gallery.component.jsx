@@ -39,7 +39,7 @@ const Gallery = () => {
     <section id="gallery-section" className={Styles.gallerySection}>
 
         <h4 className={Styles.subtitle}>Gallerij</h4>
-        <h3 className={Styles.title}>Een impressie van ons werk</h3>
+        <h3 className={Styles.title}>Ons werk</h3>
 
       <div className="wrapper">
         <div className={Styles.imageGrid}>

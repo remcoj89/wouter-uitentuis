@@ -6,12 +6,14 @@ import styles from "./page.module.css";
 import HeroSection from "@/ui/sections/hero-section/hero-section.component";
 import UspSection from "@/ui/sections/usp-section/usp-section.component";
 import CtaSection from "@/ui/sections/cta-section/cta-section.component";
+import ArticleSection from "@/ui/sections/article-section/article-section";
 import ProjectSection from '@/ui/sections/project-section/project-section.component';
 import CtaSectionWithBgImage from '@/ui/sections/cta-section-with-bg-image/cta-section-with-bg-image.component';
 import Gallery from '@/ui/sections/gallery-section/gallery.component';
 import ContactSection from '@/ui/sections/contact-section/contact-section.component';
 import HorizontalLogoSlider from "@/ui/components/horizontal-logo-slider/horizontal-logo-slider.component";
 import SocialProofLogoSection from "@/ui/sections/social-proof-logo-section/social-proof-logo-section.component";
+import FeaturedContentSection from "@/ui/sections/featured-content-section/featured-content";
 
 
 
@@ -20,8 +22,8 @@ export default function Home() {
   const pageContent = {
     heroSection:
         {
-        heroTitle: "Milieuvriendelijk Onderhoud voor Gezonde Velden",
-        subTitle: "Behoud van Gezonde Grasvelden bij Intensief Gebruik",
+        heroTitle: "Al meer dan 12 jaar zijn we dé expert in onderhoud en beheer van sportvelden voor amateur- en profclubs.",
+        subTitle: "Met advies en de juiste onderhoudsmaatregelen helpen we sportclubs hun grasvelden in optimale staat te brengen en houden, ook bij intensief gebruik.",
         backGroundImage: "/assets/images/field-management/green-grass-white-clouds.png",
         image1: {imageUrl: "/assets/images/field-management/field-management-hero-1.jpg", altText: "image 1"},
         image2: {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"},
@@ -29,24 +31,24 @@ export default function Home() {
       },
       uspSection: [
         {
-          title: "Schadedetectie en herstel",
-          description: "Inspecteren en repareren van beschadigingen houdt het veld in optimale conditie. Snelle interventie voorkomt verdere schade.",
+          title: "Onderhoud",
+          description: "Door middel van o.a. maaien, bemesten, bezanden en verticuteren houden we het veld in optimale conditie.",
           iconUrl: "/assets/images/field-management/icon-grass.svg"
         },
         {
-          title: "Beregening",
-          description: "Een goed beheerd irrigatiesysteem zorgt ervoor dat het gras voldoende water krijgt, vooral tijdens droge periodes. Dit voorkomt uitdroging en behoudt de vitaliteit van het veld.",
+          title: "Belijning",
+          description: "We verzorgen de belijning van diverse soorten sportvelden. Dit doen we snel en nauwkeurig met gebruik van gps.",
           iconUrl: "/assets/images/field-management/icon-water.svg"
         },
         {
-          title: "Bemesten",
-          description: "Het toedienen van meststoffen voorziet het gras van essentiële voedingsstoffen. Dit versterkt de wortels en houdt het gras gezond en groen.",
+          title: "Begeleiding & Advies",
+          description: "We begeleiden en adviseren sportclubs die het onderhoud van hun velden in eigen beheer hebben.",
           iconUrl: "/assets/images/field-management/icon-seed.svg"
         },
       ],
       ctaSection: {
-        ctaTitle: "Samen voor Perfecte Speelvelden!",
-        ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
+        ctaTitle: "Jouw sportveld, onze zorg",
+        ctaSubtitle: "Gezonde grasvelden die lang bespeelbaar zijn. Samen krijgen we het voor elkaar.",
         imageUrl: "/assets/images/field-management/field-management-hero-1.jpg",
         altText: "Foto van een vers gemaaid voetbal veld"
       },
@@ -120,44 +122,31 @@ export default function Home() {
           altText: "logo ZcFc"
         },
       ],
-      ProjectSection: [
+      articleSection:
         {
-          projectTitle: "'Gras is geen rocketscience. Laat je niet gek maken'",
-          projectDescription: {
-            paragraph1: "In het eerste jaar dat de trainingsvelden werden opgeleverd, nu vijf jaar geleden, kon nog niemand bevroeden hoe slecht het gras zou groeien. Er ontstonden veel kale grasplekken, vooral bij de overlap van de sproeiers.",
-            paragraph2: "Na het eerste seizoen is met een fieldtopmaker 2 cm van de graslaag af gefreesd, opnieuw ingezaaid en bemest. Door de warme en droge zomer in het jaar erop, verbrandde het opkomende gras direct.",
-            paragraph3: "We hebben ons toen afgevraagd wat daar de oorzaak van was en zijn gaan zoeken. We kwamen erachter dat het met het zoute gietwater had te maken. Met deze kennis zijn we de velden veel meer gaan besproeien om het zout weg te duwen. Soms wel 40 tot 50 ml/m2 per nacht. Normaal geven we afhankelijk van de tijd in het jaar tussen de 10 en 15 ml/m2.",
+          articleQuote: "Gras is geen rocketscience",
+          articleDescription: {
+            paragraph1: "Het gras wil niet groeien, er is sprake van slechte beworteling of er zijn problemen met de water- en luchthuishouding. Er is altijd iets aan te doen. Gras is namelijk geen rocket science. Met 12 jaar ervaring in sportveldonderhoud weten we wat er nodig is om jouw sportveld in optimale conditie te houden.",
+            title1:"Sportveldbeheer voor ieder budget",
+            paragraph2: "We verzorgen het speelveld onderhoud voor zowel amateur- als profclubs binnen diverse sporten. In samenwerking met PR Sport verzorgen we het veldonderhoud tijdens trainingskampen van diverse internationale voetbalclubs. Van het speelveld van de lokale sportvereniging tot de wedstrijdvelden van clubs in de Eredivisie: we halen het maximale uit elk budget.",
+            title2:"Bespeelbaarheid van het veld verhogen",
+            paragraph3: "Met goed onderhoud verleng je de periode dat een veld bespeelbaar is. Tijdig maaien, doorzaaien, beluchten en speelschadeherstel spelen hierbij een belangrijke rol. We streven ernaar al onze onderhoudswerkzaamheden zonder gebruik van chemische middelen uit te voeren",
+            title3:"Altijd een bekend gezicht",
+            paragraph4: "Ons team is klein en hecht. We checken regelmatig in bij onze clubs en zorgen dat zij altijd een bekend gezicht op de grasmat hebben staan. We kennen onze clubs en hun velden en zetten al onze kennis in voor optimaal behoud. En komen we er zelf niet uit? Dan schakelen we ons netwerk van externe experts in. Alleen zo bereiken we samen het beste resultaat."
           },
-          projectImage: {
-            imageUrl: "/assets/images/field-management/trainings-veld-van-az.webp",
-            altText: "Trainings veld van AZ"
+          articleImage1: {
+            imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
+            altText: "Belijnen met een lijn robot"
+          },
+            articleImage2: {
+            imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
+            altText: "Belijnen met een lijn robot"
           }
         },
-        {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          projectDescription: {
-            paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          },
-          projectImage: {
-            imageUrl: "/assets/images/field-management/hero_image-3.png",
-            altText: "project Image"
-          }
-        },
-        {
-          projectTitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          projectDescription: {
-            paragraph1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-            paragraph3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa nihil aliquam distinctio similique est quaerat aut at, quisquam et sapiente consequatur placeat fuga tenetur consectetur architecto numquam. Necessitatibus, consectetur?",
-          },
-          projectImage: {
-            imageUrl: "/assets/images/field-management/hero_image-3.png",
-            altText: "project Image"
-          }
-        },
-      ],
+      featuredContentSection: {
+        title: "Gps-robotbelijning: nauwkeurig en kostenefficiënt",
+        paragraph: "Voor het belijnen van sportvelden maken we gebruik van onze gps-robotbelijner. Deze stelt ons in staat sportvelden snel en heel precies te belijnen."
+      },
       secondCta: {
         ctaTitle: "Uw Velden, Onze Zorg!",
         ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
@@ -165,8 +154,70 @@ export default function Home() {
         altText: "Foto van een vers gemaaid voetbal veld"
       },
       contactSection: {
-        imageUrl: "/assets/images/gardener/handschoenen.avif"
-      }
+        imageUrl: "/assets/images/shared/team-wouter.jpg"
+      },
+      gallerySection: [
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-1.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-2.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-3.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-4.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-5.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-6.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-7.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-8.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-9.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-10.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-11.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          },
+          {
+            imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-12.jpg',
+            imageTitle: "titel",
+            altText: "image description"
+          }
+        ]
      }
 
   return (
@@ -179,7 +230,8 @@ export default function Home() {
         <SocialProofLogoSection >
           <HorizontalLogoSlider logos={pageContent.socialProofSection} />
         </SocialProofLogoSection>
-        <ProjectSection projectContent={pageContent.ProjectSection} />
+        <ArticleSection articleContent={pageContent.articleSection}/>
+        <FeaturedContentSection featuredContent={pageContent.featuredContentSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
         <Gallery />
         <ContactSection urls={pageContent.contactSection}/>

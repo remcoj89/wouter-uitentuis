@@ -14,7 +14,7 @@ import Gallery from '@/ui/sections/gallery-section/gallery.component';
 import ContactSection from '@/ui/sections/contact-section/contact-section.component';
 
 
-export default function BigGreen() {
+export default function BigGreen() {  
 
 
   const pageContent = {
@@ -22,10 +22,10 @@ export default function BigGreen() {
         {
         heroTitle: "Breng Leven In Je Groene Omgeving",
         subTitle: "Deskundige Zorg Voor Een Groene En Gezonde Omgeving",
-        backGroundImage: "/assets/images/big-green/hero-big-green.png",
-        image1: {imageUrl: "/assets/images/field-management/hero_image-1.png", altText: "image 1"},
-        image2: {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"},
-        image3: {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
+        backGroundImage: "/assets/images/big-green/hero/hero-big-green.png",
+        image1: {imageUrl: "/assets/images/big-green/hero/darwin-park.jpg", altText: "image 1"},
+        image2: {imageUrl: "/assets/images/big-green/hero/veldpark-luchtfoto.jpg", altText: "image 1"},
+        image3: {imageUrl: "/assets/images/big-green/hero/wouter-uitentuis-groot-groen-hero-1.jpg", altText: "image 1"}
       },
       uspSection: [
         {
@@ -119,7 +119,7 @@ export default function BigGreen() {
         altText: "Foto van een vers gemaaid voetbal veld"
       },
       contactSection: {
-        imageUrl: "/assets/images/gardener/handschoenen.avif"
+        imageUrl: "/assets/images/shared/team-wouter.jpg"
       }
      }
 

@@ -2,15 +2,40 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   min-height: 90vh;
   width: 100%;
   z-index: 1;
+
+  .heroWrapper {
+    position: absolute;
+    z-index: 10;
+    inset: 0;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 4rem;
+
+    .heroContent {
+      max-width: 85ch;
+      display: grid;
+      justify-content: center;
+      gap: 2.4rem;
+
+      .heroContentTitle {
+          color: rgb(var(--color-green));
+          font-size: var(--font-size-hero-large);
+      }
+    }
+  }
 }
 
 .heroSection::before {
   background: linear-gradient(var(--color-background-gradient-start) 0%, var(--color-background-gradient-end) 100%);
   content: '';
-  height: 90vh;
+  height: 100%;
   inset: 0;
   opacity: 0.5;
   position: absolute;
@@ -18,87 +43,8 @@
   z-index: 2;
 }
 
-.heroWrapper {
-  align-items: center;
-  display: flex;
-  height: 75%;
-  inset: 75px 0 0 0;
-  justify-content: center;
-  overflow: none;
 
-  position: absolute;
-  z-index: 10;
-}
 
-.heroContent {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-
-.heroContent > a {
-  margin-top: 6rem;
-}
-
-.heroContentTitle {
-  color: rgb(var(--color-green));
-  font-size: var(--font-size-hero-large);
-}
-
-.heroImageGrid {
-  display: none;
-}
-
-@media (min-width: 1093px) {
-  .heroContent {
-    align-items: flex-start;
-    text-align: left;
-    width: 50%;
-  }
-
-  .heroImageGrid {
-    display: grid;
-    flex-grow: 1;
-    flex-shrink: 1;
-    gap: 4.1rem 4.1rem;
-    grid-template-columns: 57% 40%;
-    grid-template-rows: 1fr 1fr;
-    height:70%;
-    overflow: hidden;
-    width: 50%;
-
-grid-template-areas:
-      "image-1 imag-2"
-      "image-1 image-3";
-  }
-}
-
-.image > img{
-  object-fit: cover;
-}
-
-.image1{
-  align-self: center;
-  border-radius: 100px 30px 25px 25px;
-  grid-area: image-1;
-  height: 100%;
-}
-.image2 {
-  align-self: end;
-  border-radius: 30px;;
-  grid-area: imag-2;
-  height: 65%;
-}
-.image3, .image3 > img{
-  align-self: start;
-  border-radius: 30px 30px 80px 30px;
-  grid-area: image-3;
-  height: 75%;
-}
 
 .scrollDownBtn {
   align-items: center;
@@ -116,7 +62,7 @@ grid-template-areas:
   right: 0;
   transform: rotate(45deg);
   width: 15rem;
-  z-index: 2;
+  z-index: 20;
 }
 
 .arrows {

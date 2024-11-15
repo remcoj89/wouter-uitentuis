@@ -100,7 +100,7 @@ const pageContent = {
       altText: "Foto van een vers gemaaid voetbal veld"
     },
     contactSection: {
-      imageUrl: "/assets/images/gardener/handschoenen.avif"
+      imageUrl: "/assets/images/shared/team-wouter.jpg"
     }
    }
 

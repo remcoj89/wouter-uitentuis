@@ -1,0 +1,49 @@
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 4.8rem;
+
+  .paragraphWrapper {
+    text-wrap: pretty;
+    max-width: 65ch;
+    display: grid;
+    gap: 1.8rem;
+  }
+
+  .articleImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .articleGridItem1 {
+    display: grid;
+    gap: 3rem;
+
+  }
+  .articleGridItem2 {
+    display: grid;
+    gap: 1.6rem;
+
+
+    .articleQuote {
+        background-color: rgba(var(--color-light-green), 0.5);
+        display: block;
+        border-radius: var(--border-radius-card-uneven);
+        box-shadow: var(--box-shadow);
+        font-size: 3rem;
+        height: fit-content;
+        padding-block: 3rem;
+        text-align: center;
+        margin-block-end: 2.4rem;
+    }
+  }
+
+  .articleGridItem3 {
+    display: grid;
+    gap: 3rem;
+    grid-column: 1 / 2;
+  }
+}

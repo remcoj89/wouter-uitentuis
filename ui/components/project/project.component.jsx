@@ -9,7 +9,7 @@ import ProjectBanner from '../project-banner/project-banner.component';
 
 const ProjectComponent = ({projectContent, projectBanner}) => {
   const {projectTitle, projectImage, projectDescription} =projectContent
-  const {paragraph1,paragraph2, paragraph3} = projectDescription
+  const {paragraph1, title1, paragraph2, title2,  paragraph3, title3, paragraph4} = projectDescription
 
 
 
@@ -26,8 +26,12 @@ const ProjectComponent = ({projectContent, projectBanner}) => {
         <h4>{projectTitle}</h4>
       </ProjectBanner>
           <p>{paragraph1}</p>
+          <h3>{title1}</h3>
           <p>{paragraph2}</p>
+          <h3>{title2}</h3>
           <p>{paragraph3}</p>
+          <h3>{title3}</h3>
+          <p>{paragraph4}</p>
 
 
       </article>

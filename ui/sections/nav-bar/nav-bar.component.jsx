@@ -11,7 +11,7 @@ import {useState} from 'react'
 import { PhoneIcon, EmailIcon, CloseIcon, BurgerIcon } from '@/assets/icons';
 
 const NavBar = () => {
-   const [cancelButtonChecked, setCancelButtonChecked] = useState(false);
+  const [cancelButtonChecked, setCancelButtonChecked] = useState(false);
   const pathname = usePathname();
 
   function handleNavLinkClick() {

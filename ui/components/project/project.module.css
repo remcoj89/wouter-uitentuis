@@ -27,7 +27,7 @@
     align-items: flex-end;
     display: flex;
     gap: var(--gap-card);
-    height: 60rem;
+    /* height: 60rem; */
   }
 
   .projectImage {

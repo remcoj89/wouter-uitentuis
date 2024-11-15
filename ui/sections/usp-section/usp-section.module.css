@@ -3,11 +3,15 @@
   grid-template-columns: 1fr;
   z-index: 2;
   position: relative;
+  justify-content: space-between;
+  gap: 2.4rem;
 }
 
 .uspContent {
   display: grid;
   justify-content: space-between;
+  gap: 1.8rem;
+  height: 100%;
 }
 
 @media (min-width: 650px) {

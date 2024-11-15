@@ -1,36 +1,50 @@
 .btn {
   align-items: center;
   cursor: pointer;
-  display: flex;
-  display: flex;
-  gap: var(--gap-card)
+  display: inline-flex;
+  gap: var(--gap-card);
 }
 
 .btnPrimary {
   background-color: rgb(var(--color-primary));
+
 }
 
 .btnDarkGreen {
   background-color: rgb(var(--color-dark-green));
 }
 
-.btnPrimary, .btnDarkGreen {
+.btnPrimary, .btnDarkGreen, .btnHero {
   border: none;
   border-radius: var(--border-radius-btn);
   color:  rgb(var(--color-white));
   cursor: pointer;
   font-size: var(--font-size-large);
-  padding-block: var(--padding-btn);
-  padding-inline: var(--padding-btn);
+  padding-block: var(--padding-block-btn);
+  padding-inline: var(--padding-inline-btn);
 }
 
 .btnPrimary:hover, .btnDarkGreen:hover  {
-  /* border: 2px solid rgb(var(--color-on-background)); */
-  /* border-style: inset; */
-  opacity: 0.8;
+  background-color: rgb(var(--color-very-dark-green));
 }
 
 .btnCard {
   background: transparent;
   border: none;
+}
+
+
+.btnHero {
+  background-color: rgb(var(--color-primary));
+  display: inline-block;
+  width: 100%;
+
+  @media (width >= 582px) {
+    width: 50%;
+  }
+
+  &:hover {
+    background-color: rgba(var(--color-green), 0.85);
+
+  }
 }

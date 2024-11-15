@@ -19,7 +19,7 @@ const defaultFormFields = {
 
 const defaultMessage = {
   title: 'succes',
-  message: 'hartelijk dank voor uw bericht'
+  message: 'hartelijk dank voor je bericht'
 }
 
 
@@ -95,7 +95,7 @@ const ContactForm = () => {
         inputOptions={{
           name:"message",
           value: message,
-          placeholder: "Uw vraag...",
+          placeholder: "Stel hier jouw vraag...",
           type:"textarea",
           onChange: handelChange,
           required: true
@@ -103,7 +103,7 @@ const ContactForm = () => {
       />
 
     <Button buttonType="submit" buttonStyle='btnPrimary'>{pending ? "Wordt verzonden..." : "Verzenden"}</Button>
-      <span>Uw gegevens zullen <strong>nooit</strong> met derden worden gedeeld</span>
+      <span>We delen jouw gegevens<strong>nooit</strong> met derden.</span>
       {isModalOpen && (
         <MessageModal modalOpen={setIsModalOpen}>
           <h3>{submitMessage.title}</h3>

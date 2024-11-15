@@ -1,6 +1,7 @@
 .ctaSection {
   color: rgb(var(--color-white));
-  min-height: 46rem;
+  position: relative;
+  height: 31.8rem;
 }
 
 .ctaText {
@@ -31,15 +32,15 @@
 
   .ctaText  {
     padding-left: 20%;
-    max-width: 60%;
+    max-width: 70%;
   }
   .ctaImage {
     display: block;
     border-radius: var(--border-radius-card);
     height: 37.2rem;
-    left: -10%;
+    left: -15%;
     position: absolute;
     top: -30%;
-    width: 25vw;
+    width: 30vw;
   }
 }

@@ -1,0 +1,15 @@
+.featuredContent {
+  background-color: rgba(var(--color-green), 1);
+  color: rgb(var(--color-white));
+  padding-block: 8rem;
+  display: grid;
+  justify-content: center;
+
+  .featuredContent__Wrapper {
+    max-width: 75ch;
+    text-wrap: pretty;
+    display: grid;
+    gap: 1.8rem;
+   text-align: center;
+  }
+}
