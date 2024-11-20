@@ -1,3 +1,4 @@
+'use client'
 // Styles
 import IconComponent from '@/ui/components/icon/icon.component';
 import Styles from './footer-section.module.css';
@@ -21,13 +22,13 @@ return (
        </Link>
       <Link href="https://maps.app.goo.gl/fwxp3YxCLdR9xtrL6" target='_blank' >
         <IconComponent iconStyle='greenIcon' ><LocationIcon color="#ffff"/></IconComponent>
-        Westeinde 29, 1636VB, Schermerhorn
+        Westeinde 29, 1636 VB, Schermerhorn
         </Link>
       <Link href="tel: 0630272667" target='_blank'>
         <IconComponent iconStyle='greenIcon'><PhoneIcon color="#ffff"/> </IconComponent>06-30272667
        </Link>
       </div>
-      <p> &copy;All Copyrights Reseverd {currentYear} </p>
+      <p> &copy; W. Uitentuis {currentYear} </p>
     </footer>
   </section>
 )

@@ -2,34 +2,35 @@
 
 import Styles from './cookie-banner.module.css';
 import Link from 'next/link';
-import { getLocalStorage, setLocalStorage } from '../../../lib/storage-helper/storage-helper';
 import { useState, useEffect } from 'react';
 
-export default function CookieBanner(){
-  const [cookieConsent, setCookieConsent] = useState(null);
-
-  useEffect (() => {
-      const storedCookieConsent = getLocalStorage("cookie_consent", null)
-
-      setCookieConsent(storedCookieConsent)
-  }, [setCookieConsent])
+function CookieConsent() {
+  const [hasConsented, setHasConsented] = useState(null);
 
   useEffect(() => {
-    const newValue = cookieConsent ? 'granted' : 'denied'
-    window.gtag("consent", 'update', {
-      'analytics_storage': newValue
-    });
-    setLocalStorage("cookie_consent", cookieConsent);
-  }, [cookieConsent]);
+    const storedConsent = localStorage.getItem('consent');
+    if (storedConsent) {
+      setHasConsented(JSON.parse(storedConsent));
+    }
+  }, []);
+
+  const handleConsent = (concent) => {
+    setHasConsented(concent);
+    localStorage.setItem('consent', JSON.stringify(concent));
+  };
 
 
   return(
-    <div className={Styles.cookieBanner} style={{ display: cookieConsent != null ? "none" : "flex" }}>
+    hasConsented === null && (
+    <div className={Styles.cookieBanner}>
       <Link href='#'><p>Wij gebruiken <span className={Styles.highligtedText}>cookies</span> op onze website</p></Link>
       <div className={Styles.btnWrapper}>
-        <button className={`${Styles.btn} ${Styles.btnDecline}`} onClick={() => setCookieConsent(false)}>Afwijzen</button>
-        <button className={`${Styles.btn} ${Styles.btnAllow}`} onClick={() => setCookieConsent(true)}>Cookies Toestaan</button>
+        <button className={`${Styles.btn} ${Styles.btnDecline}`} onClick={() => handleConsent(false)}>Afwijzen</button>
+        <button className={`${Styles.btn} ${Styles.btnAllow}`} onClick={() => handleConsent(true)}>Cookies Toestaan</button>
       </div>
     </div>
+    )
   )
 }
+
+export default CookieConsent;

@@ -1,7 +1,8 @@
 
 .articleGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
   column-gap: 3.2rem;
   row-gap: 4.8rem;
 
@@ -18,15 +19,16 @@
     width: 100%;
   }
 
-  .articleGridItem1 {
+  .articleGridItem1,
+  .articleGridItem2,
+  .articleGridItem3,
+  .articleGridItem4
+   {
+    align-items: center;
     display: grid;
     gap: 3rem;
-
   }
   .articleGridItem2 {
-    display: grid;
-    gap: 1.6rem;
-
 
     .articleQuote {
         background-color: rgba(var(--color-light-green), 0.5);
@@ -42,8 +44,6 @@
   }
 
   .articleGridItem3 {
-    display: grid;
-    gap: 3rem;
     grid-column: 1 / 2;
   }
 
@@ -54,4 +54,11 @@
       text-decoration: underline;
     }
   }
+}
+
+
+@media (width >= 750px) {
+    .articleGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -1,5 +1,5 @@
 .featuredContent {
-  background-color: rgba(var(--color-green), 1);
+  background-color: rgba(var(--color-dark-green), 1);
   color: rgb(var(--color-white));
   padding-block: 8rem;
   display: grid;

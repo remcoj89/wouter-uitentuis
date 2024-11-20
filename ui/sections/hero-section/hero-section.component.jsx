@@ -11,7 +11,7 @@ import Button from '@/ui/components/button/button.component';
 import { ArrowDownLarge, ArrowDownSmall } from '@/assets/icons';
 
 const HeroSection = ({sectionContent}) => {
-  const {heroTitle, subTitle,backGroundImage, image1, image2, image3} = sectionContent;
+  const {heroTitle, subTitle,backGroundImage} = sectionContent;
 
     const handleClick = () => {
         document.getElementById("usp-section").scrollIntoView()

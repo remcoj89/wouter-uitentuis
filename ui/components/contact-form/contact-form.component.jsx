@@ -80,11 +80,11 @@ const ContactForm = () => {
         }}
         />
       <InputField
-        label="Email"
+        label="E-mail"
         inputOptions={{
           name:"user_email",
           value: user_email,
-          placeholder: "Email",
+          placeholder: "E-mail",
           type:"email",
           onChange: handelChange,
           required: true
@@ -103,7 +103,7 @@ const ContactForm = () => {
       />
 
     <Button buttonType="submit" buttonStyle='btnPrimary'>{pending ? "Wordt verzonden..." : "Verzenden"}</Button>
-      <span>We delen jouw gegevens<strong>nooit</strong> met derden.</span>
+      <span>We delen jouw gegevens <strong>nooit</strong> met derden.</span>
       {isModalOpen && (
         <MessageModal modalOpen={setIsModalOpen}>
           <h3>{submitMessage.title}</h3>

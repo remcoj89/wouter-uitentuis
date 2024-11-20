@@ -5,25 +5,26 @@ import Styles from './nav-bar.module.css';
 // Hooks
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {useState} from 'react'
+import { useRef} from 'react'
 
 // Icons
 import { PhoneIcon, EmailIcon, CloseIcon, BurgerIcon } from '@/assets/icons';
 
 const NavBar = () => {
-  const [cancelButtonChecked, setCancelButtonChecked] = useState(false);
+  const cancelButtonRef = useRef(null);
   const pathname = usePathname();
 
   function handleNavLinkClick() {
-    setCancelButtonChecked(true)
+    if (cancelButtonRef.current) {
+      cancelButtonRef.current.checked = true;
+    }
   }
-
   return (
     <header className={Styles.header}>
       <nav className={Styles.nav}>
         <div className={Styles.navWrapper}>
           <Link  className={Styles.logo} href="/">W. Uitentuis</ Link>
-          <input type="radio" name="slide" className={Styles.navButton} id={Styles.cancelButton} checked={cancelButtonChecked}/>
+          <input type="radio" name="slide" className={Styles.navButton} id={Styles.cancelButton} ref={cancelButtonRef}/>
           <input type="radio" name="slide" className={Styles.navButton} id={Styles.menuButton}  />
 
           <ul className={Styles.navLinks}>
@@ -54,10 +55,10 @@ const NavBar = () => {
 
             <li>
               <Link
-                href='/groen-onderhoud'
-                className={`${Styles.navLink} ${pathname === '/groen-onderhoud' ? `${Styles.active}` : ""}`}
+                href='/groenonderhoud'
+                className={`${Styles.navLink} ${pathname === '/groenonderhoud' ? `${Styles.active}` : ""}`}
                 onClick={handleNavLinkClick}>
-                  Groen Onderhoud
+                  Groenonderhoud
               </Link>
             </li>
 

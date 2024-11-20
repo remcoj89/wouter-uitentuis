@@ -1,8 +1,6 @@
 // Styles
 import Styles from '../page.module.css'
 
-
-
 // Components
 import UspSection from '@/ui/sections/usp-section/usp-section.component'
 import HeroSection from "@/ui/sections/hero-section/hero-section.component"
@@ -16,6 +14,10 @@ import CardComponent from '@/ui/components/card/card.component'
 import FeaturedContentSection from "@/ui/sections/featured-content-section/featured-content";
 
 const pageContent = {
+    metaData: {
+      title: 'Wouter Uitentuis | Hovenier in omgeving Alkmaar',
+      description:"Als hovenier helpen we particulieren en de kleinere ondernemer in regio Noord-Holland met tuinaanleg en -onderhoud. Van snoeien en bestraten tot seizoensgebonden onderhoud en houtwerk."
+    },
   heroSection:
       {
       heroTitle: "Jouw hovenier in Noord-Holland",
@@ -24,8 +26,8 @@ const pageContent = {
     },
     uspSection: [
       {
-        title: "Tuinaanleg & renovatie",
-        description: "We verzorgen de volledige aanleg of renovatie van tuinen, inclusief bestrating en aanplanting, met als doel een aantrekkelijke en gebruiksvriendelijk tuin.",
+        title: "Tuinaanleg & -renovatie",
+        description: "We verzorgen de volledige aanleg en renovatie van tuinen, inclusief bestrating en aanplanting, met als doel een aantrekkelijke en gebruiksvriendelijk tuin.",
         iconUrl: "/assets/images/gardener/garden-icon-flower.svg"
       },
       {
@@ -35,13 +37,13 @@ const pageContent = {
       },
       {
         title: "Gazon",
-        description: "Wij zijn specialist op het gebied van gazonaanleg en onderhoud. Door middel van o.a. bemesten, beluchten en verticuteren zorgen we voor een gezond gazon jaarrond.",
+        description: "Wij zijn specialist op het gebied van gazonaanleg en -onderhoud. Door middel van o.a. bemesten, beluchten en verticuteren zorgen we voor een gezond gazon jaarrond.",
         iconUrl: "/assets/images/gardener/garden-icon-garden-cart.svg"
       },
     ],
     ctaSection: {
-      ctaTitle: "Samen voor een Perfecte Tuin!",
-      ctaSubtitle: "Wilt u weten hoe wij het beheer van uw velden kunnen optimaliseren? Ontdek de voordelen en laat ons uw velden perfectioneren.",
+      ctaTitle: "In elk seizoen een mooie tuin",
+      ctaSubtitle: "Een prachtig onderhouden en gebruiksvriendelijke tuin. Wij regelen het voor je.",
       imageUrl: "/assets/images/gardener/achtertuin-met-vijver.jpg",
       altText: "Foto van een vers gemaaid voetbal veld"
     },
@@ -57,7 +59,7 @@ const pageContent = {
       articleDescription: {
         paragraph1: "Achterstallig onderhoud aan houtwerk, een terras vol scheve tegels of een herfsttuin met weinig kleur. Ons team gaat er graag mee aan de slag. We helpen je met het realiseren van een prachtig groen gazon, een kleurrijke border, een strak terras of een gloednieuwe overkapping.",
         title1:"Elk seizoen een fijne tuin",
-        paragraph2: "Door een goede inrichting en beplanting van de tuin, is deze geschikt voor ieder seizoen. We denken graag mee over een beplantingsplan zodat jouw tuin zowel in de lente en zomer als in de koude en natte maanden een fijne plek is. Zo zorgen we voor planten die de winter kleur geven en beplanting die het vele water van het herfstseizoen opneemt en vasthoudt. Zo is jouw tuin direct toekomstbestendig.",
+        paragraph2: "Door een goede inrichting en beplanting van de tuin, is deze geschikt voor ieder seizoen. We denken graag mee over een beplantingsplan zodat jouw tuin zowel in de lente en zomer als in de koude en natte maanden een fijne plek is. We zorgen voor planten die de winter kleur geven en beplanting die het vele water van het herfstseizoen opneemt en vasthoudt. Zo is jouw tuin direct toekomstbestendig.",
         title2:"Met elk budget een mooie tuin",
         paragraph3: "Ook met een klein budget kunnen we een prachtige buitenomgeving realiseren. Dat weten we uit ervaring. De uitdaging die dit met zich meebrengt maak de klus alleen maar mooier. Samen kijken we wat er mogelijk is en halen we het maximale uit jouw tuin.",
         title3:"Persoonlijke benadering",
@@ -88,16 +90,78 @@ const pageContent = {
     },
     contactSection: {
       imageUrl: "/assets/images/shared/team-wouter.jpg"
-    }
+    },
+    gallerySection: [
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-1.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-2.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-3.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-4.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-5.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-6.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-7.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-8.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-9.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-10.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-11.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-12.jpg',
+        imageTitle: "titel",
+        altText: "image description"
+      }
+    ]
    }
 
 export const metadata = {
-  title: 'Wouter Uitentuis | Hovenier in omgeving Alkmaar',
-  description:"Als hovenier helpen we particulieren en de kleinere ondernemer in regio Noord-Holland met tuinaanleg en -onderhoud. Van snoeien en bestraten tot seizoensgebonden onderhoud en houtwerk.",
+  title: `${pageContent.metaData.title}`,
+  description:`${pageContent.metaData.description}`,
   openGraph: {
-    title: 'Wouter Uitentuis | Hovenier in omgeving Alkmaar',
-    description:"Als hovenier helpen we particulieren en de kleinere ondernemer in regio Noord-Holland met tuinaanleg en -onderhoud. Van snoeien en bestraten tot seizoensgebonden onderhoud en houtwerk.",
-  },
+    title: `${pageContent.metaData.title}`,
+    description:`${pageContent.metaData.description}`,
+ },
 }
 
 export default function Hovenier() {
@@ -115,22 +179,22 @@ export default function Hovenier() {
 
           <CardComponent cardStyle='socialProofCard' >
               <h3 className='counter'>11</h3>
-              <span>Jaar actief als hovenier </span>
+              <span>jaar actief als hovenier</span>
           </CardComponent>
           <CardComponent cardStyle='socialProofCard' >
             <h3>&gt; 132</h3>
-            <span>Aangelegde Tuinen </span>
+            <span>tuinen aangelegd</span>
           </CardComponent>
           <CardComponent cardStyle='socialProofCard' >
             <h3>&gt; 66000km2</h3>
-            <span>Gras gezaaid</span>
+            <span>gras gezaaid</span>
           </CardComponent>
 
         </SocialProof>
         <ArticleSection articleContent={pageContent.articleSection}/>
         <FeaturedContentSection featuredContent={pageContent.featuredContentSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
-        <Gallery />
+        <Gallery images={pageContent.gallerySection} />
         <ContactSection urls={pageContent.contactSection} />
       </main>
     </>

@@ -16,14 +16,15 @@ import SocialProof from "@/ui/sections/social-proof-section/social-proof.compone
 
 
 const pageContent = {
-  heroSection:
+    metaData: {
+      title: 'Wouter Uitentuis | De expert in onderhoud en beheer van sportvelden voor amateur- en profclubs.',
+      description:"Met advies en de juiste onderhoudsmaatregelen helpen we sportclubs hun grasvelden in optimale staat te brengen en houden, ook bij intensief gebruik."
+    },
+    heroSection:
       {
-      heroTitle: "Al meer dan 12 jaar zijn we dé expert in onderhoud en beheer van sportvelden voor amateur- en profclubs.",
+      heroTitle: "Dé expert in onderhoud en beheer van sportvelden voor amateur- en profclubs",
       subTitle: "Met advies en de juiste onderhoudsmaatregelen helpen we sportclubs hun grasvelden in optimale staat te brengen en houden, ook bij intensief gebruik.",
-      backGroundImage: "/assets/images/field-management/green-grass-white-clouds.png",
-      image1: {imageUrl: "/assets/images/field-management/field-management-hero-1.jpg", altText: "image 1"},
-      image2: {imageUrl: "/assets/images/field-management/hero_image-2.png", altText: "image 1"},
-      image3: {imageUrl: "/assets/images/field-management/hero_image-3.png", altText: "image 1"}
+      backGroundImage: "/assets/images/field-management/green-grass-white-clouds.webp",
     },
     uspSection: [
       {
@@ -45,7 +46,7 @@ const pageContent = {
     ctaSection: {
       ctaTitle: "Jouw sportveld, onze zorg",
       ctaSubtitle: "Gezonde grasvelden die lang bespeelbaar zijn. Samen krijgen we het voor elkaar.",
-      imageUrl: "/assets/images/field-management/field-management-hero-1.jpg",
+      imageUrl: "/assets/images/field-management/field-management-hero-1.webp",
       altText: "Foto van een vers gemaaid voetbal veld"
     },
     socialProofTitle: "Wij beheren de velden van onder andere",
@@ -121,7 +122,7 @@ const pageContent = {
     ],
     articleSection:
       {
-        articleQuote: "Gras is geen rocketscience",
+        articleQuote: "Gras is geen rocket science",
         articleDescription: {
           paragraph1: "Het gras wil niet groeien, er is sprake van slechte beworteling of er zijn problemen met de water- en luchthuishouding. Er is altijd iets aan te doen. Gras is namelijk geen rocket science. Met 12 jaar ervaring in sportveldonderhoud weten we wat er nodig is om jouw sportveld in optimale conditie te houden.",
           title1:"Sportveldbeheer voor ieder budget",
@@ -132,22 +133,23 @@ const pageContent = {
           paragraph4: "Ons team is klein en hecht. We checken regelmatig in bij onze clubs en zorgen dat zij altijd een bekend gezicht op de grasmat hebben staan. We kennen onze clubs en hun velden en zetten al onze kennis in voor optimaal behoud. En komen we er zelf niet uit? Dan schakelen we ons netwerk van externe experts in. Alleen zo bereiken we samen het beste resultaat."
         },
         articleImage1: {
-          imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
-          altText: "Belijnen met een lijn robot"
+          imageUrl: "/assets/images/field-management/articles/trekkers.webp",
+          altText: "2 Trekkers die gras weg frezen"
         },
           articleImage2: {
-          imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
+          imageUrl: "/assets/images/field-management/articles/beleinen.webp",
           altText: "Belijnen met een lijn robot"
         }
       },
     featuredContentSection: {
-      title: "Gps-robotbelijning: nauwkeurig en kostenefficiënt",
+      title: "Gps-robotbelijning:",
+      subTitle: "nauwkeurig en kostenefficiënt",
       paragraph: "Voor het belijnen van sportvelden maken we gebruik van onze gps-robotbelijner. Deze stelt ons in staat sportvelden snel en heel precies te belijnen."
     },
     secondCta: {
       ctaTitle: "Uw Velden, Onze Zorg!",
       ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
-      imageUrl: "/assets/images/field-management/hero_image-1.png",
+      imageUrl: "/assets/images/field-management/green-grass-white-clouds.webp",
       altText: "Foto van een vers gemaaid voetbal veld"
     },
     contactSection: {
@@ -155,80 +157,82 @@ const pageContent = {
     },
     gallerySection: [
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-1.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-1.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-2.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-2.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-3.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-3.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-4.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-4.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-5.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-5.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-6.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-6.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-7.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-7.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-8.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-8.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-9.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-9.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-10.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-10.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-11.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-11.webp',
           imageTitle: "titel",
           altText: "image description"
         },
         {
-          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-12.jpg',
+          imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-12.webp',
           imageTitle: "titel",
           altText: "image description"
         }
       ]
    }
 
-export const metadata = {
-  title: 'Wouter Uitentuis | De expert in onderhoud en beheer van sportvelden voor amateur- en profclubs.',
-  description:"Met advies en de juiste onderhoudsmaatregelen helpen we sportclubs hun grasvelden in optimale staat te brengen en houden, ook bij intensief gebruik.",
-  openGraph: {
-    title: 'Wouter Uitentuis | De expert in onderhoud en beheer van sportvelden voor amateur- en profclubs.',
-    description:"Met advies en de juiste onderhoudsmaatregelen helpen we sportclubs hun grasvelden in optimale staat te brengen en houden, ook bij intensief gebruik.",
-  },
-}
+   export const metadata = {
+    title: `${pageContent.metaData.title}`,
+    description:`${pageContent.metaData.description}`,
+    openGraph: {
+      title: `${pageContent.metaData.title}`,
+      description:`${pageContent.metaData.description}`,
+   },
+  }
+
+
+
 
 
 export default function Home() {
-
 
   return (
     <>
@@ -243,7 +247,7 @@ export default function Home() {
         <ArticleSection articleContent={pageContent.articleSection}/>
         <FeaturedContentSection featuredContent={pageContent.featuredContentSection} />
         <CtaSectionWithBgImage  ctaContent={pageContent.secondCta}/>
-        <Gallery />
+        <Gallery images={pageContent.gallerySection} />
         <ContactSection urls={pageContent.contactSection}/>
       </main>
     </>
