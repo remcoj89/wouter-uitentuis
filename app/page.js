@@ -126,9 +126,9 @@ const pageContent = {
         articleDescription: {
           paragraph1: "Het gras wil niet groeien, er is sprake van slechte beworteling of er zijn problemen met de water- en luchthuishouding. Er is altijd iets aan te doen. Gras is namelijk geen rocket science. Met 12 jaar ervaring in sportveldonderhoud weten we wat er nodig is om jouw sportveld in optimale conditie te houden.",
           title1:"Sportveldbeheer voor ieder budget",
-          paragraph2: "We verzorgen het speelveld onderhoud voor zowel amateur- als profclubs binnen diverse sporten. In samenwerking met PR Sport verzorgen we het veldonderhoud tijdens trainingskampen van diverse internationale voetbalclubs. Van het speelveld van de lokale sportvereniging tot de wedstrijdvelden van clubs in de Eredivisie: we halen het maximale uit elk budget.",
+          paragraph2: "We verzorgen het speelveldonderhoud voor zowel amateur- als profclubs binnen diverse sporten. In samenwerking met PR Sport verzorgen we het veldonderhoud tijdens trainingskampen van diverse internationale voetbalclubs. Van het speelveld van de lokale sportvereniging tot de wedstrijdvelden van clubs in de Eredivisie: we halen het maximale uit elk budget.",
           title2:"Bespeelbaarheid van het veld verhogen",
-          paragraph3: "Met goed onderhoud verleng je de periode dat een veld bespeelbaar is. Tijdig maaien, doorzaaien, beluchten en speelschadeherstel spelen hierbij een belangrijke rol. We streven ernaar al onze onderhoudswerkzaamheden zonder gebruik van chemische middelen uit te voeren",
+          paragraph3: "Met goed onderhoud verleng je de periode dat een veld bespeelbaar is. Tijdig maaien, doorzaaien, beluchten en speelschadeherstel spelen hierbij een belangrijke rol. We streven ernaar al onze onderhoudswerkzaamheden zonder gebruik van chemische middelen uit te voeren.",
           title3:"Altijd een bekend gezicht",
           paragraph4: "Ons team is klein en hecht. We checken regelmatig in bij onze clubs en zorgen dat zij altijd een bekend gezicht op de grasmat hebben staan. We kennen onze clubs en hun velden en zetten al onze kennis in voor optimaal behoud. En komen we er zelf niet uit? Dan schakelen we ons netwerk van externe experts in. Alleen zo bereiken we samen het beste resultaat."
         },
@@ -147,8 +147,8 @@ const pageContent = {
       paragraph: "Voor het belijnen van sportvelden maken we gebruik van onze gps-robotbelijner. Deze stelt ons in staat sportvelden snel en heel precies te belijnen."
     },
     secondCta: {
-      ctaTitle: "Uw Velden, Onze Zorg!",
-      ctaSubtitle: "Wilt u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
+      ctaTitle: "Een gezonde grasmat voor ieder budget",
+      ctaSubtitle: "Jouw speelveld in optimale conditie brengen en houden? Met de kennis van ons ervaren team is het zo voor elkaar!t u weten wat wij voor het onderhoud van uw voetbalvelden kunnen betekenen? Laten we samenwerken aan perfect speeloppervlak!",
       imageUrl: "/assets/images/field-management/green-grass-white-clouds.webp",
       altText: "Foto van een vers gemaaid voetbal veld"
     },
