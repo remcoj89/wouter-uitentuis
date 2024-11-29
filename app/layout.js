@@ -6,12 +6,7 @@ import "./globals.css";
 // Components
 import FooterSection from "@/ui/sections/footer-section/footer-section.component";
 import NavBar from "@/ui/sections/nav-bar/nav-bar.component";
-
-
-export const metadata = {
-  title: "Wouter Uitentuis",
-  description: "Field management en agrarische dienst verlening",
-};
+import CookieConsent from "@/ui/components/cookie-banner/cookie-banner.component";
 
 export default function RootLayout({ children }) {
 
@@ -21,7 +16,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
         <FooterSection />
-        {/* <CookieConsent /> */}
+        <CookieConsent />
       </body>
     </html>
   );

@@ -1,12 +1,15 @@
 .socialProofSection {
   position: relative;
+  display: grid;
+  justify-content: center;
   z-index: 2;
 }
 
 .socialProofTitle {
   text-align: center;
   font-size: var(--font-size-hero-medium);
-  max-width: 65ch;
+  max-width: 40ch;
+  margin-inline: auto;
 }
 
 .socialProofWrapper {

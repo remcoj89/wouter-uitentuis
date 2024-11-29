@@ -182,11 +182,11 @@ export default function Hovenier() {
               <span>jaar actief als hovenier</span>
           </CardComponent>
           <CardComponent cardStyle='socialProofCard' >
-            <h3>&gt; 132</h3>
+            <h3>132</h3>
             <span>tuinen aangelegd</span>
           </CardComponent>
           <CardComponent cardStyle='socialProofCard' >
-            <h3>&gt; 66.000 km²</h3>
+            <h3>66.000 km²</h3>
             <span>gras gezaaid</span>
           </CardComponent>
 

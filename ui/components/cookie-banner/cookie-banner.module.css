@@ -1,7 +1,8 @@
 .cookieBanner {
+  align-items: center;
   background-color: rgba(var(--color-primary));
   bottom: 10rem;
-  color: rgb(var(--color-on-background));
+  color: rgb(var(--color-white));
   display: flex;
   inset-inline: 25%;
   justify-content: space-between;
@@ -22,15 +23,14 @@
 }
 
 .btn {
-  cursor: pointer;
-  padding-inline: 2.4rem;
-  padding-block: 1.6rem;
-  border-radius: var(--border-radius);
   background-color: transparent;
   border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  padding-block: 1.6rem;
+  padding-inline: 2.4rem;
 }
 .btn:hover {
-  border: solid 1px;
   border-radius: var(--border-radius-btn);
 }
 

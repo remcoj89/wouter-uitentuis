@@ -1,7 +1,8 @@
 // Styles
 import styles from "./page.module.css";
 
-
+// Google Analytics
+import { GoogleAnalytics } from '@next/third-parties/google'
 // Components
 import HeroSection from "@/ui/sections/hero-section/hero-section.component";
 import UspSection from "@/ui/sections/usp-section/usp-section.component";
@@ -52,11 +53,11 @@ const pageContent = {
     socialProofTitle: "Wij beheren de velden van onder andere",
     socialProofSection: [
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-ado-den-haag.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-ado-den-haag.svg",
         altText: "logo Ado Den Haag"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-aek-athene.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-aek-athene.svg",
         altText: "logo AEK Athene"
       },
       {
@@ -64,19 +65,19 @@ const pageContent = {
         altText: "logo Alkmaarsche Boys"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-az.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-az.svg",
         altText: "logo Az Alkmaar"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-bologna.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-bologna.svg",
         altText: "logo Bologna"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-engelse-bond.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-engelse-bond.svg",
         altText: "logo Engelse nationale ploeg"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-fc-groningen.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-fc-groningen.svg",
         altText: "logo Fc Groningen"
       },
       {
@@ -88,11 +89,11 @@ const pageContent = {
         altText: "logo Hercules Zaandam"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-kaa-gent.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-kaa-gent.svg",
         altText: "logo Kaa Gent"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-knvb.png",
+        imageUrl: "/assets/images/field-management/club-logos/logo-knvb.svg",
         altText: "logo KNVB"
       },
       {
@@ -236,6 +237,7 @@ export default function Home() {
 
   return (
     <>
+       <GoogleAnalytics gaId="G-QN7N1KL6LP" />
        <HeroSection sectionContent={pageContent.heroSection} />
 
       <main className={styles.main}>
