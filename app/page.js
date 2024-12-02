@@ -52,14 +52,14 @@ const pageContent = {
     },
     socialProofTitle: "Wij beheren de velden van onder andere",
     socialProofSection: [
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-ado-den-haag.svg",
-        altText: "logo Ado Den Haag"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-aek-athene.svg",
-        altText: "logo AEK Athene"
-      },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-ado-den-haag.svg",
+      //   altText: "logo Ado Den Haag"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-aek-athene.svg",
+      //   altText: "logo AEK Athene"
+      // },
       {
         imageUrl: "/assets/images/field-management/club-logos/logo-alkmaarsche-boys.png",
         altText: "logo Alkmaarsche Boys"
@@ -68,50 +68,50 @@ const pageContent = {
         imageUrl: "/assets/images/field-management/club-logos/logo-az.svg",
         altText: "logo Az Alkmaar"
       },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-bologna.svg",
-        altText: "logo Bologna"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-engelse-bond.svg",
-        altText: "logo Engelse nationale ploeg"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-fc-groningen.svg",
-        altText: "logo Fc Groningen"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-fc-utrecht.png",
-        altText: "logo Fc Utrecht"
-      },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-bologna.svg",
+      //   altText: "logo Bologna"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-engelse-bond.svg",
+      //   altText: "logo Engelse nationale ploeg"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-fc-groningen.svg",
+      //   altText: "logo Fc Groningen"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-fc-utrecht.png",
+      //   altText: "logo Fc Utrecht"
+      // },
       {
         imageUrl: "/assets/images/field-management/club-logos/logo-hercules-zaandam.png",
         altText: "logo Hercules Zaandam"
       },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-kaa-gent.svg",
-        altText: "logo Kaa Gent"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-knvb.svg",
-        altText: "logo KNVB"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-lamia-fc.png",
-        altText: "logo Lamia FC"
-      },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-shakhter-donetsk.svg",
-        altText: "logo Shakhter Donetks"
-      },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-kaa-gent.svg",
+      //   altText: "logo Kaa Gent"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-knvb.svg",
+      //   altText: "logo KNVB"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-lamia-fc.png",
+      //   altText: "logo Lamia FC"
+      // },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-shakhter-donetsk.svg",
+      //   altText: "logo Shakhter Donetks"
+      // },
       {
         imageUrl: "/assets/images/field-management/club-logos/logo-sporting-s.png",
         altText: "logo sporting-s"
       },
-      {
-        imageUrl: "/assets/images/field-management/club-logos/logo-voetbal-bond-peru.png",
-        altText: "logo Nationaal Voetbalteam Peru"
-      },
+      // {
+      //   imageUrl: "/assets/images/field-management/club-logos/logo-voetbal-bond-peru.png",
+      //   altText: "logo Nationaal Voetbalteam Peru"
+      // },
       {
         imageUrl: "/assets/images/field-management/club-logos/logo-vv-bergen.png",
         altText: "logo VV Bergen"
@@ -134,8 +134,8 @@ const pageContent = {
           paragraph4: "Ons team is klein en hecht. We checken regelmatig in bij onze clubs en zorgen dat zij altijd een bekend gezicht op de grasmat hebben staan. We kennen onze clubs en hun velden en zetten al onze kennis in voor optimaal behoud. En komen we er zelf niet uit? Dan schakelen we ons netwerk van externe experts in. Alleen zo bereiken we samen het beste resultaat."
         },
         articleImage1: {
-          imageUrl: "/assets/images/field-management/articles/trekkers.webp",
-          altText: "2 Trekkers die gras weg frezen"
+          imageUrl: "/assets/images/field-management/articles/wouter-uitentuis-stadion-az.webp",
+          altText: "Veld van stadion Az vanaf de tribune"
         },
           articleImage2: {
           imageUrl: "/assets/images/field-management/articles/beleinen.webp",

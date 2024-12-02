@@ -66,12 +66,12 @@ const pageContent = {
         paragraph4: "‘Afspraak is afspraak’ is het motto binnen ons kleine team. We geloven in persoonlijk contact en zorgen dat je zoveel mogelijk dezelfde gezichten ziet. Zo leren we jou als klant goed kennen en zijn we in staat jouw ideale tuin te creëren."
       },
       articleImage1: {
-        imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
-        altText: "Belijnen met een lijn robot"
+        imageUrl: "/assets/images/gardener/images/tuin-met-serre.jpg",
+        altText: "Tuin met Serre"
       },
         articleImage2: {
-        imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
-        altText: "Belijnen met een lijn robot"
+        imageUrl: "/assets/images/gardener/images/bestrating.jpg",
+        altText: "Aanleggen van tuinpad"
       },
       link: {
         url: "/groen-onderhoud",
@@ -93,62 +93,77 @@ const pageContent = {
     },
     gallerySection: [
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-1.jpg',
+        imgUrl:'/assets/images/gardener/images/bestrating.jpg',
+        imageTitle: "bestrating",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/gardener/images/gras-zoden.jpg',
+        imageTitle: "Aanlegen gras zoden",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/gardener/images/schutting-plaatsen.jpg',
+        imageTitle: "plaatsen van schutting",
+        altText: "image description"
+      },
+      {
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-1.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-2.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-2.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-3.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-3.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-4.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-4.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-5.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-5.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-6.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-6.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-7.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-7.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-8.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-8.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-9.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-9.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-10.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-10.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-11.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-11.jpeg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-12.jpg',
+        imgUrl:'/assets/images/gardener/images/tuin-aanleg-12.jpeg',
         imageTitle: "titel",
         altText: "image description"
       }

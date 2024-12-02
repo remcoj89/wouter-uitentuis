@@ -47,7 +47,7 @@ const pageContent = {
       imageUrl: "/assets/images/big-green/darwin-park.jpg",
       altText: "Foto van het darwin-park"
     },
-    socialProofTitle: "Wij verzorgen het groenonderhoud voor onder andere",
+    socialProofTitle: "Wij hebben het groenonderhoud verzorgd voor onder andere",
     socialProofSection: [
       {
         imageUrl: "/assets/images/big-green/logos/logo-az.png",
@@ -85,12 +85,12 @@ const pageContent = {
         paragraph4: "Door efficiënte planning en uitvoering van onderhoudstaken worden lange termijnkosten verlaagd en grote herstelwerkzaamheden voorkomen. Ook voorkomt het onveilige situaties die veroorzaakt kunnen worden door bijvoorbeeld losliggende tegels en overwoekerde bewegwijzering."
       },
       articleImage1: {
-        imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
-        altText: "Belijnen met een lijn robot"
+        imageUrl: "/assets/images/big-green/images/wouter-uitentuis-grootgroen-project-1.jpg",
+        altText: "Maaien"
       },
         articleImage2: {
-        imageUrl: "/assets/images/field-management/articles/beleinen.jpg",
-        altText: "Belijnen met een lijn robot"
+        imageUrl: "/assets/images/big-green/images/boom-snoeien-1.jpg",
+        altText: "kappen van boom met bomen zaag"
       },
       link: {
         url: "/hovenier",
@@ -112,62 +112,37 @@ const pageContent = {
     },
     gallerySection: [
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-1.jpg',
+        imgUrl:'/assets/images/big-green/images/boom-snoeien-2.jpg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-2.jpg',
+        imgUrl:'/assets/images/big-green/images/boom-snoeien-3.jpg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-3.jpg',
+        imgUrl:'/assets/images/big-green/images/boom-snoeien-4.jpg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-4.jpg',
+        imgUrl:'/assets/images/big-green/images/wouter-uitentuis-grootgroen-1.jpg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-5.jpg',
+        imgUrl:'/assets/images/big-green/images/wouter-uitentuis-grootgroen-2.jpg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-6.jpg',
+        imgUrl:'/assets/images/big-green/images/wouter-uitentuis-grootgroen-project-1.jpg',
         imageTitle: "titel",
         altText: "image description"
       },
       {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-7.jpg',
-        imageTitle: "titel",
-        altText: "image description"
-      },
-      {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-8.jpg',
-        imageTitle: "titel",
-        altText: "image description"
-      },
-      {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-9.jpg',
-        imageTitle: "titel",
-        altText: "image description"
-      },
-      {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-10.jpg',
-        imageTitle: "titel",
-        altText: "image description"
-      },
-      {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-11.jpg',
-        imageTitle: "titel",
-        altText: "image description"
-      },
-      {
-        imgUrl:'/assets/images/field-management/images/wouter-uitentuis-fieldmanager-12.jpg',
+        imgUrl:'/assets/images/big-green/images/wouter-uitentuis-grootgroen-project-2.jpg',
         imageTitle: "titel",
         altText: "image description"
       }
