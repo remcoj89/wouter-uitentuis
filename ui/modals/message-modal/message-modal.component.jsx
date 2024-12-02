@@ -1,4 +1,4 @@
-import CardComponent from '@/ui/components/card/card.component';
+
 import Styles from './message-modale.module.css';
 import { CloseIcon } from '@/assets/icons';
 

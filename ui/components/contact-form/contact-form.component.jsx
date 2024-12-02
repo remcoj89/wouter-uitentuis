@@ -18,8 +18,8 @@ const defaultFormFields = {
 }
 
 const defaultMessage = {
-  title: 'succes',
-  message: 'hartelijk dank voor je bericht'
+  title: 'Wij hebben je bericht ontvangen',
+  message: 'Wij nemen zo snel mogelijk contact met je op.'
 }
 
 
@@ -46,11 +46,11 @@ const ContactForm = () => {
     setPending(true)
     try {
       await emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
-        publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY
+        publicKey: process.env.NEXT_PUBLIC_KEY
       });
       setSubmitMessage({
         title: `Dank je wel ${user_name}`,
-        message: `We hebben je bericht ontvangen en nemen binnen 24 uur contact met je op via ${user_email}.`
+        message: `We hebben je bericht ontvangen en nemen zo snel mogelijk contact met je op via ${user_email}.`
       })
 
     } catch (error) {

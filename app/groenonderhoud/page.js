@@ -28,17 +28,17 @@ const pageContent = {
       {
         title: "Snoeien en trimmen",
         description: "We snoeien en trimmen planten en struiken zodat deze een goede gezondheid behouden. Ook bevordert het de groei, voorkomt het overwoekering en zorgt het voor een nette buitenruimte.",
-        iconUrl: "/assets/images/big-green/icon-money.svg"
+        iconUrl: "/assets/images/big-green/icon-cutting.svg"
       },
       {
         title: "Seizoensgebonden onderhoud",
         description: "We bereiden de buitenruimte voor op een nieuw seizoen. We maken de omgeving bladvrij, verwijderen onkruid en herstellen eventuele schade.",
-        iconUrl: "/assets/images/big-green/icon-safety.svg"
+        iconUrl: "/assets/images/big-green/icon-calendar.svg"
       },
       {
         title: "Duurzaam groenbeheer",
         description: "Door middel van goed groenonderhoud brengen we de buitenomgeving tot leven.",
-        iconUrl: "/assets/images/big-green/icon-sustainability.svg"
+        iconUrl: "/assets/images/big-green/icon-leave.svg"
       },
     ],
     ctaSection: {

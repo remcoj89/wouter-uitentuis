@@ -31,17 +31,17 @@ const pageContent = {
       {
         title: "Onderhoud",
         description: "Door middel van o.a. maaien, bemesten, bezanden en verticuteren houden we het veld in optimale conditie.",
-        iconUrl: "/assets/images/field-management/icon-grass.svg"
+        iconUrl: "/assets/images/field-management/icon-seed.svg"
       },
       {
         title: "Belijning",
         description: "We verzorgen de belijning van diverse soorten sportvelden. Dit doen we snel en nauwkeurig met gebruik van gps.",
-        iconUrl: "/assets/images/field-management/icon-water.svg"
+        iconUrl: "/assets/images/field-management/icon-belijning.svg"
       },
       {
         title: "Begeleiding & Advies",
         description: "We begeleiden en adviseren sportclubs die het onderhoud van hun velden in eigen beheer hebben.",
-        iconUrl: "/assets/images/field-management/icon-seed.svg"
+        iconUrl: "/assets/images/field-management/icon-knowledge.svg"
       },
     ],
     ctaSection: {

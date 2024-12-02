@@ -28,17 +28,17 @@ const pageContent = {
       {
         title: "Tuinaanleg & -renovatie",
         description: "We verzorgen de volledige aanleg en renovatie van tuinen, inclusief bestrating en aanplanting, met als doel een aantrekkelijke en gebruiksvriendelijk tuin.",
-        iconUrl: "/assets/images/gardener/garden-icon-flower.svg"
+        iconUrl: "/assets/images/gardener/icon-shovel.svg"
       },
       {
         title: "Tuinonderhoud",
         description: "Passend onderhoud voor ieder seizoen. Dankzij goed onderhoud op het juiste moment geniet je het hele jaar van een tuin die er mooi bij staat.",
-        iconUrl: "/assets/images/gardener/garden-icon-shovel.svg"
+        iconUrl: "/assets/images/gardener/icon-garden.svg"
       },
       {
         title: "Gazon",
         description: "Wij zijn specialist op het gebied van gazonaanleg en -onderhoud. Door middel van o.a. bemesten, beluchten en verticuteren zorgen we voor een gezond gazon jaarrond.",
-        iconUrl: "/assets/images/gardener/garden-icon-garden-cart.svg"
+        iconUrl: "/assets/images/gardener/icon-grass.svg"
       },
     ],
     ctaSection: {

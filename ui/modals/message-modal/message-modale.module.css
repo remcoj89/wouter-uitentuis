@@ -6,7 +6,7 @@
   left: 15%;
   right: 15%;
   bottom: 25%;
-  background-color: rgba(var(--color-dark-green), 0.575);
+  background-color: rgba(var(--color-dark-green), 0.75);
   border-radius: var(--border-radius-card-uneven);
   z-index: 999;
 }
@@ -30,5 +30,6 @@
   position: absolute;
   top: 30px;
   right: 30px;
+  width: 3rem;
   cursor: pointer;
 }
