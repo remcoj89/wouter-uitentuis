@@ -101,8 +101,8 @@ const pageContent = {
         altText: "logo Lamia FC"
       },
       {
-        imageUrl: "/assets/images/field-management/club-logos/logo-shaktar-donetsk.png",
-        altText: "logo Shaktar Donetks"
+        imageUrl: "/assets/images/field-management/club-logos/logo-shakhter-donetsk.svg",
+        altText: "logo Shakhter Donetks"
       },
       {
         imageUrl: "/assets/images/field-management/club-logos/logo-sporting-s.png",
