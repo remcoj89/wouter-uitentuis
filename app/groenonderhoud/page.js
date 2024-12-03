@@ -44,8 +44,8 @@ const pageContent = {
     ctaSection: {
       ctaTitle: "Duurzaam groenbeheer: onze specialiteit",
       ctaSubtitle: "Ontvang professioneel advies voor jouw groenbeheer. Neem vandaag nog contact op voor een gratis gesprek.",
-      imageUrl: "/assets/images/big-green/darwin-park.jpg",
-      altText: "Foto van het darwin-park"
+      imageUrl: "/assets/images/big-green/hero/wouter-uitentuis-groot-groen-hero-1.jpg",
+      altText: "Foto van kerk tuin in Schermerhorn"
     },
     socialProofTitle: "Wij hebben het groenonderhoud verzorgd voor onder andere",
     socialProofSection: [

@@ -4,12 +4,18 @@
   bottom: 10rem;
   color: rgb(var(--color-white));
   display: flex;
-  inset-inline: 25%;
+  inset-inline: 2.5rem;
   justify-content: space-between;
   margin-inline: auto;
   padding: 2.4rem 3.6rem;
   position: fixed;
   z-index: 9999;
+}
+
+@media (width >= 978px) {
+  .cookieBanner {
+    inset-inline: 25%
+  }
 }
 
 .highligtedText{

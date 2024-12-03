@@ -33,7 +33,7 @@ const pageContent = {
       {
         title: "Tuinonderhoud",
         description: "Passend onderhoud voor ieder seizoen. Dankzij goed onderhoud op het juiste moment geniet je het hele jaar van een tuin die er mooi bij staat.",
-        iconUrl: "/assets/images/gardener/icon-garden.svg"
+        iconUrl: "/assets/images/gardener/icon-gardening.svg"
       },
       {
         title: "Gazon",
