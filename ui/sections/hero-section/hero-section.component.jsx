@@ -21,6 +21,7 @@ const HeroSection = ({sectionContent}) => {
     <section id="hero-section"
       className={Styles.heroSection}
       style={{background: `url(${backGroundImage})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}
+      priority="true"
       >
       <div className={`wrapper ${Styles.heroWrapper} `}>
 

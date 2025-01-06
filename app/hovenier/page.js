@@ -74,7 +74,7 @@ const pageContent = {
         altText: "Aanleggen van tuinpad"
       },
       link: {
-        url: "/groen-onderhoud",
+        url: "/groenonderhoud",
         linkText: "Naast particulier en kleinzakelijk tuinonderhoud verzorgen we groenonderhoud voor gemeentes, overheidsinstellingen en bedrijven."
       }
     },

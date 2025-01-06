@@ -1,6 +1,7 @@
 // Styles
 import styles from "./page.module.css";
 
+
 // Google Analytics
 import { GoogleAnalytics } from '@next/third-parties/google'
 // Components
@@ -18,7 +19,7 @@ import SocialProof from "@/ui/sections/social-proof-section/social-proof.compone
 
 const pageContent = {
     metaData: {
-      title: 'Wouter Uitentuis | De expert in onderhoud en beheer van sportvelden voor amateur- en profclubs.',
+      title: 'Wouter Uitentuis | Expert in sportveld onderhoud & beheer voor amateur- en profclubs.',
       description:"Met advies en de juiste onderhoudsmaatregelen helpen we sportclubs hun grasvelden in optimale staat te brengen en houden, ook bij intensief gebruik."
     },
     heroSection:
