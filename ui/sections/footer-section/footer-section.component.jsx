@@ -28,7 +28,7 @@ return (
         <IconComponent iconStyle='greenIcon'><PhoneIcon color="#ffff"/> </IconComponent>06-30272667
        </Link>
       </div>
-      <p> &copy; W. Uitentuis {currentYear} </p>
+      <p> &copy; W. Uitentuis {currentYear} made by <a href="http://westend-digital.nl" target='_blank'>Westend Digital</a> </p>
     </footer>
   </section>
 )
